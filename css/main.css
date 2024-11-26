@@ -1,0 +1,111 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    /* COLORS */
+    --bgcolor: #e3e1e1;
+    --box-bgcolor: #ffefd5ed;
+    --boxcolor: #640404;
+    --boxcolor-fade: #e20404;
+    --border-color: #e20404;
+    --text-color: #fff;
+    --box-gradient: linear-gradient(var(--boxcolor), var(--boxcolor-fade));
+
+    /* BORDER */
+    --border: 1.5px solid var(--border-color);
+
+    /* MARGINS AND PADDING */
+    --box-margin: 5px;
+    --box-padding: 10px;
+}
+
+/* GENERAL STYLES */
+body {
+    min-height: 100vh;
+    background-color: var(--bgcolor);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "hd hd hd"
+        "id trt tg"
+        "pt pw pw"
+        "ab pw pw"
+        "dm pw pw"
+        "nt nt nt"
+        "ft ft ft";
+}
+
+header, footer {
+    background-color: var(--boxcolor);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    grid-area: hd;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    grid-area: ft;
+}
+
+section {
+    border: var(--border);
+    background-color: var(--box-bgcolor);
+    margin: var(--box-margin);
+    padding: var(--box-padding);
+}
+
+#identity {
+    grid-area: id;
+}
+
+#traits {
+    grid-area: trt;
+}
+
+#tags {
+    grid-area: tg;
+}
+
+#physical-traits {
+    grid-area: pt;
+}
+
+#abilities {
+    grid-area: ab;
+    background-image: var(--box-gradient);
+    color: var(--text-color);
+}
+
+#powers {
+    grid-area: pw;
+    background-image: var(--box-gradient);
+    color: var(--text-color);
+    
+}
+
+#damage {
+    grid-area: dm;
+    background-image: var(--box-gradient);
+    color: var(--text-color);
+}
+
+#notes {
+    grid-area: nt;
+}
