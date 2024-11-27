@@ -310,13 +310,61 @@
             </section>
             <section id="powers">
                 <h3>POWERS</h3>
-                <!-- Power drop down -->
-                <!-- Set from powers object -->
-                <!-- Page # from powers object -->
-                <!-- Display div for info about power -->
-                <!-- Duration checkboxes -->
-                <!-- Action checkboxes -->
-                <!-- Button to add another power -->
+                <fieldset id="powers-field">
+                    <!-- Power drop down -->
+                    <select name="powers-select" id="powers-select">
+                        <option value="" disabled selected>Choose power</option>
+                        <option value="test">Test</option>
+                    </select>
+                    <button id="add-power">Add Power</button>
+                </fieldset>
+                <div id="p0" class="powers-display">
+                    <!-- Power name from powers object -->
+                    <div class="info">
+                        <p class="power-name"><strong>Power: </strong></p>
+                        <!-- Set from powers object -->
+                        <p class="power-set"><strong>Set: </strong></p>
+                        <!-- Cost from powers object -->
+                        <p class="power-cose"><strong>Cost: </strong></p>
+                        <!-- Page # from powers object -->
+                        <p class="power-page"><strong>Page Number: </strong></p>
+                    </div>
+                    <form class="power-form">
+                        <fieldset class="duration-field">
+                            <!-- Duration checkboxes -->
+                            <p class="power-duration"><strong>Duration: </strong></p>
+                            <input type="checkbox" name="permanent" id="permanent">
+                            <label for="permanent">P</label>
+                            <input type="checkbox" name="instant" id="instant">
+                            <label for="instant">I</label>
+                            <input type="checkbox" name="one-round" id="one-round">
+                            <label for="one-round">1</label>
+                            <input type="checkbox" name="concentration" id="concentration">
+                            <label for="concentration">C</label>
+                        </fieldset>
+                        <fieldset class="action-field">
+                            <!-- Action checkboxes -->
+                            <p class="power-action"><strong>Action: </strong></p>
+                            <input type="checkbox" name="standard" id="standard">
+                            <label for="standard">S</label>
+                            <input type="checkbox" name="movement" id="movement">
+                            <label for="movement">M</label>
+                            <input type="checkbox" name="reaction" id="reaction">
+                            <label for="reaction">R</label>
+                        </fieldset>
+                    </form>
+                    <!-- Display div for info about power -->
+                    <aside class="power-summary">
+                        <details>
+                            <summary>
+                                <strong>Summary:</strong>
+                            </summary>
+                            <p>Test</p>
+                        </details>
+                    </aside>
+                    <!-- Button to delete -->
+                    <button id="remove-power">Remove Power</button>
+                </div>
             </section>
             <section id="damage">
                 <h3>DAMAGE</h3>
