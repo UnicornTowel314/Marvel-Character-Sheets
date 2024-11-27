@@ -23,7 +23,7 @@
                     <!-- Rank -->
                     <fieldset>
                         <label for="rank">Rank: </label>
-                        <input type="text" name="rank" id="rank">
+                        <input type="number" name="rank" id="rank" min="1">
                     </fieldset>
                     <!-- Real Name -->
                     <fieldset>
@@ -65,7 +65,9 @@
                         <label for="size">Size: </label>
                         <select name="size" id="size">
                             <!-- Size Options -->
+                            <option value="" disabled selected>Choose size</option>
                         </select>
+                        <!-- Display div for info about Origin -->
                     </fieldset>
                     <!-- Distinguishing Features -->
                     <fieldset id="features-field">
@@ -87,6 +89,7 @@
                         <label for="origin">Origin: </label>
                         <select name="origin" id="origin">
                             <!-- Origin Options -->
+                            <option value="" disabled selected>Choose origin</option>
                         </select>
                         <!-- Display div for info about Origin -->
                     </fieldset>
@@ -95,6 +98,7 @@
                         <label for="occupation">Occupation: </label>
                         <select name="occupation" id="occupation">
                             <!-- Occupation options -->
+                            <option value="" disabled selected>Choose occupation</option>
                         </select>
                         <!-- Display div for info about Occupation -->
                     </fieldset>
@@ -305,10 +309,43 @@
             </section>
             <section id="damage">
                 <h3>DAMAGE</h3>
-                <!-- Melee Multiplier -->
-                <!-- Agility Multiplier -->
-                <!-- Ego Multiplier -->
-                <!-- Logic Multiplier -->
+                <div id="dmg-labels">
+                    <p id="ability-dmg">Ability</p>
+                    <p id="multi-label">Multiplier</p>
+                    <p id="dmg-modifier">Modifier</p>
+                </div>
+                <fieldset id="melee-dmg-field">
+                    <!-- Melee Multiplier -->
+                    <label for="melee-dmg" id="melee-dmg-label">Melee</label>
+                    <input type="number" name="melee-dmg" id="melee-dmg">
+                    <p id="melee-modifier-cont">
+                        <span id="melee-modifier">Test</span>
+                    </p>
+                </fieldset>
+                <fieldset id="agility-dmg-field">
+                    <!-- agility Multiplier -->
+                    <label for="agility-dmg" id="agility-dmg-label">Agility</label>
+                    <input type="number" name="agility-dmg" id="agility-dmg">
+                    <p id="agility-modifier-cont">
+                        <span id="agility-modifier">Test</span>
+                    </p>
+                </fieldset>
+                <fieldset id="ego-dmg-field">
+                    <!-- Ego Multiplier -->
+                    <label for="ego-dmg" id="ego-dmg-label">Ego</label>
+                    <input type="number" name="ego-dmg" id="ego-dmg">
+                    <p id="ego-modifier-cont">
+                        <span id="ego-modifier">Test</span>
+                    </p>
+                </fieldset>
+                <fieldset id="logic-dmg-field">
+                    <!-- Logic Multiplier -->
+                    <label for="logic-dmg" id="logic-dmg-label">Logic</label>
+                    <input type="number" name="logic-dmg" id="logic-dmg">
+                    <p id="logic-modifier-cont">
+                        <span id="logic-modifier">Test</span>
+                    </p>
+                </fieldset>
             </section>
             <section id="notes">
                 <h3>NOTES</h3>

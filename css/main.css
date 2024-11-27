@@ -112,6 +112,10 @@ p {
     margin: 10px 0;
 }
 
+label {
+    margin: 10px 0;
+}
+
 span {
     padding: 5px;
 }
@@ -189,7 +193,11 @@ span {
 #ego-def,
 #ego-non-com,
 #logic-def,
-#logic-non-com {
+#logic-non-com,
+#melee-modifier,
+#agility-modifier,
+#ego-modifier,
+#logic-modifier {
     background-color: #fff;
     border: 1px solid #000;
     color: #000;
@@ -284,6 +292,61 @@ span {
 #ego,
 #logic {
     width: 75%;
+    display: grid;
+    place-self: center;
+}
+
+#dmg-labels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "abd ml dmg";
+    column-gap: 10px;
+    font-weight: bolder;
+    font-size: 1.12rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+#ability-dmg {
+    grid-area: abd;
+    place-self: center;
+}
+
+#multi-label {
+    grid-area: ml;
+    place-self: center;
+}
+
+#dmg-modifier {
+    grid-area: dmg;
+    place-self: center;
+}
+
+#melee-dmg-field,
+#agility-dmg-field,
+#ego-dmg-field,
+#logic-dmg-field {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#melee-dmg-label,
+#melee-modifier-cont,
+#agility-dmg-label,
+#agility-modifier-cont,
+#ego-dmg-label,
+#ego-modifier-cont,
+#logic-dmg-label,
+#logic-modifier-cont {
+    display: grid;
+    place-self: center;
+}
+
+#melee-dmg,
+#agility-dmg,
+#ego-dmg,
+#logic-dmg {
+    width: 50%;
     display: grid;
     place-self: center;
 }
