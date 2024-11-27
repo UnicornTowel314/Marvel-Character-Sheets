@@ -185,44 +185,112 @@
                 <!-- Drop down menu -->
                 <select name="trait-select" id="trait-select">
                     <!-- Options for traits -->
+                    <option value="" disabled selected>Choose trait</option>
                 </select>
-                <!-- Display div for info about trait -->
-                <div id="trait-display"></div>
                 <!-- Button to get another dropdown menu -->
                 <button id="add-trait">Add Trait</button>
+                <!-- Display div for info about trait -->
+                <div id="trait-display"></div>
             </section>
             <section id="tags">
                 <h3>TAGS</h3>
                 <!-- Drop down menu -->
                 <select name="tag-select" id="tag-select">
                     <!-- Options for tags -->
+                    <option value="" disabled selected>Choose tag</option>
                 </select>
-                <!-- Display div for info about tag -->
-                <div id="tag-display"></div>
                 <!-- Button to get another dropdown menu -->
                 <button id="add-tag">Add Tag</button>
+                <!-- Display div for info about tag -->
+                <div id="tag-display"></div>
             </section>
             <section id="abilities">
                 <h3>ABILITIES</h3>
                 <form id="abilities-form">
-                    <!-- Melee -->
-                    <!-- Melee Defense -->
-                    <!-- Melee Non-Combat Check -->
-                    <!-- Agility -->
-                    <!-- Agility Defense -->
-                    <!-- Agility Non-Combat Check -->
-                    <!-- Resilience -->
-                    <!-- Resilience Defense -->
-                    <!-- Resilience Non-Combat Check -->
-                    <!-- Vigilance -->
-                    <!-- Vigilance Defense -->
-                    <!-- Vigilance Non-Combat Check -->
-                    <!-- Ego -->
-                    <!-- Ego Defense -->
-                    <!-- Ego Non-Combat Check -->
-                    <!-- Logic -->
-                    <!-- Logic Defense -->
-                    <!-- Logic Non-Combat Check -->
+                    <div id="ability-labels">
+                        <p id="ability">Ability</p>
+                        <p id="score-label">Ability Score</p>
+                        <p id="def-label">Defense Score</p>
+                        <p id="non-com-label">Non-Combat Checks</p>
+                    </div>
+                    <fieldset id="melee-field">
+                        <!-- Melee -->
+                        <label for="melee" id="melee-label">Melee</label>
+                        <input type="number" name="melee" id="melee" min="0">
+                        <!-- Melee Defense -->
+                        <p id="melee-def-cont">
+                            <span id="melee-def">Test</span>
+                        </p>
+                        <!-- Melee Non-Combat Check -->
+                        <p id="melee-non-com-cont">
+                            <span id="melee-non-com">Test</span>
+                        </p>
+                    </fieldset>
+                    <fieldset id="agility-field">
+                        <!-- Agility -->
+                        <label for="agility" id="agility-label">Agility</label>
+                        <input type="number" name="agility" id="agility" min="0">
+                        <!-- Agility Defense -->
+                        <p id="agility-def-cont">
+                            <span id="agility-def">Test</span>
+                        </p>
+                        <!-- Agility Non-Combat Check -->
+                        <p id="agility-non-com-cont">
+                            <span id="agility-non-com">Test</span>
+                        </p>
+                    </fieldset>
+                    <fieldset id="resilience-field">
+                        <!-- Resilience -->
+                        <label for="resilience" id="resilience-label">Resilience</label>
+                        <input type="number" name="resilience" id="resilience" min="0">
+                        <!-- Resilience Defense -->
+                        <p id="resilience-def-cont">
+                            <span id="resilience-def">Test</span>
+                        </p>
+                        <!-- Resilience Non-Combat Check -->
+                        <p id="resilience-non-com-cont">
+                            <span id="resilience-non-com">Test</span>
+                        </p>
+                    </fieldset>
+                    <fieldset id="vigilance-field">
+                        <!-- Vigilance -->
+                        <label for="vigilance" id="vigilance-label">Vigilance</label>
+                        <input type="number" name="vigilance" id="vigilance" min="0">
+                        <!-- Vigilance Defense -->
+                        <p id="vigilance-def-cont">
+                            <span id="vigilance-def">Test</span>
+                        </p>
+                        <!-- Vigilance Non-Combat Check -->
+                        <p id="vigilance-non-com-cont">
+                            <span id="vigilance-non-com">Test</span>
+                        </p>
+                    </fieldset>
+                    <fieldset id="ego-field">
+                        <!-- Ego -->
+                        <label for="ego" id="ego-label">Ego</label>
+                        <input type="number" name="ego" id="ego" min="0">
+                        <!-- Ego Defense -->
+                        <p id="ego-def-cont">
+                            <span id="ego-def">Test</span>
+                        </p>
+                        <!-- Ego Non-Combat Check -->
+                        <p id="ego-non-com-cont">
+                            <span id="ego-non-com">Test</span>
+                        </p>
+                    </fieldset>
+                    <fieldset id="logic-field">
+                        <!-- Logic -->
+                        <label for="logic" id="logic-label">Logic</label>
+                        <input type="number" name="logic" id="logic" min="0">
+                        <!-- Logic Defense -->
+                        <p id="logic-def-cont">
+                            <span id="logic-def">Test</span>
+                        </p>
+                        <!-- Logic Non-Combat Check -->
+                        <p id="logic-non-com-cont">
+                            <span id="logic-non-com">Test</span>
+                        </p>
+                    </fieldset>
                 </form>
             </section>
             <section id="powers">
