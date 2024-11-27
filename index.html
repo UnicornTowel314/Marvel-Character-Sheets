@@ -76,17 +76,64 @@
                 <h3>PHYSICAL TRAITS</h3>
                 <form id="physical-traits-form">
                     <!-- Karma -->
+                    <label for="karma">Karma: </label>
+                    <input type="text" name="karma" id="karma">
                     <!-- Initiative Modifier -->
+                    <p>
+                        <strong>Initiative Modifier: </strong>
+                        <span id="init-mod"></span>
+                    </p>
                     <!-- Current Health out of Max Health -->
-                    <!-- Button to increase and decrease -->
+                    <p>
+                        <strong>Current Health: </strong>
+                        <span id="curr-health"></span>
+                    </p>
+                    <!-- Max Health -->
+                    <label for="max-health">Max Health: </label>
+                    <input type="text" name="max-health" id="max-health">
+                    <!-- Buttons to increase and decrease -->
+                    <button id="health-inc">+</button>
+                    <button id="health-dec">-</button>
                     <!-- Health Damage Reduction -->
+                    <label for="health-dmg-red">Damage Reduction: </label>
+                    <input type="text" name="health-dmg-red" id="health-dmg-red">
                     <!-- Current Focus out of Max Focus -->
-                    <!-- Button to increase and decrease -->
+                    <p>
+                        <strong>Current Focus: </strong>
+                        <span id="curr-focus"></span>
+                    </p>
+                    <!-- Max Focus -->
+                    <label for="max-focus">Max Focus: </label>
+                    <input type="text" name="max-focus" id="max-focus">
+                    <!-- Buttons to increase and decrease -->
+                    <button id="focus-inc">+</button>
+                    <button id="focus-dec">-</button>
                     <!-- Focus Damage Reduction -->
-                    <!-- Speed h2 -->
+                    <label for="focus-dmg-red">Damage Reduction: </label>
+                    <input type="text" name="focus-dmg-red" id="focus-dmg-red">
+                    <!-- Speed -->
+                    <p>
+                        <strong>Speed: </strong>
+                        <span id="speed"></span>
+                    </p>
                     <!-- Run -->
+                    <p>
+                        <strong>Run: </strong>
+                        <span id="run"></span>
+                    </p>
                     <!-- Climb -->
+                    <p>
+                        <strong>Climb: </strong>
+                        <span id="climb"></span>
+                    </p>
                     <!-- Swim -->
+                    <p>
+                        <strong>Swim: </strong>
+                        <span id="swim"></span>
+                    </p>
+                    <!-- Other -->
+                    <label for="other-speed">Other: </label>
+                    <textarea name="other-speed" id="other-speed"></textarea>
                 </form>
             </section>
             <section id="traits">
