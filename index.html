@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Sarah Mckee">
         <link rel="stylesheet" href="css/main.css">
-        <title>Home</title>
+        <title>Marvel Character Sheet</title>
     </head>
     <body>
         <header>
@@ -13,127 +13,171 @@
         </header>
         <main>
             <section id="identity">
-                <h3>IDENTITY</h3>
+                <h3 id="id-header">IDENTITY</h3>
                 <form id="identity-form">
                     <!-- Codename -->
-                    <label for="codename">Codename: </label>
-                    <input type="text" name="codename" id="codename">
+                    <fieldset>
+                        <label for="codename" id="codename-label">Codename: </label>
+                        <input type="text" name="codename" id="codename">
+                    </fieldset>
                     <!-- Rank -->
-                    <label for="rank">Rank: </label>
-                    <input type="text" name="rank" id="rank">
+                    <fieldset>
+                        <label for="rank">Rank: </label>
+                        <input type="text" name="rank" id="rank">
+                    </fieldset>
                     <!-- Real Name -->
-                    <label for="real-name">Real Name: </label>
-                    <input type="text" name="real-name" id="real-name">
+                    <fieldset>
+                        <label for="real-name">Real Name: </label>
+                        <input type="text" name="real-name" id="real-name">
+                    </fieldset>
                     <!-- Height -->
-                    <label for="height">Height: </label>
-                    <input type="text" name="height" id="height">
+                    <fieldset>
+                        <label for="height">Height: </label>
+                        <input type="text" name="height" id="height">
+                    </fieldset>
                     <!-- Weight -->
-                    <label for="weight">Weight: </label>
-                    <input type="text" name="weight" id="weight">
+                    <fieldset>
+                        <label for="weight">Weight: </label>
+                        <input type="text" name="weight" id="weight">
+                    </fieldset>
                     <!-- Gender Radios -->
-                    <p id="gender-label">Gender: </p>
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" id="male">
-                    <label for="female">Female</label>
-                    <input type="radio" name="gender" id="female">
-                    <label for="non-binary">Non-Binary</label>
-                    <input type="radio" name="gender" id="non-binary">
+                    <fieldset id="gender-field">
+                        <p id="gender-label"><strong>Gender: </strong></p>
+                        <input type="radio" name="gender" id="male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="non-binary">
+                        <label for="non-binary">Non-Binary</label>
+                    </fieldset>
                     <!-- Eyes -->
-                    <label for="eyes">Eyes: </label>
-                    <input type="text" name="eyes" id="eyes">
+                    <fieldset>
+                        <label for="eyes">Eyes: </label>
+                        <input type="text" name="eyes" id="eyes">
+                    </fieldset>
                     <!-- Hair -->
-                    <label for="hair">Hair: </label>
-                    <input type="text" name="hair" id="hair">
+                    <fieldset>
+                        <label for="hair">Hair: </label>
+                        <input type="text" name="hair" id="hair">
+                    </fieldset>
                     <!-- Size -->
-                    <label for="size">Size: </label>
-                    <select name="size" id="size">
-                        <!-- Size Options -->
-                    </select>
+                    <fieldset>
+                        <label for="size">Size: </label>
+                        <select name="size" id="size">
+                            <!-- Size Options -->
+                        </select>
+                    </fieldset>
                     <!-- Distinguishing Features -->
-                    <label for="features">Distinguishing Features: </label>
-                    <textarea name="features" id="features"></textarea>
+                    <fieldset id="features-field">
+                        <label for="features">Distinguishing Features: </label>
+                        <textarea name="features" id="features" rows="3"></textarea>
+                    </fieldset>
                     <!-- Teams -->
-                    <label for="teams">Teams: </label>
-                    <input type="text" name="teams" id="teams">
+                    <fieldset>
+                        <label for="teams">Teams: </label>
+                        <input type="text" name="teams" id="teams">
+                    </fieldset>
                     <!-- Base -->
-                    <label for="base">Base: </label>
-                    <input type="text" name="base" id="base">
-                    <!-- Origin Drop down -->
-                    <label for="origin">Origin: </label>
-                    <select name="origin" id="origin">
-                        <!-- Origin Options -->
-                    </select>
-                    <!-- Display div for info about Origin -->
-                    <!-- Occupation Drop down -->
-                    <label for="occupation">Occupation: </label>
-                    <select name="occupation" id="occupation">
-                        <!-- Occupation options -->
-                    </select>
-                    <!-- Display div for info about Occupation -->
+                    <fieldset>
+                        <label for="base">Base: </label>
+                        <input type="text" name="base" id="base">
+                    </fieldset>
+                    <fieldset>
+                        <!-- Origin Drop down -->
+                        <label for="origin">Origin: </label>
+                        <select name="origin" id="origin">
+                            <!-- Origin Options -->
+                        </select>
+                        <!-- Display div for info about Origin -->
+                    </fieldset>
+                    <fieldset>
+                        <!-- Occupation Drop down -->
+                        <label for="occupation">Occupation: </label>
+                        <select name="occupation" id="occupation">
+                            <!-- Occupation options -->
+                        </select>
+                        <!-- Display div for info about Occupation -->
+                    </fieldset>
                 </form>
             </section>
             <section id="physical-traits">
                 <h3>PHYSICAL TRAITS</h3>
                 <form id="physical-traits-form">
-                    <!-- Karma -->
-                    <label for="karma">Karma: </label>
-                    <input type="text" name="karma" id="karma">
-                    <!-- Initiative Modifier -->
-                    <p>
-                        <strong>Initiative Modifier: </strong>
-                        <span id="init-mod"></span>
-                    </p>
-                    <!-- Current Health out of Max Health -->
-                    <p>
-                        <strong>Current Health: </strong>
-                        <span id="curr-health"></span>
-                    </p>
-                    <!-- Max Health -->
-                    <label for="max-health">Max Health: </label>
-                    <input type="text" name="max-health" id="max-health">
-                    <!-- Buttons to increase and decrease -->
-                    <button id="health-inc">+</button>
-                    <button id="health-dec">-</button>
-                    <!-- Health Damage Reduction -->
-                    <label for="health-dmg-red">Damage Reduction: </label>
-                    <input type="text" name="health-dmg-red" id="health-dmg-red">
+                    <fieldset>
+                        <!-- Karma -->
+                        <label for="karma">Karma: </label>
+                        <input type="text" name="karma" id="karma">
+                    </fieldset>
+                    <fieldset>
+                        <!-- Initiative Modifier -->
+                        <p>
+                            <strong>Initiative Modifier: </strong>
+                            <span id="init-mod">Test</span>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <!-- Current Health out of Max Health -->
+                        <p>
+                            <strong>Current Health: </strong>
+                            <span id="curr-health">Test</span>
+                        </p>
+                        <!-- Buttons to increase and decrease -->
+                        <button id="health-inc">+</button>
+                        <button id="health-dec">-</button>
+                        <br>
+                        <!-- Max Health -->
+                        <label for="max-health">Max Health: </label>
+                        <input type="text" name="max-health" id="max-health">
+                        <br>
+                        <!-- Health Damage Reduction -->
+                        <label for="health-dmg-red">Damage Reduction: </label>
+                        <input type="text" name="health-dmg-red" id="health-dmg-red">
+                    </fieldset>
                     <!-- Current Focus out of Max Focus -->
-                    <p>
-                        <strong>Current Focus: </strong>
-                        <span id="curr-focus"></span>
-                    </p>
-                    <!-- Max Focus -->
-                    <label for="max-focus">Max Focus: </label>
-                    <input type="text" name="max-focus" id="max-focus">
-                    <!-- Buttons to increase and decrease -->
-                    <button id="focus-inc">+</button>
-                    <button id="focus-dec">-</button>
-                    <!-- Focus Damage Reduction -->
-                    <label for="focus-dmg-red">Damage Reduction: </label>
-                    <input type="text" name="focus-dmg-red" id="focus-dmg-red">
-                    <!-- Speed -->
-                    <p>
-                        <strong>Speed: </strong>
-                        <span id="speed"></span>
-                    </p>
-                    <!-- Run -->
-                    <p>
-                        <strong>Run: </strong>
-                        <span id="run"></span>
-                    </p>
-                    <!-- Climb -->
-                    <p>
-                        <strong>Climb: </strong>
-                        <span id="climb"></span>
-                    </p>
-                    <!-- Swim -->
-                    <p>
-                        <strong>Swim: </strong>
-                        <span id="swim"></span>
-                    </p>
-                    <!-- Other -->
-                    <label for="other-speed">Other: </label>
-                    <textarea name="other-speed" id="other-speed"></textarea>
+                     <fieldset>
+                        <p>
+                            <strong>Current Focus: </strong>
+                            <span id="curr-focus">Test</span>
+                        </p>
+                        <!-- Buttons to increase and decrease -->
+                        <button id="focus-inc">+</button>
+                        <button id="focus-dec">-</button>
+                        <br>
+                        <!-- Max Focus -->
+                        <label for="max-focus">Max Focus: </label>
+                        <input type="text" name="max-focus" id="max-focus">
+                        <br>
+                        <!-- Focus Damage Reduction -->
+                        <label for="focus-dmg-red">Damage Reduction: </label>
+                        <input type="text" name="focus-dmg-red" id="focus-dmg-red">
+                    </fieldset>
+                    <fieldset id="speed-field">
+                        <!-- Speed -->
+                        <p>
+                            <strong>Speed: </strong>
+                            <span id="speed">Test</span>
+                        </p>
+                        <!-- Run -->
+                        <p>
+                            <strong>Run: </strong>
+                            <span id="run">Test</span>
+                        </p>
+                        <!-- Climb -->
+                        <p>
+                            <strong>Climb: </strong>
+                            <span id="climb">Test</span>
+                        </p>
+                        <!-- Swim -->
+                        <p>
+                            <strong>Swim: </strong>
+                            <span id="swim">Test</span>
+                        </p>
+                    </fieldset>
+                    <fieldset id="other-speed-field">
+                        <!-- Other -->
+                        <label for="other-speed">Other: </label>
+                        <textarea name="other-speed" id="other-speed" rows="1"></textarea>
+                    </fieldset>
                 </form>
             </section>
             <section id="traits">
