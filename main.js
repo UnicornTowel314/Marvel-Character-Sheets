@@ -80,3 +80,8 @@ const addTag = document.getElementById("add-tag");
 const delTag = document.getElementById("delete-tag");
 const addPower = document.getElementById("add-power");
 const delPower = document.getElementById("delete-power");
+
+// ARRAYS FOR RENDERING
+let traits = [];
+let tags = [];
+let powers = [];
