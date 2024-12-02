@@ -376,3 +376,10 @@ span {
 #origin-display p {
     display: block;
 }
+
+.trait-display button,
+.tag-display button {
+    background-color: var(--box-bgcolor);
+    color: #000;
+    font-size: 0.75rem;
+}
