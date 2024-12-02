@@ -197,25 +197,31 @@
             </section>
             <section id="traits">
                 <h3>TRAITS</h3>
-                <!-- Drop down menu -->
-                <select name="trait-select" id="trait-select">
-                    <!-- Options for traits -->
-                    <option value="" disabled selected>Choose trait</option>
-                </select>
-                <!-- Button to get another dropdown menu -->
-                <button id="add-trait">Add Trait</button>
+                <form id="traits-form">
+                    <!-- Drop down menu -->
+                    <select name="trait-select" id="trait-select">
+                        <!-- Options for traits -->
+                        <option value="" disabled selected>Choose trait</option>
+                        <option value="test">Test</option>
+                    </select>
+                    <!-- Button to add new trait -->
+                    <button id="add-trait">Add Trait</button>
+                </form>
                 <!-- Display div for info about trait -->
                 <div id="trait-display"></div>
             </section>
             <section id="tags">
                 <h3>TAGS</h3>
                 <!-- Drop down menu -->
-                <select name="tag-select" id="tag-select">
-                    <!-- Options for tags -->
-                    <option value="" disabled selected>Choose tag</option>
-                </select>
-                <!-- Button to get another dropdown menu -->
-                <button id="add-tag">Add Tag</button>
+                <form id="tags-form">
+                    <select name="tag-select" id="tag-select">
+                        <!-- Options for tags -->
+                        <option value="" disabled selected>Choose tag</option>
+                        <option value="test">Test</option>
+                    </select>
+                    <!-- Button to add new tag -->
+                    <button id="add-tag">Add Tag</button>
+                </form>
                 <!-- Display div for info about tag -->
                 <div id="tag-display"></div>
             </section>
