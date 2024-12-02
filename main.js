@@ -1,5 +1,6 @@
 // Assign DOM elements to variables
-// Pull Traits, Tags, and Powers data from JSON
+// Pull Occupations, Traits, Tags, and Powers data from JSON
+  // Occupations need "name", "description", and "traits"
   // Traits and Tags need "name" and "description"
   // Powers need "name", "set", "cost", "pg number", "duration", "action", "summary"
 // Functions for updating dependent elements

@@ -103,6 +103,14 @@
                             <option value="" disabled selected>Choose origin</option>
                         </select>
                         <!-- Display div for info about Origin -->
+                        <aside id="origin-display">
+                            <details>
+                                <summary><strong>Description</strong></summary>
+                                <p id="origin-description"></p>
+                                <p id="origin-tags"><strong>Tags: </strong></p>
+                                <p id="origin-suggest-occupation"><strong>Suggested Occupation: </strong></p>
+                            </details>
+                        </aside>
                     </fieldset>
                     <fieldset>
                         <!-- Occupation Drop down -->
@@ -112,6 +120,13 @@
                             <option value="" disabled selected>Choose occupation</option>
                         </select>
                         <!-- Display div for info about Occupation -->
+                        <aside id="occupation-display">
+                            <details>
+                                <summary><strong>Description</strong></summary>
+                                <p id="occupation-description"></p>
+                                <p id="occupation-traits"><strong>Traits: </strong></p>
+                            </details>
+                        </aside>
                     </fieldset>
                 </form>
             </section>
@@ -208,7 +223,12 @@
                     <button id="add-trait">Add Trait</button>
                 </form>
                 <!-- Display div for info about trait -->
-                <div id="trait-display"></div>
+                <aside class="trait-display">
+                    <details>
+                        <summary><strong>Trait Name </strong></summary>
+                        <p class="trait-description"></p>
+                    </details>
+                </aside>
             </section>
             <section id="tags">
                 <h3>TAGS</h3>
@@ -223,7 +243,12 @@
                     <button id="add-tag">Add Tag</button>
                 </form>
                 <!-- Display div for info about tag -->
-                <div id="tag-display"></div>
+                <aside class="tag-display">
+                    <details>
+                        <summary><strong>Tag Name</strong></summary>
+                        <p class="tag-description"></p>
+                    </details>
+                </aside>
             </section>
             <section id="abilities">
                 <h3>ABILITIES</h3>
