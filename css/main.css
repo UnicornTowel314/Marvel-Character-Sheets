@@ -360,6 +360,13 @@ span {
     background-color: var(--box-bgcolor);
     color: #000;
     padding: 10px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.powers-display button {
+    font-size: 0.75rem;
 }
 
 #occupation-display,
