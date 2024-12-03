@@ -104,7 +104,7 @@
                         <select name="origin" id="origin">
                             <!-- Origin Options -->
                             <option value="" disabled selected>Choose origin</option>
-                            <option value="Test">Test</option>
+                            <option value="o0">Test</option>
                         </select>
                         <!-- Display div for info about Origin -->
                         <aside id="origin-display">
@@ -124,7 +124,7 @@
                         <select name="occupation" id="occupation">
                             <!-- Occupation options -->
                             <option value="" disabled selected>Choose occupation</option>
-                            <option value="test">Test</option>
+                            <option value="oc0">Test</option>
                         </select>
                         <!-- Display div for info about Occupation -->
                         <aside id="occupation-display">
@@ -225,27 +225,26 @@
                 <div class="header-container" id="traits-header-container">
                     <h3 id="id-header">TRAITS</h3>
                 </div>
-                <form id="traits-form">
-                    <!-- Drop down menu -->
-                    <select name="trait-select" id="trait-select">
-                        <!-- Options for traits -->
-                        <option value="" disabled selected>Choose trait</option>
-                        <option value="test">Test</option>
-                    </select>
-                    <!-- Button to add new trait -->
-                    <button id="add-trait">Add Trait</button>
-                    <select name="traits-delete" id="traits-delete">
-                        <option value="" disabled selected>Choose trait to delete</option>
-                    </select>
-                    <button id="delete-trait">Delete Trait</button>
-                </form>
+                <div id="traits-form">
+                    <form id="traits-add-form">
+                        <!-- Drop down menu -->
+                        <select name="trait-select" id="trait-select">
+                            <!-- Options for traits -->
+                            <option value="" disabled selected>Choose trait</option>
+                            <option value="t0">Test</option>
+                        </select>
+                    </form>
+                        <!-- Button to add new trait -->
+                        <button id="add-trait">Add Trait</button>
+                    <form id="traits-delete-form">
+                        <select name="traits-delete" id="traits-delete">
+                            <option value="" disabled selected>Choose trait to delete</option>
+                        </select>
+                    </form>
+                    <button id="delete-trait" type="submit">Delete Trait</button>
+                </div>
                 <!-- Display div for info about trait -->
-                <aside class="trait-display">
-                    <details>
-                        <summary><strong>Trait Name </strong></summary>
-                        <p class="trait-description"></p>
-                    </details>
-                </aside>
+                <ul id="traits-display"></ul>
             </section>
             <section id="tags">
                 <div class="header-container" id="tags-header-container">
@@ -256,7 +255,7 @@
                     <select name="tag-select" id="tag-select">
                         <!-- Options for tags -->
                         <option value="" disabled selected>Choose tag</option>
-                        <option value="test">Test</option>
+                        <option value="ta0">Test</option>
                     </select>
                     <!-- Button to add new tag -->
                     <button id="add-tag">Add Tag</button>
@@ -374,7 +373,7 @@
                         <!-- Power drop down -->
                         <select name="powers-select" id="powers-select">
                             <option value="" disabled selected>Choose power</option>
-                            <option value="test">Test</option>
+                            <option value="p0">Test</option>
                         </select>
                         <button id="add-power">Add Power</button>
                         <select name="powers-delete" id="powers-delete">

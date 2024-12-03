@@ -151,6 +151,10 @@ span {
     gap: 5px;
 }
 
+#traits-form select {
+    margin-top: 10px;
+}
+
 #tags {
     grid-area: tg;
 }
@@ -393,12 +397,16 @@ span {
 
 #occupation-display,
 #origin-display,
-.trait-display,
+#traits-display li,
 .tag-display {
     background-color: var(--boxcolor);
     color: #fff;
     padding: 10px;
     margin-top: 10px;
+}
+
+#traits-display {
+    list-style-type: none;
 }
 
 #occupation-display p,

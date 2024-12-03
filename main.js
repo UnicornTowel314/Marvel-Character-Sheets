@@ -13,7 +13,7 @@ const originDesc = document.getElementById("origin-description");
 const originTags = document.getElementById("origin-tags");
 const originTraits = document.getElementById("origin-traits");
 const originPowers = document.getElementById("origin-powers");
-const originSugOccu = document.getElementById("origin-suggested-occupation");
+const originSugOccu = document.getElementById("origin-suggest-occupation");
 const occupInput = document.getElementById("occupation");
 const occuDesc = document.getElementById("occupation-description");
 const occuTags = document.getElementById("occupation-tags");
@@ -33,6 +33,7 @@ const swim = document.getElementById("swim");
 // TRAITS
 const traitInput = document.getElementById("trait-select");
 const traitDelInput = document.getElementById("traits-delete");
+const traitDisplay = document.getElementById("traits-display");
 
 // TAGS
 const tagInput = document.getElementById("tag-select");
@@ -99,6 +100,7 @@ let powersCount = 0;
 
 // OBJECTS FOR TESTING
 let origins = [{
+  id: "o0",
   name: "Test",
   description: "This is a description. It can get quite long, so I'm going to test that out here.",
   tags: "Tag1, Tag2, Tag3",
@@ -107,20 +109,24 @@ let origins = [{
   powers: "Power1, Power2"
 }];
 let occupations = [{
+  id: "oc0",
   name: "Test",
   description: "This is a description. It can get quite long, so I'm going to test that out here.",
   tags: "Tag1, Tag2",
   traits: "Trait1, Trait2"
 }];
 let traitsList = [{
+  id: "t0",
   name: "Test",
   description: "This is a description. It can get quite long, so I'm going to test that out here."
 }];
 let tagsList = [{
+  id: "ta0",
   name: "Test",
   description: "This is a description. It can get quite long, so I'm going to test that out here."
 }];
 let powersList = [{
+  id: "p0",
   name: "Test",
   set: "Test",
   cost: 5,
@@ -142,9 +148,46 @@ const modifyValues = (input, output) => {
 
 // FUNCTIONS FOR DISPLAYING ORIGIN, OCCUPATION, TAGS, TRAITS, AND POWERS
 const displayOrigin = () => {
-  const originResult = origins.find(obj => obj.name == originInput.value);
+  const originResult = origins.find(obj => obj.id == originInput.value);
   if (originResult) {
-    console.log(originResult);
+    originDesc.innerText = originResult.description;
+    originTags.innerHTML = `<strong>Tags: </strong> ${originResult.tags}`;
+    originTraits.innerHTML = `<strong>Traits: </strong> ${originResult.traits}`;
+    originPowers.innerHTML = `<strong>Powers: </strong> ${originResult.powers}`;
+    originSugOccu.innerHTML = `<strong>Suggested Occupation: </strong> ${originResult["suggested occupation"]}`;
+  }
+}
+
+const displayOccu = () => {
+  const occuResults = occupations.find(obj => obj.id == occupInput.value);
+  if (occuResults) {
+    occuDesc.innerText = occuResults.description;
+    occuTags.innerHTML = `<strong>Tags: </strong> ${occuResults.tags}`;
+    occuTraits.innerHTML = `<strong>Traits: </strong> ${occuResults.traits}`;
+  }
+}
+
+const addTraits = () => {
+  const traitResults = traitsList.find(obj => obj.id == traitInput.value);
+  let traitsDis = "";
+
+  if (traitResults) {
+    traits.push(traitResults);
+
+    for (let i = 0; i < traits.length; i++) {
+      traitsDis += `
+      <li>
+        <aside>
+          <details>
+            <summary>${traits[i].name}</summary>
+            <p>${traits[i].description}</p>
+          </details>
+        </aside>
+      </li>
+      `;
+    }
+
+    traitDisplay.innerHTML = traitsDis;
   }
 }
 
@@ -188,4 +231,12 @@ abilitySubmit.addEventListener("click", (e) => {
 idSubmit.addEventListener("click", (e) => {
   e.preventDefault;
   displayOrigin();
+  displayOccu();
+
+  // Add values of form to localStorage
+});
+
+addTrait.addEventListener("click", (e) => {
+  e.preventDefault;
+  addTraits();
 });
