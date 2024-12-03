@@ -397,3 +397,8 @@ span {
     color: #000;
     font-size: 0.75rem;
 }
+
+#notes-form {
+    display: flex;
+    flex-direction: column;
+}
