@@ -11,9 +11,12 @@
 const originInput = document.getElementById("origin");
 const originDesc = document.getElementById("origin-description");
 const originTags = document.getElementById("origin-tags");
+const originTraits = document.getElementById("origin-traits");
+const originPowers = document.getElementById("origin-powers");
 const originSugOccu = document.getElementById("origin-suggested-occupation");
 const occupInput = document.getElementById("occupation");
 const occuDesc = document.getElementById("occupation-description");
+const occuTags = document.getElementById("occupation-tags");
 const occuTraits = document.getElementById("occupation-traits");
 
 // PHYSICAL TRAITS VARIABLES
@@ -90,17 +93,99 @@ const delPower = document.getElementById("delete-power");
 let traits = [];
 let tags = [];
 let powers = [];
+let traitsCount = 0;
+let tagsCount = 0;
+let powersCount = 0;
+
+// OBJECTS FOR TESTING
+let origins = [{
+  name: "Test",
+  description: "This is a description. It can get quite long, so I'm going to test that out here.",
+  tags: "Tag1, Tag2, Tag3",
+  traits: "Trait1, Trait2",
+  "suggested occupation": "Occupation Suggestion",
+  powers: "Power1, Power2"
+}];
+let occupations = [{
+  name: "Test",
+  description: "This is a description. It can get quite long, so I'm going to test that out here.",
+  tags: "Tag1, Tag2",
+  traits: "Trait1, Trait2"
+}];
+let traitsList = [{
+  name: "Test",
+  description: "This is a description. It can get quite long, so I'm going to test that out here."
+}];
+let tagsList = [{
+  name: "Test",
+  description: "This is a description. It can get quite long, so I'm going to test that out here."
+}];
+let powersList = [{
+  name: "Test",
+  set: "Test",
+  cost: 5,
+  page: 123,
+  duration: "Concentration",
+  action: "Standard or Reaction",
+  description: "This is a description. It can get quite long, so I'm going to test that out here."
+}];
 
 // FUNCTIONS FOR UPDATING OUTPUT ELEMENTS
-const updateValues = (input, output) => {
+const oneToOneValues = (input, output) => {
   output.innerText = input.value;
+}
+
+const modifyValues = (input, output) => {
+  let modVal = parseInt(input.value) + 10;
+  output.innerText = modVal;
+}
+
+// FUNCTIONS FOR DISPLAYING ORIGIN, OCCUPATION, TAGS, TRAITS, AND POWERS
+const displayOrigin = () => {
+  const originResult = origins.find(obj => obj.name == originInput.value);
+  if (originResult) {
+    console.log(originResult);
+  }
 }
 
 // EVENT LISTENERS
 phTraitsSubmit.addEventListener("click", (e) => {
   e.preventDefault;
-  updateValues(maxHealth, currHealth);
-  updateValues(maxFocus, currFocus);
+  oneToOneValues(maxHealth, currHealth);
+  oneToOneValues(maxFocus, currFocus);
 
   // Add values of form to localStorage
+});
+
+abilitySubmit.addEventListener("click", (e) => {
+  // Melee
+  oneToOneValues(meleeAb, meleeNC);
+  oneToOneValues(meleeAb, meleeMod);
+  modifyValues(meleeAb, meleeDef);
+  // Agility
+  oneToOneValues(agilityAb, agilityNC);
+  oneToOneValues(agilityAb, agilityMod);
+  oneToOneValues(agilityAb, initMod);
+  modifyValues(agilityAb, agilityDef);
+  // Resilience
+  oneToOneValues(resilienceAb, resilienceNC);
+  modifyValues(resilienceAb, resilienceDef);
+  // Vigilance
+  oneToOneValues(vigilanceAb, vigilanceNC);
+  modifyValues(vigilanceAb, vigilanceDef);
+  // Ego
+  oneToOneValues(egoAb, egoNC);
+  oneToOneValues(egoAb, egoMod);
+  modifyValues(egoAb, egoDef);
+  // Logic
+  oneToOneValues(logicAb, logicNC);
+  oneToOneValues(logicAb, logicMod);
+  modifyValues(logicAb, logicDef);
+
+  // Add values from form to localStorage
+});
+
+idSubmit.addEventListener("click", (e) => {
+  e.preventDefault;
+  displayOrigin();
 });
