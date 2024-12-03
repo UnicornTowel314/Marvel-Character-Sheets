@@ -90,3 +90,17 @@ const delPower = document.getElementById("delete-power");
 let traits = [];
 let tags = [];
 let powers = [];
+
+// FUNCTIONS FOR UPDATING OUTPUT ELEMENTS
+const updateValues = (input, output) => {
+  output.innerText = input.value;
+}
+
+// EVENT LISTENERS
+phTraitsSubmit.addEventListener("click", (e) => {
+  e.preventDefault;
+  updateValues(maxHealth, currHealth);
+  updateValues(maxFocus, currFocus);
+
+  // Add values of form to localStorage
+});
