@@ -136,9 +136,9 @@
                 </form>
             </section>
             <section id="physical-traits">
-                <div class="header-container" id="id-header-container">
-                    <h3 id="id-header">PHYSICAL TRAITS</h3>
-                    <button type="submit" id="id-submit">Save</button>
+                <div class="header-container" id="physical-traits-header-container">
+                    <h3 id="physcial-traits-header">PHYSICAL TRAITS</h3>
+                    <button type="submit" id="physical-traits-submit">Save</button>
                 </div>
                 <form id="physical-traits-form">
                     <fieldset>
@@ -150,14 +150,14 @@
                         <!-- Initiative Modifier -->
                         <p>
                             <strong>Initiative Modifier: </strong>
-                            <span id="init-mod">Test</span>
+                            <span id="init-mod">0</span>
                         </p>
                     </fieldset>
                     <fieldset>
                         <!-- Current Health out of Max Health -->
                         <p>
                             <strong>Current Health: </strong>
-                            <span id="curr-health">Test</span>
+                            <span id="curr-health">0</span>
                         </p>
                         <!-- Buttons to increase and decrease -->
                         <button id="health-inc">+</button>
@@ -175,7 +175,7 @@
                      <fieldset>
                         <p>
                             <strong>Current Focus: </strong>
-                            <span id="curr-focus">Test</span>
+                            <span id="curr-focus">0</span>
                         </p>
                         <!-- Buttons to increase and decrease -->
                         <button id="focus-inc">+</button>
@@ -193,22 +193,22 @@
                         <!-- Speed -->
                         <p>
                             <strong>Speed: </strong>
-                            <span id="speed">Test</span>
+                            <span id="speed">0</span>
                         </p>
                         <!-- Run -->
                         <p>
                             <strong>Run: </strong>
-                            <span id="run">Test</span>
+                            <span id="run">0</span>
                         </p>
                         <!-- Climb -->
                         <p>
                             <strong>Climb: </strong>
-                            <span id="climb">Test</span>
+                            <span id="climb">0</span>
                         </p>
                         <!-- Swim -->
                         <p>
                             <strong>Swim: </strong>
-                            <span id="swim">Test</span>
+                            <span id="swim">0</span>
                         </p>
                     </fieldset>
                     <fieldset id="other-speed-field">
@@ -288,11 +288,11 @@
                         <input type="number" name="melee" id="melee" min="0">
                         <!-- Melee Defense -->
                         <p id="melee-def-cont">
-                            <span id="melee-def">Test</span>
+                            <span id="melee-def">0</span>
                         </p>
                         <!-- Melee Non-Combat Check -->
                         <p id="melee-non-com-cont">
-                            <span id="melee-non-com">Test</span>
+                            <span id="melee-non-com">0</span>
                         </p>
                     </fieldset>
                     <fieldset id="agility-field">
@@ -301,11 +301,11 @@
                         <input type="number" name="agility" id="agility" min="0">
                         <!-- Agility Defense -->
                         <p id="agility-def-cont">
-                            <span id="agility-def">Test</span>
+                            <span id="agility-def">0</span>
                         </p>
                         <!-- Agility Non-Combat Check -->
                         <p id="agility-non-com-cont">
-                            <span id="agility-non-com">Test</span>
+                            <span id="agility-non-com">0</span>
                         </p>
                     </fieldset>
                     <fieldset id="resilience-field">
@@ -314,11 +314,11 @@
                         <input type="number" name="resilience" id="resilience" min="0">
                         <!-- Resilience Defense -->
                         <p id="resilience-def-cont">
-                            <span id="resilience-def">Test</span>
+                            <span id="resilience-def">0</span>
                         </p>
                         <!-- Resilience Non-Combat Check -->
                         <p id="resilience-non-com-cont">
-                            <span id="resilience-non-com">Test</span>
+                            <span id="resilience-non-com">0</span>
                         </p>
                     </fieldset>
                     <fieldset id="vigilance-field">
@@ -327,11 +327,11 @@
                         <input type="number" name="vigilance" id="vigilance" min="0">
                         <!-- Vigilance Defense -->
                         <p id="vigilance-def-cont">
-                            <span id="vigilance-def">Test</span>
+                            <span id="vigilance-def">0</span>
                         </p>
                         <!-- Vigilance Non-Combat Check -->
                         <p id="vigilance-non-com-cont">
-                            <span id="vigilance-non-com">Test</span>
+                            <span id="vigilance-non-com">0</span>
                         </p>
                     </fieldset>
                     <fieldset id="ego-field">
@@ -340,11 +340,11 @@
                         <input type="number" name="ego" id="ego" min="0">
                         <!-- Ego Defense -->
                         <p id="ego-def-cont">
-                            <span id="ego-def">Test</span>
+                            <span id="ego-def">0</span>
                         </p>
                         <!-- Ego Non-Combat Check -->
                         <p id="ego-non-com-cont">
-                            <span id="ego-non-com">Test</span>
+                            <span id="ego-non-com">0</span>
                         </p>
                     </fieldset>
                     <fieldset id="logic-field">
@@ -353,11 +353,11 @@
                         <input type="number" name="logic" id="logic" min="0">
                         <!-- Logic Defense -->
                         <p id="logic-def-cont">
-                            <span id="logic-def">Test</span>
+                            <span id="logic-def">0</span>
                         </p>
                         <!-- Logic Non-Combat Check -->
                         <p id="logic-non-com-cont">
-                            <span id="logic-non-com">Test</span>
+                            <span id="logic-non-com">0</span>
                         </p>
                     </fieldset>
                 </form>
@@ -419,7 +419,7 @@
                     <label for="melee-dmg" id="melee-dmg-label">Melee</label>
                     <input type="number" name="melee-dmg" id="melee-dmg">
                     <p id="melee-modifier-cont">
-                        <span id="melee-modifier">Test</span>
+                        <span id="melee-modifier">0</span>
                     </p>
                 </fieldset>
                 <fieldset id="agility-dmg-field">
@@ -427,7 +427,7 @@
                     <label for="agility-dmg" id="agility-dmg-label">Agility</label>
                     <input type="number" name="agility-dmg" id="agility-dmg">
                     <p id="agility-modifier-cont">
-                        <span id="agility-modifier">Test</span>
+                        <span id="agility-modifier">0</span>
                     </p>
                 </fieldset>
                 <fieldset id="ego-dmg-field">
@@ -435,7 +435,7 @@
                     <label for="ego-dmg" id="ego-dmg-label">Ego</label>
                     <input type="number" name="ego-dmg" id="ego-dmg">
                     <p id="ego-modifier-cont">
-                        <span id="ego-modifier">Test</span>
+                        <span id="ego-modifier">0</span>
                     </p>
                 </fieldset>
                 <fieldset id="logic-dmg-field">
@@ -443,7 +443,7 @@
                     <label for="logic-dmg" id="logic-dmg-label">Logic</label>
                     <input type="number" name="logic-dmg" id="logic-dmg">
                     <p id="logic-modifier-cont">
-                        <span id="logic-modifier">Test</span>
+                        <span id="logic-modifier">0</span>
                     </p>
                 </fieldset>
             </section>

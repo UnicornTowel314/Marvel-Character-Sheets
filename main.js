@@ -70,6 +70,11 @@ const powersInput = document.getElementById("power-select");
 const powersDelInput = document.getElementById("powers-delete");
 
 // BUTTONS
+const idSubmit = document.getElementById("id-submit");
+const phTraitsSubmit = document.getElementById("physical-traits-submit");
+const abilitySubmit = document.getElementById("ability-submit");
+const dmgSubmit = document.getElementById("dmg-submit");
+const notesSubmit = document.getElementById("notes-submit");
 const healthInc = document.getElementById("health-inc");
 const healthDec = document.getElementById("health-dec");
 const focusInc = document.getElementById("focus-inc");
