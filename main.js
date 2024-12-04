@@ -229,7 +229,40 @@ const addTags = () => {
 }
 
 // FUNCTIONS FOR REMOVING TRAITS, TAGS, AND POWERS
+const deleteTrait = () => {
+  const traitDelResults = traits.find(obj => obj.id == traitDelInput.value);
+  let traitsDis = "";
+  let traitsDel = "";
 
+  if (traitDelResults) {
+    const indexToRemove = traits.findIndex(item => item.id == traitDelResults.id);
+    traits.splice(indexToRemove, 1);
+    
+    for (let i = 0; i < traits.length; i++) {
+      traitsDis += `
+      <li>
+        <aside>
+          <details>
+            <summary>${traits[i].name}</summary>
+            <p>${traits[i].description}</p>
+          </details>
+        </aside>
+      </li>
+      `;
+    }
+
+    let traitsDelList = traits;
+
+    for (let i = 0; i < traitsDelList.length; i++) {
+      traitsDel += `
+        <option value="${traitsDelList[i].id}">${traitsDelList[i].name}</option>
+      `;
+    }
+
+    traitDisplay.innerHTML = traitsDis;
+    traitDelInput.innerHTML += traitsDel;
+  }
+}
 
 // EVENT LISTENERS
 phTraitsSubmit.addEventListener("click", (e) => {
@@ -288,3 +321,8 @@ addTag.addEventListener("click", (e) => {
   e.preventDefault;
   addTags();
 });
+
+delTrait.addEventListener("click", (e) => {
+  e.preventDefault;
+  deleteTrait();
+})
