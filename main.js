@@ -38,6 +38,7 @@ const traitDisplay = document.getElementById("traits-display");
 // TAGS
 const tagInput = document.getElementById("tag-select");
 const tagDelInput = document.getElementById("tags-delete");
+const tagDisplay = document.getElementById("tags-display");
 
 // ABILITIES
 const meleeAb = document.getElementById("melee");
