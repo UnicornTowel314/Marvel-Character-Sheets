@@ -171,6 +171,7 @@ const displayOccu = () => {
 const addTraits = () => {
   const traitResults = traitsList.find(obj => obj.id == traitInput.value);
   let traitsDis = "";
+  let traitsDel = "";
 
   if (traitResults) {
     traits.push(traitResults);
@@ -186,15 +187,21 @@ const addTraits = () => {
         </aside>
       </li>
       `;
+
+      traitsDel += `
+        <option value="${traits[i].id}">${traits[i].name}</option>
+      `;
     }
 
     traitDisplay.innerHTML = traitsDis;
+    traitDelInput.innerHTML += traitsDel;
   }
 }
 
 const addTags = () => {
   const tagResults = tagsList.find(obj => obj.id == tagInput.value);
   let tagsDis = "";
+  let tagsDel = "";
 
   if (tagResults) {
     tags.push(tagResults);
@@ -210,11 +217,19 @@ const addTags = () => {
           </aside>
         </li>
       `;
+
+      tagsDel = `
+        <option value="${tags[i].id}">${tags[i].name}</option>
+      `;
     }
 
     tagDisplay.innerHTML = tagsDis;
+    tagDelInput.innerHTML += tagsDel;
   }
 }
+
+// FUNCTIONS FOR REMOVING TRAITS, TAGS, AND POWERS
+
 
 // EVENT LISTENERS
 phTraitsSubmit.addEventListener("click", (e) => {
@@ -263,6 +278,9 @@ idSubmit.addEventListener("click", (e) => {
 
 addTrait.addEventListener("click", (e) => {
   e.preventDefault;
+  traitDelInput.innerHTML = `
+    <option value="" disabled selected>Choose trait to delete</option>
+  `;
   addTraits();
 });
 
