@@ -192,6 +192,30 @@ const addTraits = () => {
   }
 }
 
+const addTags = () => {
+  const tagResults = tagsList.find(obj => obj.id == tagInput.value);
+  let tagsDis = "";
+
+  if (tagResults) {
+    tags.push(tagResults);
+
+    for (let i = 0; i < tags.length; i++) {
+      tagsDis += `
+        <li>
+          <aside>
+            <details>
+              <summary><strong>${tags[i].name}</strong></summary>
+              <p>${tags[i].description}</p>
+            </details>
+          </aside>
+        </li>
+      `;
+    }
+
+    tagDisplay.innerHTML = tagsDis;
+  }
+}
+
 // EVENT LISTENERS
 phTraitsSubmit.addEventListener("click", (e) => {
   e.preventDefault;
@@ -240,4 +264,9 @@ idSubmit.addEventListener("click", (e) => {
 addTrait.addEventListener("click", (e) => {
   e.preventDefault;
   addTraits();
+});
+
+addTag.addEventListener("click", (e) => {
+  e.preventDefault;
+  addTags();
 });

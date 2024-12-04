@@ -151,7 +151,8 @@ span {
     gap: 5px;
 }
 
-#traits-form select {
+#traits-form select,
+#tags-form select {
     margin-top: 10px;
 }
 
@@ -398,27 +399,21 @@ span {
 #occupation-display,
 #origin-display,
 #traits-display li,
-.tag-display {
+#tags-display li {
     background-color: var(--boxcolor);
     color: #fff;
     padding: 10px;
     margin-top: 10px;
 }
 
-#traits-display {
+#traits-display,
+#tags-display {
     list-style-type: none;
 }
 
 #occupation-display p,
 #origin-display p {
     display: block;
-}
-
-.trait-display button,
-.tag-display button {
-    background-color: var(--box-bgcolor);
-    color: #000;
-    font-size: 0.75rem;
 }
 
 #notes-form {
