@@ -368,21 +368,24 @@
                 <div class="header-container" id="powers-header-container">
                     <h3 id="powers-header">POWERS</h3>
                 </div>
-                <form id="powers-form">
-                    <fieldset id="powers-field">
+                <div id="powers-form">
+                    <form>
                         <!-- Power drop down -->
                         <select name="powers-select" id="powers-select">
                             <option value="" disabled selected>Choose power</option>
                             <option value="p0">Test</option>
                         </select>
-                        <button id="add-power">Add Power</button>
+                    </form>
+                    <button id="add-power" type="submit">Add Power</button>
+                    <form>
                         <select name="powers-delete" id="powers-delete">
                             <option value="" disabled selected>Choose power to delete</option>
                         </select>
-                        <button id="delete-power">Delete Power</button>
-                    </fieldset>
-                </form>
+                    </form>
+                    <button id="delete-power" type="submit">Delete Power</button>
+                </div>
                 <!-- Example div for displaying powers info -->
+                <ul id="powers-display"></ul>
                 <div class="powers-display">
                     <p class="power-name"><strong>Power: </strong></p>
                     <p class="power-set"><strong>Set: </strong></p>
@@ -397,14 +400,6 @@
                         </details>
                     </aside>
                 </div>
-                    <!-- Power name from powers object -->
-                    <!-- Set from powers object -->
-                    <!-- Cost from powers object -->
-                    <!-- Page # from powers object -->
-                    <!-- Duration from powers object -->
-                    <!-- Action from powers object -->
-                    <!-- Summary from powers object -->
-                    <!-- Button to delete -->
             </section>
             <section id="damage">
                 <div class="header-container" id="dmg-header-container">

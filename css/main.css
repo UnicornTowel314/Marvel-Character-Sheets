@@ -152,7 +152,8 @@ span {
 }
 
 #traits-form select,
-#tags-form select {
+#tags-form select,
+#powers-form select {
     margin-top: 10px;
 }
 
@@ -378,22 +379,21 @@ span {
     place-self: center;
 }
 
-#powers-field {
+#powers-form {
     background-color: var(--box-bgcolor);
-    padding-left: 10px;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5px;
 }
 
-.powers-display {
+#powers-display li {
     background-color: var(--box-bgcolor);
     color: #000;
     padding: 10px;
     margin-bottom: 5px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-}
-
-.powers-display button {
-    font-size: 0.75rem;
 }
 
 #occupation-display,
@@ -407,7 +407,8 @@ span {
 }
 
 #traits-display,
-#tags-display {
+#tags-display,
+#powers-display {
     list-style-type: none;
 }
 

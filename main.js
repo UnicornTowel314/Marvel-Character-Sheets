@@ -2,7 +2,6 @@
   // Occupations need "name", "description", and "traits"
   // Traits and Tags need "name" and "description"
   // Powers need "name", "set", "cost", "pg number", "duration", "action", "summary"
-// Functions for updating dependent elements
 // Functions for adding, rendering, and deleting Traits, Tags, and Powers
 // Event listeners for the buttons
 // Localstorage functionality
@@ -71,8 +70,9 @@ const logicDmg = document.getElementById("logic-dmg");
 const logicMod = document.getElementById("logic-modifier");
 
 // POWERS
-const powersInput = document.getElementById("power-select");
+const powersInput = document.getElementById("powers-select");
 const powersDelInput = document.getElementById("powers-delete");
+const powerDisplay = document.getElementById("powers-display");
 
 // BUTTONS
 const idSubmit = document.getElementById("id-submit");
@@ -240,6 +240,45 @@ const addTags = () => {
   }
 }
 
+const addPowers = () => {
+  const powerResults = powersList.find(obj => obj.id == powersInput.value);
+  let powersDis = "";
+  let powersDel = "";
+
+  if (powerResults) {
+    powers.push(powerResults);
+    powersDelList.push(powerResults);
+
+    for (let i = 0; i < powers.length; i++) {
+      powersDis += `
+        <li>
+          <p><strong>Power: </strong>${powers[i].name}</p>
+          <p><strong>Set: </strong>${powers[i].set}</p>
+          <p><strong>Cost: </strong>${powers[i].cost}</p>
+          <p><strong>Page #: </strong>${powers[i].page}</p>
+          <p><strong>Duration: </strong>${powers[i].duration}</p>
+          <p><strong>Action: </strong>${powers[i].action}</p>
+          <aside>
+            <details>
+              <summary><strong>Summary</strong></summary>
+              <p>${powers[i].description}</p>
+            </details>
+          </aside>
+        </li>
+      `;
+    }
+
+    for (let i = 0; i < powersDelList.length; i++) {
+      powersDel += `
+        <option value="${powers[i].id}">${powers[i].name}</option>
+      `;
+    }
+
+    powerDisplay.innerHTML = powersDis;
+    powersDelInput.innerHTML += powersDel;
+  }
+}
+
 // FUNCTIONS FOR REMOVING TRAITS, TAGS, AND POWERS
 const deleteTrait = () => {
   const traitDelResults = traits.find(obj => obj.id == traitDelInput.value);
@@ -317,6 +356,50 @@ const deleteTag = () => {
   }
 }
 
+const deletePower = () => {
+  const powerDelResults = powersList.find(obj => obj.id == powersDelInput.value);
+  let powersDis = "";
+  let powersDel = "";
+
+  if (powerDelResults) {
+    const indexToRemove = powers.findIndex(item => item.id == powerDelResults.id);
+    powers.splice(indexToRemove, 1);
+    powersDelList.splice(indexToRemove, 1);
+
+    for (let i = 0; i < powers.length; i++) {
+      powersDis += `
+        <li>
+          <p><strong>Power: </strong>${powers[i].name}</p>
+          <p><strong>Set: </strong>${powers[i].set}</p>
+          <p><strong>Cost: </strong>${powers[i].cost}</p>
+          <p><strong>Page #: </strong>${powers[i].page}</p>
+          <p><strong>Duration: </strong>${powers[i].duration}</p>
+          <p><strong>Action: </strong>${powers[i].action}</p>
+          <aside>
+            <details>
+              <summary><strong>Summary</strong></summary>
+              <p>${powers[i].description}</p>
+            </details>
+          </aside>
+        </li>
+      `;
+    }
+
+    powersDelInput.innerHTML = `
+      <option value="" disabled selected>Choose power to delete</option>
+    `;
+
+    for (let i = 0; i < powersDelList.length; i++) {
+      powersDel += `
+        <option value="${powers[i].id}">${powers[i].name}</option>
+      `;
+    }
+    
+    powerDisplay.innerHTML = powersDis;
+    powersDelInput.innerHTML += powersDel;
+  }
+}
+
 // EVENT LISTENERS
 phTraitsSubmit.addEventListener("click", (e) => {
   e.preventDefault;
@@ -378,6 +461,15 @@ addTag.addEventListener("click", (e) => {
   addTags();
 });
 
+addPower.addEventListener("click", (e) => {
+  e.preventDefault;
+  powersDelInput.innerHTML = `
+    <option value="" disabled selected>Choose power to delete</option>
+  `;
+
+  addPowers();
+});
+
 delTrait.addEventListener("click", (e) => {
   e.preventDefault;
   deleteTrait();
@@ -387,3 +479,8 @@ delTag.addEventListener("click", (e) => {
   e.preventDefault;
   deleteTag();
 })
+
+delPower.addEventListener("click", (e) => {
+  e.preventDefault;
+  deletePower();
+});
