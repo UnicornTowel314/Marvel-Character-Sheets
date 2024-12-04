@@ -95,9 +95,9 @@ const delPower = document.getElementById("delete-power");
 let traits = [];
 let tags = [];
 let powers = [];
-let traitsCount = 0;
-let tagsCount = 0;
-let powersCount = 0;
+let traitsDelList = [];
+let tagsDelList = [];
+let powersDelList = [];
 
 // OBJECTS FOR TESTING
 let origins = [{
@@ -120,7 +120,13 @@ let traitsList = [{
   id: "t0",
   name: "Test",
   description: "This is a description. It can get quite long, so I'm going to test that out here."
-}];
+},
+{
+  id: "t1",
+  name: "Test1",
+  description: "This is a description. It can get quite long, so I'm going to test that out here."
+}
+];
 let tagsList = [{
   id: "ta0",
   name: "Test",
@@ -175,6 +181,7 @@ const addTraits = () => {
 
   if (traitResults) {
     traits.push(traitResults);
+    traitsDelList.push(traitResults);
 
     for (let i = 0; i < traits.length; i++) {
       traitsDis += `
@@ -187,9 +194,11 @@ const addTraits = () => {
         </aside>
       </li>
       `;
+    }
 
+    for (let i = 0; i < traitsDelList.length; i++) {
       traitsDel += `
-        <option value="${traits[i].id}">${traits[i].name}</option>
+        <option value="${traitsDelList[i].id}">${traitsDelList[i].name}</option>
       `;
     }
 
@@ -205,6 +214,7 @@ const addTags = () => {
 
   if (tagResults) {
     tags.push(tagResults);
+    tagsDelList.push(tagResults);
 
     for (let i = 0; i < tags.length; i++) {
       tagsDis += `
@@ -217,9 +227,11 @@ const addTags = () => {
           </aside>
         </li>
       `;
+    }
 
-      tagsDel = `
-        <option value="${tags[i].id}">${tags[i].name}</option>
+    for (let i = 0; i < tagsDelList.length; i++) {
+      tagsDel += `
+        <option value="${tagsDelList[i].id}">${tagsDelList[i].name}</option>
       `;
     }
 
@@ -237,6 +249,7 @@ const deleteTrait = () => {
   if (traitDelResults) {
     const indexToRemove = traits.findIndex(item => item.id == traitDelResults.id);
     traits.splice(indexToRemove, 1);
+    traitsDelList.splice(indexToRemove, 1);
     
     for (let i = 0; i < traits.length; i++) {
       traitsDis += `
@@ -251,7 +264,9 @@ const deleteTrait = () => {
       `;
     }
 
-    let traitsDelList = traits;
+    traitDelInput.innerHTML = `
+      <option value="" disabled selected>Choose trait to delete</option>
+    `;
 
     for (let i = 0; i < traitsDelList.length; i++) {
       traitsDel += `
@@ -261,6 +276,44 @@ const deleteTrait = () => {
 
     traitDisplay.innerHTML = traitsDis;
     traitDelInput.innerHTML += traitsDel;
+  }
+}
+
+const deleteTag = () => {
+  const tagDelResults = tags.find(obj => obj.id == tagDelInput.value);
+  let tagsDis = "";
+  let tagsDel = "";
+
+  if (tagDelResults) {
+    const indexToRemove = tags.findIndex(item => item.id == tagDelResults.id);
+    tags.splice(indexToRemove, 1);
+    tagsDelList.splice(indexToRemove, 1);
+    
+    for (let i = 0; i < tags.length; i++) {
+      tagsDis += `
+      <li>
+        <aside>
+          <details>
+            <summary>${tags[i].name}</summary>
+            <p>${tags[i].description}</p>
+          </details>
+        </aside>
+      </li>
+      `;
+    }
+
+    tagDelInput.innerHTML = `
+      <option value="" disabled selected>Choose tag to delete</option>
+    `;
+
+    for (let i = 0; i < tagsDelList.length; i++) {
+      tagsDel += `
+        <option value="${tagsDelList[i].id}">${tagsDelList[i].name}</option>
+      `;
+    }
+
+    tagDisplay.innerHTML = tagsDis;
+    tagDelInput.innerHTML += tagsDel;
   }
 }
 
@@ -319,10 +372,18 @@ addTrait.addEventListener("click", (e) => {
 
 addTag.addEventListener("click", (e) => {
   e.preventDefault;
+  tagDelInput.innerHTML = `
+    <option value="" disabled selected>Choose tag to delete</option>
+  `;
   addTags();
 });
 
 delTrait.addEventListener("click", (e) => {
   e.preventDefault;
   deleteTrait();
+})
+
+delTag.addEventListener("click", (e) => {
+  e.preventDefault;
+  deleteTag();
 })
