@@ -100,15 +100,6 @@ let tagsDelList = [];
 let powersDelList = [];
 
 // OBJECTS FOR TESTING
-let origins = [{
-  id: "o0",
-  name: "Test",
-  description: "This is a description. It can get quite long, so I'm going to test that out here.",
-  tags: "Tag1, Tag2, Tag3",
-  traits: "Trait1, Trait2",
-  "suggested occupation": "Occupation Suggestion",
-  powers: "Power1, Power2"
-}];
 let occupations = [{
   id: "oc0",
   name: "Test",
