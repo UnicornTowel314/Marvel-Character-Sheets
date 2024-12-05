@@ -484,3 +484,43 @@ delPower.addEventListener("click", (e) => {
   e.preventDefault;
   deletePower();
 });
+
+healthInc.addEventListener("click", (e) => {
+  e.preventDefault;
+
+  if (currHealth.value < maxHealth.value) {
+    let health = parseInt(currHealth.value);
+    health++;
+    currHealth.innerText = health;
+  }
+});
+
+focusInc.addEventListener("click", (e) => {
+  e.preventDefault;
+
+  if (currFocus.value < maxFocus.value) {
+    let focus = parseInt(currFocus.value);
+    focus++;
+    currFocus.innerText = focus;
+  }
+});
+
+healthDec.addEventListener("click", (e) => {
+  e.preventDefault;
+  let health = parseInt(currHealth.value);
+
+  if (health > 0) {
+    health--;
+    currHealth.innerText = health;
+  }
+});
+
+focusDec.addEventListener("click", (e) => {
+  e.preventDefault;
+
+  if (currFocus.value > 0) {
+    let focus = parseInt(currFocus.value);
+    focus--;
+    currFocus.innerText = focus;
+  }
+});
