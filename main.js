@@ -487,9 +487,10 @@ delPower.addEventListener("click", (e) => {
 
 healthInc.addEventListener("click", (e) => {
   e.preventDefault;
+  let health = parseInt(currHealth.textContent);
+  let healthMax = parseInt(maxHealth.value);
 
-  if (currHealth.value < maxHealth.value) {
-    let health = parseInt(currHealth.value);
+  if (health < healthMax) {
     health++;
     currHealth.innerText = health;
   }
@@ -498,8 +499,10 @@ healthInc.addEventListener("click", (e) => {
 focusInc.addEventListener("click", (e) => {
   e.preventDefault;
 
-  if (currFocus.value < maxFocus.value) {
-    let focus = parseInt(currFocus.value);
+  let focus = parseInt(currFocus.textContent);
+  let focusMax = parseInt(maxFocus.value);
+
+  if (focus < focusMax) {
     focus++;
     currFocus.innerText = focus;
   }
@@ -507,7 +510,7 @@ focusInc.addEventListener("click", (e) => {
 
 healthDec.addEventListener("click", (e) => {
   e.preventDefault;
-  let health = parseInt(currHealth.value);
+  let health = parseInt(currHealth.textContent);
 
   if (health > 0) {
     health--;
@@ -518,8 +521,9 @@ healthDec.addEventListener("click", (e) => {
 focusDec.addEventListener("click", (e) => {
   e.preventDefault;
 
-  if (currFocus.value > 0) {
-    let focus = parseInt(currFocus.value);
+  let focus = parseInt(currFocus.textContent);
+
+  if (focus > 0) {
     focus--;
     currFocus.innerText = focus;
   }
