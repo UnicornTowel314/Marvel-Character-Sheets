@@ -1,9 +1,6 @@
 // Pull Occupations, Traits, Tags, and Powers data from JSON
-  // Occupations need "name", "description", and "traits"
   // Traits and Tags need "name" and "description"
   // Powers need "name", "set", "cost", "pg number", "duration", "action", "summary"
-// Functions for adding, rendering, and deleting Traits, Tags, and Powers
-// Event listeners for the buttons
 // Localstorage functionality
 
 // IDENTITY VARIABLES
@@ -99,14 +96,10 @@ let traitsDelList = [];
 let tagsDelList = [];
 let powersDelList = [];
 
+// JSON PREPARATION
+const jsonUrl = "https://raw.githubusercontent.com/UnicornTowel314/Marvel-RPG-Data/refs/heads/main/properties.json?token=GHSAT0AAAAAAC3AU256ZDBDF7GHI3NUO47CZ2SPZ2A";
+
 // OBJECTS FOR TESTING
-let occupations = [{
-  id: "oc0",
-  name: "Test",
-  description: "This is a description. It can get quite long, so I'm going to test that out here.",
-  tags: "Tag1, Tag2",
-  traits: "Trait1, Trait2"
-}];
 let traitsList = [{
   id: "t0",
   name: "Test",
@@ -133,6 +126,19 @@ let powersList = [{
   action: "Standard or Reaction",
   description: "This is a description. It can get quite long, so I'm going to test that out here."
 }];
+
+// FETCH PROPERTIES
+const fetchData = async () => {
+  try {
+    const response = await fetch(jsonUrl);
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+fetchData();
 
 // FUNCTIONS FOR UPDATING OUTPUT ELEMENTS
 const oneToOneValues = (input, output) => {
