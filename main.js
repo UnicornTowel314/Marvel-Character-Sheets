@@ -96,9 +96,6 @@ let traitsDelList = [];
 let tagsDelList = [];
 let powersDelList = [];
 
-// JSON PREPARATION
-const jsonUrl = "https://raw.githubusercontent.com/UnicornTowel314/Marvel-RPG-Data/refs/heads/main/properties.json?token=GHSAT0AAAAAAC3AU256ZDBDF7GHI3NUO47CZ2SPZ2A";
-
 // OBJECTS FOR TESTING
 let traitsList = [{
   id: "t0",
@@ -126,19 +123,6 @@ let powersList = [{
   action: "Standard or Reaction",
   description: "This is a description. It can get quite long, so I'm going to test that out here."
 }];
-
-// FETCH PROPERTIES
-const fetchData = async () => {
-  try {
-    const response = await fetch(jsonUrl);
-    const data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-fetchData();
 
 // FUNCTIONS FOR UPDATING OUTPUT ELEMENTS
 const oneToOneValues = (input, output) => {
