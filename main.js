@@ -399,7 +399,293 @@ const occupations = [
     traits: "Connections: Celebrities, Famous"
   }
 ];
-const traitsList = [];
+const traitsList = [
+  {
+    id: "t1",
+    name: "Abrasive",
+    description: "The character rubs people the wrong way. They have trouble on Ego checks to persuade someone to help them. They have edge when trying to make Ego checks to intimidate someone."
+  },
+  {
+    id: "t2",
+    name: "Anathema",
+    description: "The character suffers direct home when exposed to a particular substance. They can't voluntarily enter the same space with it. If touched by it, they instantly suffer the damage of a Rank 3 attack roll that automatically succeeds. This continues each turn until they are separated from the substance or are killed or destroyed. This damage ignores all damage reduction and can't be healed by their healing factor."
+  },
+  {
+    id: "t3",
+    name: "Audience",
+    description: "Many people follow the character's work and treat them with the respect they deserve. The character can make an Ego check to persuade their audience to provide help in the form of information or resources."
+  },
+  {
+    id: "t4",
+    name: "Battle Ready",
+    description: "The character is always mentally prepared for any sort of trouble to start. Add +30 Focus."
+  },
+  {
+    id: "t5",
+    name: "Beguiling",
+    description: "The character has an edge when making an Ego check to persuade someone who could be attracted to them."
+  },
+  {
+    id: "t6",
+    name: "Berserker",
+    description: "The character often loses control of their temper. Any time they take physical damage, they must make an Ego check with a TN equal to the amount of damage done. On a fail, they go berserk and must charge full speed into combat with the enemy who hurt them. In this state, he have an edge on all close attacks and add +2 to their Melee, Resilience, and Ego defenses and -2 from their Agility defense. They also can't use ranged weapons. If the character defeats the enemy who hurt them, they must then charge to attack the next closest foe. At the end of their turn, they lose 5 Focus. When their Focus is reduced to the point they couldn't voluntarily spend Focus, or if there are no enemies in sight, the berserk state automatically ends."
+  },
+  {
+    id: "t7",
+    name: "Big",
+    description: "The character's size is big, which applies -1 to their Melee and Agility defenses, adds +1 to their Run Speed, and increases their reach to 2. They still occupy a single space."
+  },
+  {
+    id: "t8",
+    name: "Bloodthirsty",
+    description: "The character likes hurting people-even killing them. After they knock someone unconscious, they must make a Challenging Ego check to keep from continuing to attack them until they're dead. A character with this trait can't take the Heroic tag."
+  },
+  {
+    id: "t9",
+    name: "Breathe Different",
+    description: "The character cannot breathe Earth's air for long. They lose 1 point of Health for every minute they do not have some sort of assistance to allow them to breathe properly."
+  },
+  {
+    id: "t10",
+    name: "Clinician",
+    description: "The character has an edge on Logic checks to determine what is medically wrong with someone they examine."
+  },
+  {
+    id: "t11",
+    name: "Clueless",
+    description: "The character tends to shut out things they're not entirely focused on. They have trouble on any Vigilance checks to spot hidden or invisible things. Enemies have an edge on Agility checks to sneak near or past them."
+  },
+  {
+    id: "t12",
+    name: "Combat Expert",
+    description: "The character knows how to handle themselves better than most. They have an edge on Melee attacks against enemies of Rank 1."
+  },
+  {
+    id: "t13",
+    name: "Combat Reflexes",
+    description: "The character can react quickly in combat. This grants them one additional reaction each turn."
+  },
+  {
+    id: "t14",
+    name: "Connections",
+    description: "The character knows someone with access to and knowledge of a particular field. By making an Ego check, the character can call on their contact to provide help in the form of clues, information or resources. This trait can b e selected multiple times, using many different types. These include Celebrities, Community, Criminal, Espionage, Military, Outsiders, Police, Professional, Sources, Super Heroes and so on."
+  },
+  {
+    id: "t15",
+    name: "Dealmaker",
+    description: "The character is skilled at the art of negotiation. They have an edge on action checks that have to do with making deals."
+  },
+  {
+    id: "t16",
+    name: "Determination",
+    description: "The character never gives up, even when they feel like they're at their worst. While demoralized, they do not gain trouble on all actions, though they still cannot maintain concentration or spend further Focus."
+  },
+  {
+    id: "t17",
+    name: "Eidetic Memory",
+    description: "The character rarely forgets anything. If their player forgets something, they can ask the Narrator to remind them."
+  },
+  {
+    id: "t18",
+    name: "Enduring Constitution",
+    description: "The character can function for up to 48 hours without sleep and has an edge on Resilience checks to overcome fatigue or weariness."
+  },
+  {
+    id: "t19",
+    name: "Enhanced Physique",
+    description: "The character is stronger than regular humans. Treat them as one size bigger for lifting, carrying, swinging and throwing things. This does not stack with other factors."
+  },
+  {
+    id: "t20",
+    name: "Extra Occupation",
+    description: "The character has a busy life and has done all sorts of things. They can choose another occupation."
+  },
+  {
+    id: "t21",
+    name: "Extraordinary Origin",
+    description: "The character has an additional origin. This trait can be selected multiple times, but each time must be cleared with the Narrator. Take care to make sure that the origins make some kind of sense when combined together."
+  },
+  {
+    id: "t22",
+    name: "Famous",
+    description: "The character is widely known-at least among a certain group of people or a population. They have an edge when making an Ego check to persuade someone who thinks favorably of them. They have trouble when making an Ego check to persuade someone who dislikes them. If the character has a secret identity, this trait works for only one of their identities. However, it can be taken multiple times for multiple identities."
+  },
+  {
+    id: "t23",
+    name: "Fearless",
+    description: "The character is extremely brave. They have an edge on any action checks required to deal with fear."
+  },
+  {
+    id: "t24",
+    name: "First Aid",
+    description: "The character knows how to administer first aid. They have an edge on Logic checks to stop bleeding."
+  },
+  {
+    id: "t25",
+    name: "Font of Information",
+    description: "The character has an edge on Logic checks having to do with knowledge."
+  },
+  {
+    id: "t26",
+    name: "Free Running",
+    description: "The character has an edge on Agility checks made to perform acrobatics during a movement action."
+  },
+  {
+    id: "t27",
+    name: "Fresh Eyes",
+    description: "The character has their own way of doing things. This often makes them seem strange to those around them, but it means they can bring new perspectives to existing issues. They have an edge on Logic checks when faced with something for the first time."
+  },
+  {
+    id: "t28",
+    name: "Gearhead",
+    description: "The character knows their way around machines. They have an edge on Logic checks to figure out how any machine works."
+  },
+  {
+    id: "t29",
+    name: "Glibness",
+    description: "The character can strike up a conversation with anyone at any time and can often convince them to lend a hand. They have an edge on Ego checks to persuade characters they are speaking to for the first time."
+  },
+  {
+    id: "t30",
+    name: "God Heritage",
+    description: "The character, or at least one of their ancestors, is a god. Pick something that they are the god of. They cannot generally be the god of something that's already been claimed by someone else in their pantheon. The character has an edge when dealing with something that they are the god of. RESTRICTION: This trait can be selected only by characters with a mythic origin and an attachment to a particular pantheon, like Asgardian or Olympian."
+  },
+  {
+    id: "t31",
+    name: "Gullible",
+    description: "The character is easy to fool. People lying to them have an edge on their Ego checks to persuade the character of something."
+  },
+  {
+    id: "t32",
+    name: "Honest",
+    description: "The character is a terrible liar. They have trouble any time they make an Ego check that involves telling a lie. However, they have an edge on any friendly  ego (persuasion) checks in which they're truthful."
+  },
+  {
+    id: "t33",
+    name: "Interrogation",
+    description: "The character knows how to ask the right questions in the right way. They have an edge on Ego or Logic checks made when asking questions."
+  },
+  {
+    id: "t34",
+    name: "Inventor",
+    description: "The character is good at coming up with solutions on the fly. They have an edge on Logic checks when creating or repairing things."
+  },
+  {
+    id: "t35",
+    name: "Investigation",
+    description: "The character is an expert investigator. They have an edge on Vigilance checks to spot clues and on Logic checks related to interpreting clues. If they have access to a forensics lab at the time, they gain a second edge on such checks."
+  },
+  {
+    id: "t36",
+    name: "Iron Will",
+    description: "Enemies have trouble on Ego attacks to control the character's mind or influence their behavior. Also, the character gains an edge on Ego checks to break free of mind control or other compulsions."
+  },
+  {
+    id: "t37",
+    name: "Legal Eagle",
+    description: "The character knows the laws of their homeland and can help others navigate them. They have an edge on Logic checks when dealing with legalities."
+  },
+  {
+    id: "t38",
+    name: "Leverage",
+    description: "The character is good at figuring out what people want and using it against them. They have an edge on Logic checks to investigate people and on Ego checks to persuade people they've investigated."
+  },
+  {
+    id: "t39",
+    name: "Loner",
+    description: "The character does not play well with others. They cannot be given an edge via assistance by someone who is not a teammate."
+  },
+  {
+    id: "t40",
+    name: "Monster",
+    description: "The character is some kind of monster, often of a type spoken of in legend. They have an edge whenever they attempt to intimidate someone."
+  },
+  {
+    id: "t41",
+    name: "Out of Shape",
+    description: "The character is in poor physical condition. They are considered one size smaller for the purposes of lifting, carrying, swinging and throwing things."
+  },
+  {
+    id: "t42",
+    name: "Piloting",
+    description: "The character knows how to operate vehicles of all kinds. They have an edge on Agility checks triggered when piloting or driving a vehitcle during a movement action. This applies to cars, boats, aircraft and so on."
+  },
+  {
+    id: "t43",
+    name: "Presence",
+    description: "The character knows how to command attention on demand. They have an edge on Ego checks that involve getting people to pay attention to them or to voluntarily do things for them."
+  },
+  {
+    id: "t44",
+    name: "Public Speaking",
+    description: "The character knows how to get the attention of a crowd. They have an edge on Ego checks when attempting to persuade groups."
+  },
+  {
+    id: "t45",
+    name: "Pundit",
+    description: "The character knows how to break news items and put them into context to craft a story around them. They have an edge on Ego or Logic rolls made when giving their opinion via media."
+  },
+  {
+    id: "t46",
+    name: "Quick Learner",
+    description: "If the character fails an action check, they gain an edge on the check if they try the same action again on their next turn."
+  },
+  {
+    id: "t47",
+    name: "Scientific Expertise",
+    description: "The character has extensive scientific training. They have an edge on Logic checks made when dealing with scientific research. If they have access to an appropriate lab at the time, they gain a second edge on such checks."
+  },
+  {
+    id: "t48",
+    name: "Signature Attack",
+    description: "The character is known for favoring a particular kind of weapon or attack power. They have an edge when making attacks that way. This trait can be taken more than once, but each time must be with a different kind of weapon or attack power."
+  },
+  {
+    id: "t49",
+    name: "Situational Awareness",
+    description: "The character is trained to always keep an eye out for trouble. They have an edge on initiative checks."
+  },
+  {
+    id: "t50",
+    name: "Skeptical",
+    description: "The character is hard to fool. People lying to them have trouble on their Ego checks to persuade the character of something."
+  },
+  {
+    id: "t51",
+    name: "Small",
+    description: "The character's size is small, which adds+ 1 to their Me lee and Agility defenses and takes -1 from their Run Speed."
+  },
+  {
+    id: "t52",
+    name: "Sneaky",
+    description: "The character has an edge on Agility checks when sneaking around. Enemies have trouble on Vigilance checks to detect the character when the character is invisible or hiding."
+  },
+  {
+    id: "t53",
+    name: "Stranger",
+    description: "The character doesn't understand local customs. They have trouble on checks made when trying to decipher such things or when trying to pass themselves off as a local."
+  },
+  {
+    id: "t54",
+    name: "Surprising Power",
+    description: "The character can choose a power they normally wouldn't be able to use. The character will still need to have any prerequisite powers, but they can ignore rank and origin requirements. This trait can be selected multiple times."
+  },
+  {
+    id: "t55",
+    name: "Tech Reliance",
+    description: "The character relies on technology for powers. When they take damage that would render them unconscious, they can instead choose to lose all of their technology-related powers and remain conscious with 1 point of Health remaining. Assuming the character has access to parts and tools, lost powers can be repaired after a battle."
+  },
+  {
+    id: "t56",
+    name: "Weakness",
+    description: "The character suffers an unusual amount of harm from certain substances. Any attack made with that substance ignores all inherent damage reduction the character has and cannot be healed by their Healing Factor."
+  },
+  {
+    id: "t57",
+    name: "Weird",
+    description: "The character has something weird (or even wonderful) about them. This causes people to have strong reactions to them, both good and bad. They have an edge on all Ego checks to persuade people inclined to like them and trouble on all Ego checks against people inclined to dislike them."
+  }
+];
 const tagsList = [];
 const powersList = [];
 
