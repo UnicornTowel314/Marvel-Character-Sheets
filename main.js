@@ -1068,6 +1068,236 @@ const powersList = [
     duration: "Instant",
     action: "Standard",
     description: "The character makes one Melee check against the Me lee defense scores of two enemies within reach. If the attack fails against either foe, it fails entirely. If the attack is a success against both foes, each enemy takes full damage. On a Fantastic success, each enemy is also knocked prone."
+  },
+  {
+    id: "p15",
+    name: "Battle Plan",
+    set: "Tactics",
+    cost: "10 Focus",
+    page: 84,
+    duration: "1 Round",
+    action: "Standard",
+    description: "The character inspires one or more allies of their choice in earshot, up to the character's Vigilance. Inspired allies gain an edge on all action checks until the start of the character's next turn."
+  },
+  {
+    id: "p16",
+    name: "Blazing-Fast Fists",
+    set: "Super-Speed",
+    cost: "",
+    page: 84,
+    duration: "Permanent",
+    action: "",
+    description: "The character has an edge on all Melee attacks."
+  },
+  {
+    id: "p17",
+    name: "Blink",
+    set: "Teleportation",
+    cost: "",
+    page: 84,
+    duration: "Instant",
+    action: "Standard, movement, or reaction",
+    description: "TRIGGER: character is attacked. The character teleports into a clear space they can see or have been to, up to their rank in spaces away. If someone was about to attack them and they are now out of reach or line of sight, the attack automatically fails. If they are still within reach or line of sight, the attack has trouble instead."
+  },
+  {
+    id: "p18",
+    name: "Blink Barrage",
+    set: "Teleportation",
+    cost: "5 Focus",
+    page: 84,
+    duration: "Instant",
+    action: "Standard or Movement",
+    description: "The character teleports several times in quick succession and winds up in a clear space they can see or have been to, up to their rank in spaces away. Any attacks have trouble against them for one round."
+  },
+  {
+    id: "p19",
+    name: "Blink Defense",
+    set: "Teleportation",
+    cost: "10 Focus",
+    page: 84,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: The character or an ally within reach is the subject of a ranged attack. The character pops away just as the attack reaches them and then pops back into the same space, leaving the projectile behind. The character makes an Ego check with an edge against the attacker's Agility check result. On a success, the projectile from the attack is teleported away, someplace safe. On a Fantastic success, the attack is turned against the attacker, using the Ego check the character just made as the attack check."
+  },
+  {
+    id: "p20",
+    name: "Blur",
+    set: "Super-Speed",
+    cost: "5 Focus",
+    page: 84,
+    durtion: "1 Round",
+    action: "Standard or Reaction",
+    description: "Any attacks against the character have trouble."
+  },
+  {
+    id: "p21",
+    name: "Body Sheet",
+    set: "Plasticity",
+    cost: "15 Focus",
+    page: 84,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character falls or is the target of an attack. The character gains Health Damage Reduction 3, but they cannot make attacks. They gain a Glide Speed equal to double their Run Speed."
+  },
+  {
+    id: "p22",
+    name: "Body Sphere",
+    set: "Plasticity",
+    cost: "15 Focus",
+    page: 85,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: The character or an ally is the target of an attack. The character forms their body into a sphere, protecting up to one ally per rank, squeezed into the same space. Those inside the sphere gain Health Damage Reduction 3 against outside attacks, but they cannot move on their own until the character releases them. Alternatively, if the attacker is within the character's reach, the character can make an Agility check against the target's Agility defense. On a success, the character envelops the attacker, grabbing them. On a Fantastic success, the character closes the sphere enough to pin the attacker too."
+  },
+  {
+    id: "p23",
+    name: "Bolts of Balthakk",
+    set: "Magic",
+    cost: "5+ Focus",
+    page: 85,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes an Ego check with an edge against the Agility defense of a target in their line of sight. For this attack, add +1 to the character's Agility damage bonus for every 2 points of Focus they spend. On a success, an affected target takes that total damage. On a Fantastic success, an affected target takes double that total damage and is stunned for one round."
+  },
+  {
+    id: "p24",
+    name: "Boost Powers",
+    set: "Power Control",
+    cost: "15+ Focus",
+    page: 85,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character picks one character within 5 spaces and boosts all of their powers. I f the powers have ranges or effective areas or durations, these are doubled. If the powers affect a damage multiplier, add 1 to the effects. Any effects that normally happen with a Fantastic successes automatically happen on any success, not just a Fantastic one. If the target's powers have costs, the character must pay the highest of them or a minimum of 15 Focus."
+  },
+  {
+    id: "p25",
+    name: "Borrow Senses",
+    set: "Telepathy",
+    cost: "5 Focus",
+    page: 85,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character can use the full senses of someone or something with whom they have established a telepathic link or bond. While they do, they retain the use of their own senses too."
+  },
+  {
+    id: "p26",
+    name: "Bounce Back",
+    set: "Plasticity",
+    cost: "5 Focus",
+    page: 85,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: The character takes damage from a fall or is knocked prone. The fall doesn't damage the character. If they are prone, they stand up. If they'd like, they can also jump a number of spaces, up to their Run Speed."
+  },
+  {
+    id: "p27",
+    name: "Brace for Impact",
+    set: "Martial Arts, Shield Bearer",
+    cost: "5+ Focus",
+    page: 85,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: An enemy deals physical damage to the character. For every point of Focus spent, the character can ignore 1 point of Health damage dealt by the attack."
+  },
+  {
+    id: "p28",
+    name: "Brain Drain",
+    set: "Magic",
+    cost: "5 Focus",
+    page: 85,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: the target is grabbed. The character makes an Ego attack against the target's Vigilance. If it succeeds, the target takes regular Focus damage, and the character heals half that much Focus for themselves. On a Fantastic success, the character heals their full Focus damage instead."
+  },
+  {
+    id: "p29",
+    name: "Brawling",
+    set: "",
+    cost: "",
+    page: 85,
+    duration: "Permanent",
+    action: "",
+    description: "The character can use their Melee defense score against Agility attacks too."
+  },
+  {
+    id: "p30",
+    name: "Brilliance 1",
+    set: "",
+    cost: "",
+    page: 86,
+    duration: "Permanent",
+    action: "",
+    description: "The character adds +l to their Logic damage multiplier, and they gain a +l bonus to Logic checks other than attacks."
+  },
+  {
+    id: "p31",
+    name: "Brilliance 2",
+    set: "",
+    cost: "",
+    page: 86,
+    duration: "Permanent",
+    action: "",
+    description: "The character adds +2 to their Logic damage multiplier, and they gain a +2 bonus to Logic checks other than attacks."
+  },
+  {
+    id: "p32",
+    name: "Brilliance 3",
+    set: "",
+    cost: "",
+    page: 86,
+    duration: "Permanent",
+    action: "",
+    description: "The character adds +3 to their Logic damage multiplier, and they gain a +3 bonus to Logic checks other than attacks."
+  },
+  {
+    id: "p33",
+    name: "Brilliance 4",
+    set: "",
+    cost: "",
+    page: 86,
+    duration: "Permanent",
+    action: "",
+    description: "The character adds +4 to their Logic damage multiplier, and they gain a +4 bonus to Logic checks other than attacks."
+  },
+  {
+    id: "p34",
+    name: "Bump Power",
+    set: "Power Control",
+    cost: "5+ Focus",
+    page: 86,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character picks one power from another character within 5 spaces and boosts it. If the power has ranges or effective areas or durations, these are doubled. If the power affects a damage multiplier, add 1 to the effect. Any effects that normally happen with a Fantastic success automatically happen on any success, not just a Fantastic one. If the power has a cost, the character must pay it as well, with a minimum of 5 Focus."
+  },
+  {
+    id: "p35",
+    name: "Catch Bullets",
+    set: "Super-Speed",
+    cost: "10 Focus",
+    page: 87,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: ranged attack using physical projectiles (arrows, bullets and so on) is made against the characteror a character within their character's reach. The character makes an Agility check, using the attacker's attack result as the target number. If the character's check succeeds, the attack is nullified. On a Fantastic success, the character gets their reaction back."
+  },
+  {
+    id: "p36",
+    name: "Chain Strikes",
+    set: "Martial Arts",
+    cost: "5 Focus",
+    page: 87,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a close attack with an edge. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the character can also make an additional Chain Strike."
+  },
+  {
+    id: "p37",
+    name: "Change of Plans",
+    set: "Tactics",
+    cost: "5 Focus",
+    page: 87,
+    duration: "1 Round",
+    action: "Reaction",
+    description: "TRIGGER: An ally has trouble on an action check. The ally gains an edge on that action check."
   }
 ];
 
