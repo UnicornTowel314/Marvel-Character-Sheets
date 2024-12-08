@@ -928,7 +928,148 @@ const tagsList = [
     description: "The character is a minor, under 18 years old. If possible, they must report in to their parents or guardians on a regular basis."
   }
 ];
-const powersList = [];
+const powersList = [
+  {
+    id: "p1",
+    name: "Accuracy 1",
+    set: "",
+    cost: "",
+    page: 81,
+    duration: "Permanent",
+    action: "",
+    description: "The character adds + 1 to their Agility damage multiplier, and they gain a +l bonus to Agility checks other than attacks."
+  },
+  {
+    id: "p2",
+    name: "Accuracy 2",
+    set: "",
+    cost: "",
+    page: 81,
+    duration: "Permanent",
+    action: "",
+    description: "The character adds +2 to their Agility damage multiplier, and they gain a +2 bonus to Agility checks other than attacks."
+  },
+  {
+    id: "p3",
+    name: "Accuracy 3",
+    set: "",
+    cost: "",
+    page: 82,
+    duration: "Permanent",
+    action: "",
+    description: "The character adds +3 to their Agility damage multiplier, and they gain a +3 bonus to Agility checks other than attacks."
+  },
+  {
+    id: "p4",
+    name: "Accuracy 4",
+    set: "",
+    cost: "",
+    page: 82,
+    duration: "Permanent",
+    action: "",
+    description: "The character adds +4 to their Agility damage multiplier, and they gain a +4 bonus to Agility checks other than attacks."
+  },
+  {
+    id: "p5",
+    name: "Additional Limbs",
+    set: "",
+    cost: "",
+    page: 82,
+    duration: "Permanent",
+    action: "",
+    description: "The character has an additional prehensile appendage (like a tail) or a symmetrical pair of them (like arms) that can be used to lift objects, use tools or otherwise take actions that normally require the use of a hand. This grants them an edge in Melee and Agility checks. A character can have as many additional limbs as they like-within reason-but they get no additional advantages for them."
+  },
+  {
+    id: "p6",
+    name: "Advance",
+    set: "Tactics",
+    cost: "15 Focus",
+    page: 82,
+    duration: "1 Round",
+    action: "Reaction",
+    description: "Any allies in earshot can be affected, up to a number equal to the character's Ego defense. Each affected ally can immediately use a free movement action to move toward the enemy that triggered the reaction."
+  },
+  {
+    id: "p7",
+    name: "Always Ready",
+    set: "Martial Arts",
+    cost: "",
+    page: 82,
+    duration: "Permanent",
+    action: "",
+    description: "The character gains one additional reaction per round, which can be used only to activate a Martial Arts power."
+  },
+  {
+    id: "p8",
+    name: "Anger",
+    set: "",
+    cost: "10+ Focus",
+    page: 82,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "The character becomes angry and uses that anger to increase their strength. For every 10 points of Focus they spend, they add +15 to their Melee damage bonus and lose -2 from their Logic-and subsequently their Logic defense. While using this power, they cannot use any other powers that require concentration."
+  },
+  {
+    id: "p9",
+    name: "Animal Bond",
+    set: "Telepathy",
+    cost: "",
+    page: 82,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character can communicate telepathically with one animal of their choice, and they must have befriended the animal before. They cannot switch to another animal unless the animal dies, but they can select this power multiple times if desired. The communication can be verbal, visual or even more complex, such as imparting location information. There is no limit to the distance of the communication, as long as the character and the animal are in the same dimension. Animals with a telepathic bond are generally willing to communicate, even if they aren't friendly. Bonded animals often do whatever the character asks, even if it might put them in danger."
+  },
+  {
+    id: "p10",
+    name: "Animal Communication",
+    set: "Telepathy",
+    cost: "",
+    page: 82,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character can communicate telepathically with one taxonomic order of animals, such as birds, mammals, fish, amphibians and so on. They can call out to them as a group up to 500 spaces per rank away, and they can communicate specifically with ones they have met or at least seen. They cannot switch to another taxonomic order, but they can select this power multiple times if desired. The communication with the animals can be verbal, visual or even more complex, such as imparting location information. There is no limit to the distance of the communication, as long as the character and the animals are in the same dimension. Friendly animals often do whatever the character asks, as long as it doesn't put them in danger-and they may be willing to risk even that for one they consider a friend. Hostile animals simply ignore all such requests-which make them a poor choice for communication."
+  },
+  {
+    id: "p11",
+    name: "Animated Illusion",
+    set: "Illusion",
+    cost: "5 Focus",
+    page: 83,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character creates a visual-only illusion anywhere in line of sight, within 50 spaces. The illusion can be anything up to four sizes larger than the character, and it can move freely within its limits. The character breaks concentration if they move beyond 50 spaces from the illusion or lose line of sight to it."
+  },
+  {
+    id: "p12",
+    name: "Astral Form",
+    set: "Magic, Telepathy",
+    cost: "5 Focus",
+    page: 83,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character can project an avatar into the Astral Plane, leaving their physical body in a deep trance in the real world, where it is vulnerable to attack. While in the Astral Plane, they can interact with other characters in the Astral Plane, but they are intangible, invisible and generally undetectable in the real world. However, they can sense things in the real world. If the character is Rank 4 or higher, they can also take on a transparent form that can be seen in the real world. While in the Astral Plane, the character can fly, and in combat, their Flight Speed is equal to their rank times their Run Speed. Outside of combat, they can move 10 times as fast."
+  },
+  {
+    id: "p13",
+    name: "Attack Stance",
+    set: "Martial Arts",
+    cost: "",
+    page: 83,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character doubles their Melee ability bonus to damage."
+  },
+  {
+    id: "p14",
+    name: "Banging Heads",
+    set: "Martial Arts, Super-Strength",
+    cost: "",
+    page: 83,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes one Melee check against the Me lee defense scores of two enemies within reach. If the attack fails against either foe, it fails entirely. If the attack is a success against both foes, each enemy takes full damage. On a Fantastic success, each enemy is also knocked prone."
+  }
+];
 
 // IDENTITY VARIABLES
 const originInput = document.getElementById("origin");
