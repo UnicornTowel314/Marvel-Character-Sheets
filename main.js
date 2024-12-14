@@ -1298,6 +1298,216 @@ const powersList = [
     duration: "1 Round",
     action: "Reaction",
     description: "TRIGGER: An ally has trouble on an action check. The ally gains an edge on that action check."
+  },
+  {
+    id: "p38",
+    name: "Cloak",
+    set: "Telepathy",
+    cost: "5 Focus",
+    page: 87,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character uses a mirage to block their presence from the minds of people within 20 spaces per rank. Cameras (for instance) can still record them, but when people look in the character's direction, they see nothing there. The target number for anyone trying to detect the character is the character's Logic defense."
+  },
+  {
+    id: "p39",
+    name: "Cloack Group",
+    set: "Telepathy",
+    cost: "10 Focus",
+    page: 87,
+    duration: "Concentration",
+    action: "Standard",
+    duration: "Using a mirage, the character blocks their presence-and the presence of up to one other person per rank, within 10 spaces-from the minds of people within 20 spaces per rank. Cameras (for instance) can still record them, but when people look in the characters' direction, they see nothing there. The target number for anyone trying to detect the character or the others protected is the character's Logic defense."
+  },
+  {
+    id: "p40",
+    name: "Clobber",
+    set: "Super-Strength",
+    cost: "",
+    page: 87,
+    duration: "Instant",
+    action: "Standard",
+    duration: "The character makes a close attack against an enemy. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is knocked prone."
+  },
+  {
+    id: "p41",
+    name: "Clone Moves",
+    set: "Power Control",
+    cost: "5+ Focus",
+    page: 87,
+    duration: "Concentration",
+    action: "Standard",
+    duration: "The character picks another character within 10 spaces and in their line of sight and duplicates all their powers that could be selected with the Special Training origin. They can now use those powers as if they were always theirs. If the copied powers have costs, the character must pay the highest of them, or a minimum of 5 Focus. When the character uses a copied power, they must pay any cost normally as well."
+  },
+  {
+    id: "p42",
+    name: "Clone Powers",
+    set: "Power Control",
+    cost: "15+ Focus",
+    page: 87,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character picks another character within 10 spaces and duplicates all of their powers. They can now use those powers as if they were always theirs. If the target's powers have costs, the character must pay the highest of them, or a minimum of 15 Focus. When the character uses a copied power, they must pay any cost normally as well."
+  },
+  {
+    id: "p43",
+    name: "Coiling Crush",
+    set: "Plasticity",
+    cost: "10 Focus",
+    page: 87,
+    duration: "Concentration",
+    action: "Reaction",
+    description: "TRIGGER: the character grabs and enemy. The character makes a Melee attack. On a success, the enemy is paralyzed. On a Fantastic success, the enemy also takes regular damage. During the character's subsequent turns, they can spend their movement action to make a Melee check against the enemy's Resilience. If this succeeds, they inflict regular Health damage. On a Fantastic success, they do double damage instead. During the paralyzed enemy's turn, they can make a Melee check against the character's Melee defense to break free."
+  },
+  {
+    id: "p44",
+    name: "Combat Support",
+    set: "Tactics",
+    cost: "10 Focus",
+    page: 89,
+    duration: "1 Round",
+    action: "Standard",
+    description: "Once per battle, the character chooses an ally in earshot. If the ally makes an action check before the start of the character's next turn, the ally automatically rolls a 1 on their Marvel die, and that die cannot be affected by trouble."
+  },
+  {
+    id: "p45",
+    name: "Combat Trickery",
+    set: "",
+    cost: "5 Focus",
+    page: 89,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: the character makes an attack. Once per battle, when the character is attacking targets of equal or higher rank, the character automatically rolls a 1 on their Marvel die, and that die cannot be affected by trouble. If the character is attacking multiple targets, all the targets must be of equal or higher rank."
+  },
+  {
+    id: "p46",
+    name: "Command",
+    set: "Telepathy",
+    cost: "5 Focus",
+    page: 89,
+    duration: "1 Round",
+    action: "Standard",
+    description: "The character gives an order to a target with whom they've established a Telepathic Link. The character makes a Logic check against the target's Logic defense. On a success, the target complies with the order. On a Fantastic success, the character gains an edge the next time they use this power against this same target. The command must be something that can be completed in a single action. If it involves harming someone, the character has trouble on the check. If it would cause the target to harm themselves, the character has double trouble on the check."
+  },
+  {
+    id: "p47",
+    name: "Control Fog",
+    set: "Weather Control",
+    cost: "",
+    page: 89,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character creates a thick fog for up to 50 spaces per rank around them that blocks all line of sight beyond 10 spaces. They can also dispel any fog in a similar area."
+  },
+  {
+    id: "p48",
+    name: "Control Weather 1",
+    set: "Weather Control",
+    cost: "",
+    page: 89,
+    duration: "Concentration",
+    action: "Standard",
+    description: "It starts to rain in an area up to 5 miles across times the character's rank, centered on the character. All ranges are cut in half. Movement is not affected."
+  },
+  {
+    id: "p49",
+    name: "Control Weather 2",
+    set: "Weather Control",
+    cost: "10 Focus",
+    page: 89,
+    duration: "Concentration",
+    action: "Standard",
+    description: "It starts to storm in an area up to 5 miles across times the character's rank, centered on the character. All ranges and all speeds are cut in half."
+  },
+  {
+    id: "p50",
+    name: "Control Weather 3",
+    set: "Weather Control",
+    cost: "15 Focus",
+    page: 89,
+    duration: "Concentration",
+    action: "Standard",
+    description: "It starts to storm in an area up to 5 miles across times the character's rank, centered on the character. All ranges and all speeds are cut in half. If the character also has the Elemental Blast (Electricity) power, they can use it as a reaction when attacked while this power is active."
+  },
+  {
+    id: "p51",
+    name: "Control Weather 4",
+    set: "Weather Control",
+    cost: "20 Focus",
+    page: 89,
+    duration: "Concentration",
+    action: "Standard",
+    description: "It starts to storm in an area up to 5 miles across times the character's rank, centered on the character. All ranges and all speeds are cut to one quarter normal, and flying is impossible. If the character also has the Elemental Barrage (Electricity) power, they can use it as a reaction when attacked while this power is active."
+  },
+  {
+    id: "p52",
+    name: "Copy Ability",
+    set: "Power Control",
+    cost: "",
+    page: 90,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character picks one ability score of another character within 10 spaces and duplicates it. They now use that ability score in place of their own."
+  },
+  {
+    id: "p53",
+    name: "Copy Power",
+    set: "Power Control",
+    cost: "5 Focus",
+    page: 90,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character picks one power a target within 10 spaces has and duplicates it. They can now use it as if it was always theirs. When the character uses such a power, they must pay any cost normally as well."
+  },
+  {
+    id: "p54",
+    name: "Copy Trait",
+    set: "Power Control",
+    cost: "",
+    page: 90,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character picks one trait another character within 10 spaces has and duplicates it. They can now use it as i f it was always theirs."
+  },
+  {
+    id: "p55",
+    name: "Counterstrike Technique",
+    set: "Martial Arts",
+    cost: "5 Focus",
+    page: 90,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: While Attack Stance is active, a close attack against the character does damage. The character deals half the attacker's regular damage to the attacker."
+  },
+  {
+    id: "p56",
+    name: "Covering Fire",
+    set: "Ranged Weapons",
+    cost: "10 Focus",
+    page: 90,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: an ally within the character's line of sight begins its turn. The character makes an Agility attack against a target's Vigilance defense. If the attack is a success, apply Health Damage Reduction normally. The target takes any damage to their Focus. If it's a Fantastic success, the damage is doubled, and if the target takes any Focus damage, they are stunned for one round."
+  },
+  {
+    id: "p57",
+    name: "Crimson Bands of Cyttorak",
+    set: "Magic",
+    cost: "10 Focus",
+    page: 90,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character makes an Ego check with an edge against the Melee defense of a target in their line of sight. If the attack is a success, the crimson bands paralyze the target. On a Fantastic success, the target can be pinned too. Breaking out of the crimson bands requires a Me lee check with target number 20."
+  },
+  {
+    id: "p58",
+    name: "Crushing Grip",
+    set: "Martial Arts and Super-Strength",
+    cost: "5 Focus",
+    page: 90,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: the target is grabbed. The character makes a Melee attack against the grabbed target's Resilience defense. If it's a success, the target takes regular damage. On a Fantastic success, the target takes double damage instead and is pinned."
   }
 ];
 
