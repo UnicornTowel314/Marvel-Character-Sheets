@@ -2288,6 +2288,116 @@ const powersList = [
     duration: "Instant",
     action: "Reaction",
     description: "TRIGGER: the character grows. The character makes a close attack with an edge. If the attack succeeds, they do regular damage for the size they are growing to. On a Fantastic success, they do double damage and stun the target."
+  },
+  {
+    id: "p137",
+    name: "Headshot",
+    set: "Ranged Weapons",
+    cost: "15 Focus",
+    page: 102,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a ranged attack with trouble on an enemy within the weapon's range. If the attack is a success, the enemy takes double normal damage. On a Fantastic success, the enemy takes triple damage. Either way, i f the enemy suffers any actual damage, they are also stunned for one round."
+  },
+  {
+    id: "p138",
+    name: "Healing Factor",
+    set: "",
+    cost: "",
+    page: 102,
+    duration: "Permanent",
+    action: "",
+    description: "At the end of the character's turn, they regain Health equal to their Resilience. (This works outside of combat too, quickly bringing them back to full Health.)"
+  },
+  {
+    id: "p139",
+    name: "Heightened Senses 1",
+    set: "",
+    cost: "",
+    page: 102,
+    duration: "Permanent",
+    action: "",
+    description: "The character can sense things roughly twice as far away as normal. They also have an edge on Vigilance checks to perceive things, and enemies have trouble on checks they make to sneak past the character."
+  },
+  {
+    id: "p140",
+    name: "Heightened Senses 2",
+    set: "",
+    cost: "",
+    page: 103,
+    duration: "Permanent",
+    action: "",
+    description: "The character can sense things roughly four times as far away as normal. Their senses are so sharp that they can use some of them to compensate for the loss of others (say, if blinded or deafened). They can even listen to the heartbeat of a person in the same room to see if they are lying-although this is as reliable as a traditional lie detector: far from 100% and not admissible in court. They also have a double edge on Vigilance checks to perceive things, and enemies have double trouble on checks they make to sneak past the character."
+  },
+  {
+    id: "141",
+    name: "Hellfire Chains",
+    set: "Magic",
+    cost: "5 Focus",
+    page: 103,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character summons chains covered in hellfire and can use them to bind or smash targets. They can attack anyone within 10 spaces per rank and line of sight. Make an Ego attack. On a success, the target takes regular Health damage. On a Fantastic success, the target is grabbed and paralyzed too. If a target is grabbed by the hellfire chains, on each subsequent round, the character can make an Ego check against the ta.rget's Resilience Resilience defense to inflict regular Health damage and regular Focus damage. Breaking free from the hellfire chains requires a Melee check with a target number of 20."
+  },
+  {
+    id: "p142",
+    name: "Hex Bolt",
+    set: "Magic",
+    cost: "5 Focus",
+    page: 103,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character fires a hex bolt at a foe. Make an Ego check against the target's Agility defense. On a success, the attack does regular damage. On a Fantastic success, it does double damage and causes the target trouble for one round."
+  },
+  {
+    id: "p143",
+    name: "Hit and Run",
+    set: "Melee Weapons",
+    cost: "",
+    page: 103,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a close attack with an edge on an enemy. If the attack is a success, the enemy takes regular damage, and the character can make an additional movement up to half their Run Speed for free. On a Fantastic success, the enemy takes double damage and suffers the weapon's special effect."
+  },
+  {
+    id: "p144",
+    name: "Hit the Dirt",
+    set: "Tactics",
+    cost: "5 Focus",
+    page: 103,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: an enemy in line of sight makes an attack on an ally within earshot. All allies within earshot can fall prone if they wish and are able to. If falling prone makes the ally an ineligible target for the initial attack, the attack automatically fails."
+  },
+  {
+    id: "p145",
+    name: "Hurled Shield Bash",
+    set: "Shield Bearer",
+    cost: "5 Focus",
+    page: 104,
+    duration: "Instant",
+    action: "Standard",
+    description: "RANGE: 10 spaces times character's rank. The character makes a ranged attack on an enemy. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is knocked prone. The shield then bounces back to the character."
+  },
+  {
+    id: "p146",
+    name: "Hurled Shield Block",
+    set: "Shield Bearer",
+    cost: "5 Focus",
+    page: 104,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: an enemy makes an attack against an Ally's Agility. RANGE: 5 spaces times the character's rank. The ally gains Health Damage Reduction equal to the character's Shield power against that attack. The shield then bounces back to the character."
+  },
+  {
+    id: "p147",
+    name: "Hurled Shield Deflection",
+    set: "Shield Bearer",
+    cost: "5 Focus",
+    page: 104,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: an enemy makes an attack against an Ally's Agility. RANGE: 5 spaces times the character's rank. The enemy has trouble on the attack. The shield then bounces back to the character."
   }
 ];
 
