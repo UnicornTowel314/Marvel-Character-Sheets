@@ -2158,6 +2158,136 @@ const powersList = [
     duration: "Instant",
     action: "Standard",
     description: "The character splits their attack to make two close attacks against separate targets within reach (or they can focus a single attack on a single target). Make a single Melee check and compare it to the targets' Melee defenses. For these attacks, add +1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes half that total damage. On a Fantastic success, an affected target takes full damage and suffers the weapon's special effect."
+  },
+  {
+    id: "p124",
+    name: "Grand Mirage",
+    set: "Telepathy",
+    cost: "10 Focus",
+    page: 101,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character creates a full-sensory mirage that affects everyone in a Telepathic Network they set up who is also in the same locale. The mirage can be of anything the character desires, and it can move freely."
+  },
+  {
+    id: "p125",
+    name: "Grand Fool",
+    set: "Telepathy",
+    cost: "10 Focus",
+    page: 101,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character uses a mirage to alter their appearance-and the appearance of up to one other person per rank, within 10 spaces-in the minds of people within 20 spaces per rank. Cameras (for instance) can still record them, but when people look in the characters' direction, they see other people. The target number for anyone trying to see through the mirage is the character's Logic defense. If the affected characters are impersonating people known to the other person, that person has an edge."
+  },
+  {
+    id: "p126",
+    name: "Grand Illusion",
+    set: "Illusion",
+    cost: "10 Focus",
+    page: 101,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character creates a sound and sight illusion anywhere in line of sight, within 50 spaces. The illusion can be of anything up to five sizes larger than the character, and it can move freely within its limits. The character breaks concentration if they move beyond 50 spaces from the illusion or lose line of sight of it."
+  },
+  {
+    id: "p127",
+    name: "Grappling Technique",
+    set: "Martial Arts",
+    cost: "5 Focus",
+    page: 101,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a close attack. If the attack is a success, the enemy takes regular damage and is grabbed. On a Fantastic success, the target takes double damage instead and is pinned too."
+  },
+  {
+    id: "p128",
+    name: "Ground-Shaking Stomp",
+    set: "Super-Strength",
+    cost: "10 Focus",
+    page: 101,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a Melee check and compares that against the Agility defense of every target within the character's reach plus their rank in spaces. Any targets the attack succeeds against take half regular damage. On a Fantastic success, the targets take full damage and are knocked prone."
+  },
+  {
+    id: "p129",
+    name: "Group Flight",
+    set: "",
+    cost: "5 Focus",
+    page: 101,
+    duration: "Concentration",
+    action: "Standard",
+    description: "For every point of Ego the character has, they can hoist one ally into the air with them. The Flight Speed of the group is half the character's, and all affected allies must remain within 5 spaces times the character's rank. The character controls each ally's speed and position during the character's turn, but they can release any or all allies at any time."
+  },
+  {
+    id: "p130",
+    name: "Group Invisibiilty",
+    set: "Illusion",
+    cost: "15 Focus",
+    page: 102,
+    duration: "Concentration",
+    action: "Standard",
+    description: "For every point of Ego defense the character has, they can make one person or thing invisible, including themselves. Each of these can be one size bigger than them for every rank they have."
+  },
+  {
+    id: "p131",
+    name: "Group Levitation",
+    set: "Telekinesis",
+    cost: "5 Focus",
+    page: 102,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character can move up to one person per rank through the air in any direction at the character's Run Speed. The levitated target(s) must remain within 5 spaces times the character's rank. If any target does not wish to be moved like this, they must be telekinetically grabbed first."
+  },
+  {
+    id: "p132",
+    name: "Grow 1",
+    set: "Resize",
+    cost: "",
+    page: 102,
+    duration: "Permanent",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked. The character can grow up to huge size. They can return to their normal size at will."
+  },
+  {
+    id: "p133",
+    name: "Grow 2",
+    set: "Resize",
+    cost: "",
+    page: 102,
+    duration: "Permanent",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked. The character can grow up to gigantic size. They can return to their normal size at will."
+  },
+  {
+    id: "p134",
+    name: "Grow 3",
+    set: "Resize",
+    cost: "",
+    page: 102,
+    duration: "Permanent",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked. The character can grow up to titanic size. They can return to their normal size at will."
+  },
+  {
+    id: "p135",
+    name: "Grow 4",
+    set: "Resize",
+    cost: "",
+    page: 102,
+    duration: "Permanent",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked. The character can grow up to gargantuan size. They can return to their normal size at will."
+  },
+  {
+    id: "p136",
+    name: "Growing Attack",
+    set: "Resize",
+    cost: "5 Focus",
+    page: 102,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: the character grows. The character makes a close attack with an edge. If the attack succeeds, they do regular damage for the size they are growing to. On a Fantastic success, they do double damage and stun the target."
   }
 ];
 
