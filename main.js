@@ -1999,6 +1999,166 @@ const powersList = [
     action: "",
     description: "The character's reach is 10x normal."
   },
+  {
+    id: "p108",
+    name: "Fast Attacks",
+    set: "Melee Weapons",
+    cost: "",
+    page: 99,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character splits their attack to make two close attacks against separate targets within reach (or they can focus a single attack on a single target). Make a single Melee check and compare it to the targets' Melee defenses. On a success, the affected target takes half regular damage. On a Fantastic success, the affected target takes full damage, and the character can make a bonus attack with this power against any target within reach, with the same effect."
+  },
+  {
+    id: "p109",
+    name: "Fast Hands",
+    set: "Ranged Weapons",
+    cost: "",
+    page: 99,
+    duration: "Permanent",
+    action: "",
+    description: "The character gains one additional reaction per round. This reaction can be used only to trigger a Ranged Weapons power."
+  },
+  {
+    id: "p110",
+    name: "Fast Strikes",
+    set: "Martial Arts",
+    cost: "",
+    page: 99,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character splits their attack to make two close attacks against separate targets within reach (or they can focus a single attack on a single target). Make a single Melee check and compare it to the targets' Melee defenses. On a success, the affected target takes half regular damage. On a Fantastic success, the affected target takes full damage."
+  },
+  {
+    id: "p111",
+    name: "Flames of the Faltine",
+    set: "Magic",
+    cost: "5 Focus",
+    page: 99,
+    duration: "Instant",
+    action: "Standard",
+    description: "RANGE: 10 spaces. The character makes an Ego check against the Agility defense of a target in their line of sight. If the attack is a success, it inflicts regular damage. On a Fantastic success, the target takes double damage and then suffers 5 points of damage at the end of every round until someone uses an action to put out the flames."
+  },
+  {
+    id: "p112",
+    name: "Flare",
+    set: "Illusion",
+    cost: "10 Focus",
+    page: 99,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes an Ego check and compares that against the Vigilance defense of every enemy within 5 spaces. Each beaten enemy is blinded for one turn. On a Fantastic success, the flare inflicts regular damage too."
+  },
+  {
+    id: "p113",
+    name: "Flexible Bones 1",
+    set: "Plasticity",
+    cost: "",
+    page: 99,
+    duration: "Permanent",
+    action: "",
+    description: "The character gains Health Damage Reduction 1. They also have an edge on Agility checks for contortion and escape."
+  },
+  {
+    id: "p114",
+    name: "Flexible Bones 2",
+    set: "Plasticity",
+    cost: "",
+    page: 99,
+    duration: "Permanent",
+    action: "",
+    description: "The character gains Health Damage Reduction 2. They also have double edge on Agility checks for contortion and escape."
+  },
+  {
+    id: "p115",
+    name: "Flexible Fingers",
+    set: "Plasticity",
+    cost: "",
+    page: 99,
+    duration: "Permanent",
+    action: "Standard",
+    description: "With a standard action, the character can automatically pick any lock that requires a physical key. They can also shape their hands to form almost any other kind of simple tool."
+  },
+  {
+    id: "p116",
+    name: "Flight 1",
+    set: "",
+    cost: "",
+    page: 100,
+    duration: "Permanent",
+    action: "",
+    description: "The character can fly. Their combat Flight Speed is equal to their rank times their Run Speed. Outside of combat, they can move three times their Flight Speed."
+  },
+  {
+    id: "p117",
+    name: "Flight 2",
+    set: "",
+    cost: "",
+    page: 100,
+    duration: "Permanent",
+    action: "",
+    description: "The character can fly up to 50 times their Flight Speed."
+  },
+  {
+    id: "p118",
+    name: "Flying Double Kick",
+    set: "Martial Arts",
+    cost: "10 Focus",
+    page: 100,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a close attack against two enemies within reach. If an attack is a success, the enemy takes regular damage. If an attack is a Fantastic success, the enemy takes double damage and is knocked prone."
+  },
+  {
+    id: "p119",
+    name: "Focus Fire",
+    set: "Tactics",
+    cost: "10 Focus",
+    page: 100,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character calls out an enemy in line of sight and inspires one or more allies of their choice in earshot, up to the character's Vigilance. They gain an edge on all action checks against that enemy."
+  },
+  {
+    id: "p120",
+    name: "Focused Fury",
+    set: "Melee Weapons",
+    cost: "5+ Focus",
+    page: 100,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a close attack with an edge. For this attack, add +l to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes that total damage. On a Fantastic success, an affected target takes double that total damage and suffers the weapon's special effect."
+  },
+  {
+    id: "p121",
+    name: "Focused Strike",
+    set: "Martial Arts",
+    cost: "10+ Focus",
+    page: 100,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a close attack. Add +1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes that total damage. On a Fantastic success, an affected target takes double that total damage and is stunned for one round."
+  },
+  {
+    id: "p122",
+    name: "Fool",
+    set: "Telepathy",
+    cost: "5 Focus",
+    page: 101,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character uses a mirage to alter their appearance in the minds of anyone within 20 spaces per rank. Cameras (for instance) can still record them normally, but when people look in the character's direction, they see someone else. The target number for anyone trying to see through the mirage is the character's Logic defense. If the character is impersonating someone known to the other person, that person has an edge."
+  },
+  {
+    id: "p123",
+    name: "Furious Attacks",
+    set: "Melee Weapons",
+    cost: "10+ Focus",
+    page: 101,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character splits their attack to make two close attacks against separate targets within reach (or they can focus a single attack on a single target). Make a single Melee check and compare it to the targets' Melee defenses. For these attacks, add +1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes half that total damage. On a Fantastic success, an affected target takes full damage and suffers the weapon's special effect."
+  }
 ];
 
 // IDENTITY VARIABLES
