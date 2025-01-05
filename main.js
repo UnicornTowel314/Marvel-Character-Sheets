@@ -2398,6 +2398,106 @@ const powersList = [
     duration: "Instant",
     action: "Reaction",
     description: "TRIGGER: an enemy makes an attack against an Ally's Agility. RANGE: 5 spaces times the character's rank. The enemy has trouble on the attack. The shield then bounces back to the character."
+  },
+  {
+    id: "p148",
+    name: "Iconic Weapon",
+    set: "",
+    cost: "",
+    page: 104,
+    duration: "Permanent",
+    action: "",
+    description: "The character is known for owning and using a unique and powerful weapon, like Mjolnir (Thor's hammer) or Captain America's shield. The Narrator must approve the details of this weapon. This power can be taken more than once, but each time must be with a different weapon."
+  },
+  {
+    id: "p149",
+    name: "Icy Tendrils of Ikthalon",
+    set: "Magic",
+    cost: "5 Focus",
+    page: 104,
+    duration: "Instant",
+    action: "Standard",
+    description: "RANGE: 10 spaces. The character makes an Ego check against the Agility defense of a target in their line of sight. If the attack is a success, it inflicts regular damage. On a Fantastic success, the enemy takes double that total damage and is paralyzed by the ice."
+  },
+  {
+    id: "p150",
+    name: "Illumination",
+    set: "Illusion",
+    cost: "",
+    page: 105,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character illuminates one object or point in line of sight, within 50 spaces, with bright light. The character can maintain concentration on the effect even if they move out of range or line of sight."
+  },
+  {
+    id: "p151",
+    name: "Images of Ikonn",
+    set: "Magic",
+    cost: "5 Focus",
+    page: 105,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character creates one sound and sight illusory duplicate per rank of one person they've met (including themselves). The duplicates look and sound exactly like the original and are under the character's complete control. They start in the same space as the character and instantly move into any open space around them, up to 2 spaces away, during which time the character can swap places with any of the duplicates. If the character is duplicating themselves, the character's player should secretly record which one is the actual character. The duplicates can move up to 10 spaces away from the character, and they can pretend to attack (and miss) opponents. Any attack that hits a duplicate instantly removes it. If the character successfully attacks someone or does something else to make the truth evident, the illusion ends. This spell can also be used to see through someone else's illusion. When used in this way, it gives the character a double edge on their Ego check."
+  },
+  {
+    id: "p152",
+    name: "Immovable",
+    set: "Shield Bearer and Super-Strength",
+    cost: "",
+    page: 105,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: the character is knocked back or knocked prone. For every point of Melee defense the character has, they can reduce knockback by 1 space."
+  },
+  {
+    id: "p153",
+    name: "Information Upload",
+    set: "Telepathy",
+    cost: "5 Focus",
+    page: 105,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character transmits a knowledge-based label (a trait or tag) of their own to a target with whom they have established a telepathic link- willing or not. The label lasts until the target sleeps. The character can also impart any other kind of knowledge they have to a target this way. The process is almost instantaneous."
+  },
+  {
+    id: "p154",
+    name: "Inspiration",
+    set: "",
+    cost: "",
+    page: 105,
+    duration: "1 Round",
+    action: "Standard",
+    description: "The character inspires an ally in earshot. The ally gains an edge on all action checks until the start of the character's next turn."
+  },
+  {
+    id: "p155",
+    name: "Instant Replay",
+    set: "Omniversal Travel",
+    cost: "10 Focus",
+    page: 105,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: the character fails a check. Once per battle, the character can make a second attempt at a check that they just failed, erasing and replacing the first attempt entirely."
+  },
+  {
+    id: "p156",
+    name: "Integrity",
+    set: "",
+    cost: "",
+    page: 105,
+    duration: "Permanent",
+    action: "",
+    description: "The character can use their Logic defense score against Ego attacks too."
+  },
+  {
+    id: "p157",
+    name: "Invisibility",
+    set: "Illusion",
+    cost: "5 Focus",
+    page: 105,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character becomes invisible. They have an edge on Agility checks to sneak past people, and enemies have trouble on Vigilance checks to perceive them. It's even harder to spot things that are invisible but aren't moving. Characters must be actively trying to do so to be able to make a Vigilance check."
   }
 ];
 
