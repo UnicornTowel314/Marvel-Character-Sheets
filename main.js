@@ -1728,7 +1728,277 @@ const powersList = [
     duration: "Instant",
     action: "Standard",
     description: "The character makes a ranged attack against an enemy within 2 spaces. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is bleeding."
-  }
+  },
+  {
+    id: "p81",
+    name: "Edit Memory",
+    set: "Telepathy",
+    cost: "15 Focus",
+    page: 95,
+    duration: "Permanent",
+    action: "Standard",
+    description: "The character alters the memory of a target with whom they've established a Telepathic Link. This can be as simple as erasing a chunk of the target's memory or as complicated as implanting entirely new memories. The Narrator sets the target number based on how complex the new memory is and how hard it would be to integrate such memories into the character's other memories. The character makes a Logic check against the target's Logic defense. On a success, the memories are altered. On a Fantastic success, the target has trouble on checks to refute such memories in the future. Any time the target is given good reason to doubt the edited memory, they can make a Logic check to refute the new version of their memories and recover their original memories. If they succeed, they remember both the original memory and the edited one. On a Fantastic success, they know for sure who did this to them."
+  },
+  {
+    id: "p82",
+    name: "Elemental Barrage",
+    set: "Elemental Control",
+    cost: "15 Focus",
+    page: 95,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character designates a space within their line of sight. The attack can affect every enemy within 10 spaces of that. The character makes a single Ego check and compares it to each target's Resilience defense. Affected enemies take half regular damage. On a Fantastic success, they take full regular damage and the elemental type's special effect."
+  },
+  {
+    id: "p83",
+    name: "Elemental Barrier",
+    set: "Elemental Control",
+    cost: "5 Focus",
+    page: 95,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character forms a wall of their element within their line of sight and up to 10 spaces away per rank. This covers up to 2 spaces across (vertically/horizontally) per their rank. The character makes an Agility check and compares the results against the Agility defense of any target in the affected spaces. On a success, the character chooses which side of the barrier the target winds up on. On a failure, the target chooses. On a Fantastic success, the target suffers the element's special effect too. Attacks against the barrier are against the character's Ego defense. Any attacks against it that do 10 points of damage or less are instantly absorbed, and the barrier continues. If an attack does more than 10 points of damage, it destroys the barrier. Either way, the attack leaves those behind the barrier unharmed."
+  },
+  {
+    id: "p84",
+    name: "Elemental Blast",
+    set: "Elemental Control",
+    cost: "5+ Focus",
+    page: 95,
+    duration: "Instant",
+    action: "Standard",
+    description: "RANGE: 10 spaces. The character makes a ranged attack with an edge at an enemy in line of sight. For this attack, add +l to the character's Agility damage bonus for every 2 points of Focus they spend. On a success, an affected target takes that total damage. On a Fantastic success, an affected target takes double that total damage and suffers the elemental type's special effect."
+  },
+  {
+    id: "p85",
+    name: "Elemental Burst",
+    set: "Elemental Control",
+    cost: "",
+    page: 95,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a ranged attack against an enemy in line of sight. If the attack is a success, it inflicts regular damage. On a Fantastic success, the enemy takes double damage instead and the elemental type's special effect."
+  },
+  {
+    id: "p86",
+    name: "Elemental Form",
+    set: "Elemental Control",
+    cost: "",
+    page: 95,
+    duration: "Permanent",
+    action: "",
+    description: "The character's body is made entirely of their element, which gives them a steady supply of their element to use and makes them essentially unkillable. When they lose all their Health, their form loses its cohesion and falls apart. When they have at least 1 Health-which they can gain back over time, normally they can re-form. If the character wishes to use their elemental body in unusual ways, they should pick Plasticity powers. If they wish to be able to be fully human at times, they should take the Shape-Shift power."
+  },
+  {
+    id: "p87",
+    name: "Elemental Grab",
+    set: "Elemental Control",
+    cost: "5 Focus",
+    page: 96,
+    duration: "Concentration",
+    action: "Standard",
+    description: "RANGE: varies. The character makes an Ego attack against a target's Melee defense within 5 spaces times the character's rank. If the attack is a success, the character grabs the target with their element. On a Fantastic success, the target can also be pinned and suffers the element's special effect. Breaking free requires a successful Melee check against target number 20."
+  },
+  {
+    id: "p88",
+    name: "Elemental Infusion",
+    set: "Elemental Control",
+    cost: "5 Focus",
+    page: 96,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character infuses their energy into a handheld weapon in their grasp. When the character gets a Fantastic success attacking with the weapon, add the energy's special effect."
+  },
+  {
+    id: "p89",
+    name: "Elemental Prison",
+    set: "Elemental Control",
+    cost: "Same as character's Elemental Protection power",
+    page: 96,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character picks a point within their line of sight and traps any chosen targets within up to 5 spaces times their rank-in a prison comprised of their element. When the Elemental Prison is formed, the character makes an Ego check and compares the results against the Agility defense of targets inside the enclosed spaces. On each success, the character traps the target within the prison's perimeter. On a Fantastic success, such imprisoned people suffer full damage and the element's special effect too. Attacks against the prison are against the character's Ego defense. Any attacks against the prison are absorbed as if made against the character's Elemental Protection power, and the prison continues. If an attack does more damage than the character's Elemental Protection power can sustain, it destroys the prison, but no one inside is harmed."
+  },
+  {
+    id: "p90",
+    name: "Elemental Protection 1",
+    set: "Elemental Control",
+    cost: "5 Focus",
+    page: 96,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked or otherwise in danger. The character protects themselves with their element. Any attacks against them that do 10 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 10 points of damage, it destroys the protection. Either way, the character remains unharmed."
+  },
+  {
+    id: "p91",
+    name: "Elemental Protection 2",
+    set: "Elemental Control",
+    cost: "10 Focus",
+    page: 96,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked or otherwise in danger. The character protects themselves with their element. Any attacks against them that do 20 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 20 points of damage, it destroys the protection. Either way, the character remains unharmed."
+  },
+  {
+    id: "p92",
+    name: "Elemental Protection 3",
+    set: "Elemental Control",
+    cost: "15 Focus",
+    page: 96,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked or otherwise in danger. The character protects themselves with their element. Any attacks against them that do 30 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 30 points of damage, it destroys the protection. Either way, the character remains unharmed."
+  },
+  {
+    id: "p93",
+    name: "Elemental Protection 3",
+    set: "Elemental Control",
+    cost: "20 Focus",
+    page: 96,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked or otherwise in danger. The character protects themselves with their element. Any attacks against them that do 40 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 40 points of damage, it destroys the protection. Either way, the character remains unharmed."
+  },
+  {
+    id: "p94",
+    name: "Elemental Push",
+    set: "Elemental Control",
+    cost: "10 Focus",
+    page: 96,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes an Ego attack against the target's Agility defense. If the attack succeeds, the character can move the target in any direction, up to 1 space times the character's rank. On a Fantastic success, the target also takes regular damage, is knocked prone and suffers the element's special effect."
+  },
+  {
+    id: "p95",
+    name: "Elemental Reinforcement",
+    set: "Elemental Control",
+    cost: "Varies",
+    page: 97,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: damage gets through an elemental power. The character can transfer any Health damage that gets through an elemental power that grants damage protection to their Focus instead, leaving the protection intact."
+  },
+  {
+    id: "p96",
+    name: "Elemental Ricochet",
+    set: "Elemental Control",
+    cost: "10 Focus",
+    page: 97,
+    duration: "Instant",
+    action: "Standard",
+    description: "RANGE: 10x character's rank. The character makes a ranged attack against a target in line of sight. I f the attack is a success, it inflicts regular damage. On a Fantastic success, energy also bounces off the first target to another in line of sight, and the character can make a new attack against that target, adding the new range to the previous attack's range. This can be repeated until an attack is not fantastic."
+  },
+  {
+    id: "p97",
+    name: "Elemental Sphere",
+    set: "Elemental Control",
+    cost: "Same as character's Elemental Protection power",
+    page: 97,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "The character envelops themselves-and any chosen people within up to 5 spaces times their rank- in a protective sphere comprised of their element. When the sphere is formed, the character makes an Ego check and compares the results against the Agility defense of unwanted characters in the enclosed spaces. On a success, the character can move any unwanted people within the sphere's perimeter to spaces outside of the sphere. On a Fantastic success, such moved people suffer full damage and the element's special effect. Attacks against the sphere are against the character's Ego defense. Any attacks against the sphere are absorbed as if made against the character's Elemental Protection power, and the sphere continues. If an attack does more damage than the character's Elemental Protection power can sustain, it destroys the sphere, but no one inside is harmed."
+  },
+  {
+    id: "p98",
+    name: "Elemental Suffocation",
+    set: "Elemental Control",
+    cost: "15 Focus",
+    page: 97,
+    duration: "Instant",
+    action: "Standard or Reaction",
+    description: "RANGE: varies. TRIGGER: the target is grabbed with Elemental Grab. The character makes an Ego attack against the grabbed target's Resilience defense. If the attack is a success, the target takes regular damage. On a Fantastic success, the target can also be pinned and suffers the element's special effect. With elements that aren't suited to suffocation, this power chokes the target instead."
+  },
+  {
+    id: "p99",
+    name: "Energy Absorption",
+    set: "",
+    cost: "15 Focus",
+    page: 97,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: the character takes Health damage. The character can take any Health damage done to them (after applying any damage reduction), ignore it and add that number to their Focus instead. In this way, they can increase their Focus up to double their regular maximum Focus. Once the combat is over, any extra Focus over the character's regular maximum Focus score fades away."
+  },
+  {
+    id: "p100",
+    name: "Environmental Protection",
+    set: "",
+    cost: "",
+    page: 98,
+    duration: "Permanent",
+    action: "",
+    description: "The character is not harmed by intense cold or heat, the pressure of the deep seas or the intense radiation and vacuum of space. The player can choose any or all of these protections, as best fits with the character concept."
+  },
+  {
+    id: "p101",
+    name: "ESP",
+    set: "Telepathy",
+    cost: "",
+    page: 98,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character can reach out with their mind to sense the presence of others within 100 spaces per rank. This tells them the person's location and general status. It can also identify if they have super-powers or not. If a target or targets wish to remain undetected, the character must make a Logic check and compare it against each target's Vigilance defense. If they succeed, they sense the target. On a Fantastic success, they can also identify the source of any powers the target has."
+  },
+  {
+    id: "p102",
+    name: "Evasion",
+    set: "",
+    cost: "",
+    page: 98,
+    duration: "Permanent",
+    action: "",
+    description: "The character can use their Agility defense score against Melee attacks too."
+  },
+  {
+    id: "p103",
+    name: "Exorcism",
+    set: "Magic",
+    cost: "15 Focus",
+    page: 98,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character attempts to remove the possessor from a possessed target. The character makes an Ego check against the possessor's Ego defense. On a success, the possessor's concentration is broken, ending the possession. On a Fantastic success, all of the possessor's concentrations are broken, and the possessor is stunned for one round too."
+  },
+  {
+    id: "p104",
+    name: "Exploit",
+    set: "Melee Weapons",
+    cost: "5 Focus",
+    page: 98,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: A Fantastic success on an attack using the character's weapon that deals at least 1 point of damage. The character makes a Melee attack against the target's Resilience defense score. If the attack is a success, the damage it does ignores Health Damage Reduction. On a Fantastic success, the target suffers double damage and the weapon's special effect."
+  },
+  {
+    id: "p105",
+    name: "Extend Invisibility",
+    set: "Illusion",
+    cost: "10 Focus",
+    page: 99,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character makes something-a single person or object-within reach invisible. This can be one size bigger than them for every rank they have."
+  },
+  {
+    id: "p106",
+    name: "Extended Reach 1",
+    set: "Plasticity",
+    cost: "",
+    page: 99,
+    duration: "Permanent",
+    action: "",
+    description: "The character's reach quadruples."
+  },
+  {
+    id: "p107",
+    name: "Extended Reach 2",
+    set: "Plasticity",
+    cost: "",
+    page: 99,
+    duration: "Permanent",
+    action: "",
+    description: "The character's reach is 10x normal."
+  },
 ];
 
 // IDENTITY VARIABLES
