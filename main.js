@@ -2498,6 +2498,66 @@ const powersList = [
     duration: "Concentration",
     action: "Standard",
     description: "The character becomes invisible. They have an edge on Agility checks to sneak past people, and enemies have trouble on Vigilance checks to perceive them. It's even harder to spot things that are invisible but aren't moving. Characters must be actively trying to do so to be able to make a Vigilance check."
+  },
+  {
+    id: "p158",
+    name: "Jinx",
+    set: "Magic",
+    cost: "5 Focus",
+    page: 105,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character makes an Ego check against the target's Ego defense. If it succeeds, the target has trouble on all actions. On a Fantastic success, the target loses their next standard action."
+  },
+  {
+    id: "p159",
+    name: "Jump 1",
+    set: "Spider-Powers and Super-Strength",
+    cost: "",
+    page: 106,
+    duration: "Permanent",
+    action: "",
+    description: "The character gains the Jump movement mode with a Jump Speed equal to their Run Speed. They can jump this distance in any direction, vertically as well as horizontally."
+  },
+  {
+    id: "p160",
+    name: "Jump 2",
+    set: "Spider-Powers and Super-Strength",
+    cost: "",
+    page: 106,
+    duration: "Permanent",
+    action: "",
+    description: "The character's Jump Speed is equal to their rank times their Run Speed. Outside of combat, they can move three times as fast."
+  },
+  {
+    id: "p161",
+    name: "Jump 3",
+    set: "Spider-Powers and Super-Strength",
+    cost: "",
+    page: 106,
+    duration: "Permanent",
+    action: "",
+    description: "Outside of combat, the character can jump up to 50 times their Jump Speed."
+  },
+  {
+    id: "p162",
+    name: "Keep Moving",
+    set: "Tactics",
+    cost: "",
+    page: 106,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: an ally in line of sight and earshot is demoralized or stunned. The demoralized or stunned condition ends."
+  },
+  {
+    id: "p163",
+    name: "Kill Zone",
+    set: "Ranged Weapons",
+    cost: "15 Focus",
+    page: 106,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: an enemy in the character's line of sight starts to move. The character makes a ranged attack on the enemy. If the attack is a success, the enemy takes normal damage. On a Fantastic success, the enemy takes double damage. Either way, the character regains their reaction. Each target can be affected by this attack by this character only once per round."
   }
 ];
 
