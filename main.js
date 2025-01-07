@@ -2558,6 +2558,56 @@ const powersList = [
     duration: "Instant",
     action: "Reaction",
     description: "TRIGGER: an enemy in the character's line of sight starts to move. The character makes a ranged attack on the enemy. If the attack is a success, the enemy takes normal damage. On a Fantastic success, the enemy takes double damage. Either way, the character regains their reaction. Each target can be affected by this attack by this character only once per round."
+  },
+  {
+    id: "p164",
+    name: "Leaping Leglock",
+    set: "Martial Arts",
+    cost: "15 Focus",
+    page: 106,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a close attack against an enemy. If the attack is a success, the enemy is grabbed and dealt regular damage. On a Fantastic success, the enemy takes double damage and is grabbed and stunned for one round. Either way, both the character and the enemy are knocked prone."
+  },
+  {
+    id: "p165",
+    name: "Leech Life",
+    set: "Magic",
+    cost: "5 Focus",
+    page: 106,
+    duration: "Instant",
+    action: "Reaction",
+    description: "The character makes an Ego attack against the target's Resilience defense. If it succeeds, the target takes regular Health damage, and the character heals half that much Health for themselves. On a Fantastic success, the character heals the full Health damage instead."
+  },
+  {
+    id: "p166",
+    name: "Leg Sweep",
+    set: "Martial Arts",
+    cost: "5 Focus",
+    page: 106,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a close attack. If it succeeds, the enemy takes regular damage and is knocked prone. If it's a Fantastic success, the enemy is stunned for one round too."
+  },
+  {
+    id: "p167",
+    name: "Levitation",
+    set: "Telekinesis",
+    cost: "",
+    page: 106,
+    duration: "Permanent",
+    action: "",
+    description: "The character can move through the air in any direction at their Run Speed."
+  },
+  {
+    id: "p168",
+    name: "Lightning Actions",
+    set: "Super-Speed",
+    cost: "",
+    page: 106,
+    duration: "Permanent",
+    action: "",
+    description: "The character has one extra standard action and one extra reaction each turn. Additionally, they can turn their Marvel die to a Fantastic success when making an initiative check."
   }
 ];
 
