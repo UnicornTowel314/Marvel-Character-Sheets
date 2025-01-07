@@ -2608,6 +2608,256 @@ const powersList = [
     duration: "Permanent",
     action: "",
     description: "The character has one extra standard action and one extra reaction each turn. Additionally, they can turn their Marvel die to a Fantastic success when making an initiative check."
+  },
+  {
+    id: "p169",
+    name: "Machine Telepathy",
+    set: "Telepathy",
+    cost: "",
+    page: 107,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character can communicate telepathically with one machine at a time, and they must have met or seen the machine before. The communication can be verbal, visual or even more complex, such as imparting location information. There is no limit to the distance of the communication, as long as the character and the machine are in the same dimension. Simple machines do not have much to offer in the way of conversation, but they are also generally compliant with requests. Complex machines-like computers, smartphones and other electronics-are also often compliant, but if they are secured in any way, they usually refuse to communicate with strangers. A Logic check can get the character past such security, and the Narrator should set the target number according to the strength of the security."
+  },
+  {
+    id: "P170",
+    name: "Macrodimensional Travel",
+    set: "Resize",
+    cost: "15 Focus",
+    page: 107,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character can grow enough to travel into the Macroverse, the Overspace or other dimensions of enlarged space. They can return to their normal size at will. Note that this is something that most characters would rarely want to do, as it removes them entirely from their regular universe and places them in a dimension in which the rules of time and space work differently. An hour in the Macroverse, for example, is roughly equivalent to a month in a regular universe. A trip to the Overspace is too overwhelming for most minds to handle."
+  },
+  {
+    id: "p171",
+    name: "Memory Blip",
+    set: "Telepathy",
+    cost: "5 Focus",
+    page: 107,
+    duration: "Permanent",
+    action: "Standard",
+    description: "The character causes a target with whom they've established a Telepathic Link to forget something that's happened in the past hour. This gap can be up to an hour in length. The character makes a Logic check against the target's Logic defense. On a success, the memories are forgotten. On a Fantastic success, the target has trouble on checks to recover such memories in the future. Any time the target is given good reason to question the blank in their memory, they can make a Logic check to recover their memory. If they succeed, the original memory floods back. On a Fantastic success, they know for sure who did this to them."
+  },
+  {
+    id: "p172",
+    name: "Mental Punch",
+    set: "Telepathy",
+    cost: "",
+    page: 108,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a Melee attack against a target. If the attack is a success, it inflicts regular Focus damage (instead of Health damage). On a Fantastic success, the target takes double damage instead and is stunned for one round."
+  },
+  {
+    id: "p173",
+    name: "Mental Shelter",
+    set: "Telepathy",
+    cost: "10 Focus",
+    page: 108,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character extends their mental defenses to protect any chosen people within up to 5 spaces times their rank. The protected targets are granted Focus Damage Reduction equal to the character's Uncanny power."
+  },
+  {
+    id: "p174",
+    name: "Microdimensional Travel",
+    set: "Resize",
+    cost: "15 Focus",
+    page: 108,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character can shrink enough to travel into subatomic realms. They can return to their normal size at will. Note that this is something that most characters would rarely want to do, as it removes them entirely from their regular universe and places them in a dimension in which the rules of time and space work differently. The Underspace, for example, might make a fine place to hide, but there's little else of interest there."
+  },
+  {
+    id: "p175",
+    name: "Mighty 1",
+    set: "",
+    cost: "",
+    page: 108,
+    duration: "Permanent",
+    action: "",
+    description: "Treat the character as one size bigger for lifting, carrying, swinging and throwing things. They also add +1 to their Melee damage multiplier, and they gain a +1 bonus to Melee checks other than attacks."
+  },
+  {
+    id: "p176",
+    name: "Mighty 2",
+    set: "",
+    cost: "",
+    page: 109,
+    duration: "Permanent",
+    action: "",
+    description: "Treat the character as two sizes bigger for lifting, carrying, swinging and throwing things. They also add +2 to their Melee damage multiplier, and they gain a +2 bonus to Melee checks other than attacks."
+  },
+  {
+    id: "p177",
+    name: "Mighty 3",
+    set: "",
+    cost: "",
+    page: 109,
+    duration: "Permanent",
+    action: "",
+    description: "Treat the character as three sizes bigger for lifting, carrying, swinging and throwing things. They also add +3 to their Melee damage multiplier, and they gain a +3 bonus to Melee checks other than attacks."
+  },
+  {
+    id: "p178",
+    name: "Mighty 4",
+    set: "",
+    cost: "",
+    page: 109,
+    duration: "Permanent",
+    action: "",
+    description: "Treat the character as four sizes bigger for lifting, carrying, swinging and throwing things. They also add +4 to their Melee damage multiplier, and they gain a +4 bonus to Melee checks other than attacks."
+  },
+  {
+    id: "p179",
+    name: "Mind Interrogation",
+    set: "Telepathy",
+    cost: "5 Focus",
+    page: 109,
+    duration: "1 Round",
+    action: "Standard",
+    description: "The character can delve into the mind of a single person with whom they have established a telepathic link. This requires a Logic check against the target's Logic defense. On a success, the character can ask a single simple question and get the answer from the target's mind. On a Fantastic success, the character can get more complex information."
+  },
+  {
+    id: "p180",
+    name: "Mind Reading",
+    set: "Telepathy",
+    cost: "",
+    page: 109,
+    duration: "1 Round",
+    action: "Standard",
+    description: "The character can read the thoughts of a single person with whom they have established a Telepathic Link. This requires a Logic check against the target's Logic defense. On a success, the character can read the target's surface thoughts. On a Fantastic success, the character can ask a single simple question and get the answer from the target's mind."
+  },
+  {
+    id: "p181",
+    name: "Mirage",
+    set: "Telepathy",
+    cost: "10 Focus",
+    page: 109,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character creates a full-sensory mirage that affects any target with whom they have established a link. The mirage can be of anything the character desires, and it can move freely."
+  },
+  {
+    id: "p182",
+    name: "Mirror Images",
+    set: "Illusion",
+    cost: "10 Focus",
+    page: 109,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character creates one sound and sight illusory duplicate of themselves per rank. The duplicates look and sound exactly like them and are under their complete control. They start in the same space as the character and instantly move into any open space around them, up to 2 spaces away, during which time the character can swap places with any of the duplicates. The character's player should secretly record which one is the actual character. The duplicates can move up to 10 spaces away from the character, and they can pretend to attack (and miss) opponents. Any attack that hits a duplicate instantly removes it. If the character successfully attacks someone or does something else to make the truth evident, the illusion ends."
+  },
+  {
+    id: "p183",
+    name: "Mists of Morpheus",
+    set: "Magic",
+    cost: "10 Focus",
+    page: 109,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character makes an Ego check against the target's Vigilance defense. On a success, the target is stunned and remains that way while the character concentrates. On a Fantastic success, the target falls asleep instead."
+  },
+  {
+    id: "p184",
+    name: "Mists of Munnopor",
+    set: "Magic",
+    cost: "5 Focus",
+    page: 109,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character creates a thick fog for up to 100 spaces per rank around them that blocks all line of sight bey ond 10 spaces and keeps people or creatures inside it from flying, gliding or webslinging."
+  },
+  {
+    id: "p185",
+    name: "Molecular Destabilization",
+    set: "Super-Speed",
+    cost: "15 Focus",
+    page: 110,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a close attack against an object their size or smaller. If the attack is a success, the object explodes. All targets within 2 spaces of the objectother than the character-take regular damage. On a Fantastic success, double the damage and ignore any Health Damage Reduction."
+  },
+  {
+    id: "p186",
+    name: "Multiversal Portal",
+    set: "Omniversal Travel",
+    cost: "15 Focus",
+    page: 110,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character opens a glowing portal in a space next to them that moves anything that enters it between that space and its destination, which forms a matched glowing portal in the other place. The other end of the portal must be in a clear space in another universe that the character has been to. Anything can move through the portal in either direction until it is closed, which the character can do at will."
+  },
+  {
+    id: "p187",
+    name: "Multiversal Travel",
+    set: "Omniversal Travel",
+    cost: "10 Focus",
+    page: 110,
+    duration: "Instant",
+    action: "Standard or Movement",
+    description: "The character instantly moves from their current universe to another universe. For instance: from Earth-616 to Earth-65. When they move to the other universe, they can arrive in any place they've been to before. Otherwise, they arrive at the closest available corresponding space in the other universe."
+  },
+  {
+    id: "p188",
+    name: "Multiversal Travel Other",
+    set: "Omniversal Travel",
+    cost: "15 Focus",
+    page: 110,
+    duration: "Instant",
+    action: "Standard, Movement, or Reaction",
+    description: "TRIGGER: the target is grabbed. The character makes an Ego check against the Vigilance of a target they have grabbed. If the check is successful, the character can send the target to another universe. The target can be sent to any location in that universe that the character has been to before. Otherwise, the target arrives at the closest available corresponding space in the other universe."
+  },
+  {
+    id: "p189",
+    name: "Multiversal Travel Together",
+    set: "Omniversal Travel",
+    cost: "10 Focus",
+    page: 110,
+    duration: "Instant",
+    action: "Standard, Movement, or Reaction",
+    description: "TRIGGER: the target is grabbed. The character moves to a different universe, taking any person they are touching with them. If the target does not wish to come along, the character must grab them first. When they move to the other universe, they can arrive in any place they've been to before. Otherwise, they arrive at the closest available corresponding space in the other universe."
+  },
+  {
+    id: "p190",
+    name: "On Your Feet",
+    set: "Tactics",
+    cost: "5 Focus",
+    page: 111,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: an ally in line of sight and earshot is knocked prone. All prone allies within earshot, who are able to, can immediately stand up for free. Allies currently unable to stand up for any reason are not affected."
+  },
+  {
+    id: "p191",
+    name: "Operations Center",
+    set: "Tactics",
+    cost: "15 Focus",
+    page: 111,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character inspires one or more allies of their choice in earshot, up to the character's Vigilance defense. Affected allies gain an edge on all action checks until the start of the character's next turn. The character breaks concentration on this power if they use a movement action."
+  },
+  {
+    id: "p192",
+    name: "Orchestra of Overkill",
+    set: "Ranged Weapon",
+    cost: "15 Focus",
+    page: 111,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes an Agility check and compares that against the Agility defense of every enemy within 10 spaces and in their line of sight. Each success does half regular damage. On a Fantastic success, each enemy takes full damage instead and is bleeding."
+  },
+  {
+    id: "p193",
+    name: "Orders",
+    set: "Telepathy",
+    cost: "15 Focus",
+    page: 111,
+    duration: "Permanent",
+    action: "Standard",
+    description: "The character gives an order to a target with whom they've established a Telepathic Link and who has no Focus left. The character makes a Logic check against the target's Logic defense. On a success, the target complies with the orders. On a Fantastic success, the character gains an edge the next time they use this power against this same target. The command must be to do something that can be completed in a n hour or less. If it involves harming someone, the character has trouble on the check. If it would cause the target to harm themselves, the character has double trouble on the check."
   }
 ];
 
