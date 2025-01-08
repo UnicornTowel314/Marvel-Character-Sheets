@@ -2858,6 +2858,146 @@ const powersList = [
     duration: "Permanent",
     action: "Standard",
     description: "The character gives an order to a target with whom they've established a Telepathic Link and who has no Focus left. The character makes a Logic check against the target's Logic defense. On a success, the target complies with the orders. On a Fantastic success, the character gains an edge the next time they use this power against this same target. The command must be to do something that can be completed in a n hour or less. If it involves harming someone, the character has trouble on the check. If it would cause the target to harm themselves, the character has double trouble on the check."
+  },
+  {
+    id: "p194",
+    name: "Partial Phase",
+    set: "Phasing",
+    cost: "5 Focus",
+    page: 111,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character has greater control over their phasing ability. They can make any portion of their body and clothing tangible or intangible, as they like."
+  },
+  {
+    id: "p195",
+    name: "Penance Stare",
+    set: "Magic",
+    cost: "",
+    page: 111,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes an Ego attack against a target character within 3 spaces per rank. If it's a success, the target takes Focus damage. On a Fantastic success, the target takes double damage and is paralyzed for one round. Characters with the Heroic tag take half the listed damage from this power in either case. If a target is shattered by this power, they can recover, but they come back in one of two ways. Either they are cleansed of their sins and ready to make a new start with a clean slate, or their emotions are drained from them permanently. How this works in each case is up to the Narrator."
+  },
+  {
+    id: "p196",
+    name: "Phase Object",
+    set: "Phasing",
+    cost: "5 Focus",
+    page: 111,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character can make any object they are touching intangible. The object (and things attached to or inside of it) can be up to their rank in sizes bigger than them. For example, if they are Rank 5, the object can be 5 sizes bigger than them. For an average person, this would be Gargantuan."
+  },
+  {
+    id: "p197",
+    name: "Phase Other",
+    set: "Phasing",
+    cost: "10 Focuse",
+    page: 111,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the target is grabbed. The character can make any person (and their clothing) they are touching intangible. The character can also phase any people the initial person is touching or grabbing. People the character has phased remain tangible to each other. If the target does not wish to be phased, the character must grab them first. When contact is broken, the phasing for those no longer in contact with the character (even indirectly) ends. If a person is inside something when they stop phasing, they are automatically pushed out of it but take damage from the disruption equal to a standard action check. The damage multiplier is 1 for every space they must move to reach a clear area. If this kills them, their body is trapped inside the material they were phased into."
+  },
+  {
+    id: "p198",
+    name: "Phase Self",
+    set: "Phasing",
+    cost: "",
+    page: 112,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character (and their clothing) becomes intangible and can move through anything as if it wasn't there. Nothing can physically affect them, nor can they affect anything else that is not phasing along with them."
+  },
+  {
+    id: "p199",
+    name: "Phase Walk",
+    set: "Phasing",
+    cost: "5 Focus",
+    page: 112,
+    duration: "Concentration",
+    action: "",
+    description: "When phasing, the character can move freely in any direction through anything-not just air, but also water, buildings and so on- at their Run Speed. The character can take anything or anyone they are phasing along with them."
+  },
+  {
+    id: "p200",
+    name: "Point-Blank Parry",
+    set: "Ranged Weapons",
+    cost: "5 Focus",
+    page: 112,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: an enemy within 2 spaces misses an attack against the character. The character makes a ranged attack against the enemy who missed them. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is bleeding."
+  },
+  {
+    id: "p201",
+    name: "Possess Vehicle",
+    set: "Magic",
+    cost: "10 Focus",
+    page: 112,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character takes magical control of a vehicle they are inside of or touching. Hellfire engulfs the outside of the vehicle, but it does no damage to it. Anyone that comes into contact with it, though, takes regular damage with a damage multiplier equal to the character's rank. On a Fantastic success, it inflicts regular Health damage and regular Focus damage instead. The character controls the vehicle by will, as long as it is within 20 spaces times the character's rank. They use their Ego for all checks to operate it, and they get an edge on all such checks. The vehicle's speed doubles. It can climb walls at this speed and can even make jumps at that same speed."
+  },
+  {
+    id: "p202",
+    name: "Possession",
+    set: "Magic",
+    cost: "20 Focus",
+    page: 113,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character makes an Ego check with trouble against the Ego defense of a character who has no Focus left. On a success, the character takes over the target's body completely. The character's Ego defense is the target number for any checks to end the possession. If the character attempts to harm someone with the possessed body, the target gets to make an Ego check to end the possession. If the target has the Heroic tag, they get an edge on the check. If the character attempts to harm the possessed body, the target gets an edge on the check. If they have the Heroic tag, they get a double edge."
+  },
+  {
+    id: "p203",
+    name: "Powerful Hex",
+    set: "Magic",
+    cost: "5+ Focus",
+    page: 113,
+    duration: "Varies",
+    action: "Standard",
+    description: "The character casts a hex that allows them to use any other power that they have the rank to use, even if they would not normally meet the power's other prerequisites. They must pay whatever the regular Focus cost is for that power, plus 5 Focus. If the duration of the used power is permanent, it is concentration for the character instead. If the power is a numbered permanent power (like Mighty 3), the Focus cost is 5 times that number instead. (Mighty 3 would cost 15 Focus.)"
+  },
+  {
+    id: "p204",
+    name: "Probability-Manipulation Hex",
+    set: "Magic",
+    cost: "10 Focus",
+    page: 113,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "When an ally within 5 spaces times the character's rank attempts a check on which they have trouble, this hex eliminates all trouble and gives them an edge instead."
+  },
+  {
+    id: "p205",
+    name: "Protection Hex",
+    set: "Magic",
+    cost: "10 Focus",
+    page: 113,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character produces a hex to help protect themselves. Make an Ego check. The result is now the character's defense against any attack. If the result isn't as high as the character would like, they can end the hex and try again later. On a Fantastic success, the hex also grants Health Damage Reduction 1 for its duration."
+  },
+  {
+    id: "p206",
+    name: "Quick Phase",
+    set: "Phasing",
+    cost: "5 Focus",
+    page: 113,
+    duration: "Concentration",
+    action: "Reaction",
+    description: "TRIGGER: the character is attacked. The character and their clothing can instantly become intangible."
+  },
+  {
+    id: "p207",
+    name: "Quick Toss",
+    set: "Super-Strength",
+    cost: "10 Focus",
+    page: 113,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: a person the character can pick up is grabbed. The character throws the grabbed person at another target. The range is determined by the level of the character's Mighty power and the grabbed person's size. The character makes a ranged attack against the target. A failure inflicts regular damage on the thrown person, who falls prone within 1 space of the target. If the attack is a success, the target takes regular damage too. On a Fantastic success, the target is knocked prone as well."
   }
 ];
 
