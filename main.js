@@ -2998,7 +2998,116 @@ const powersList = [
     duration: "Instant",
     action: "Reaction",
     description: "TRIGGER: a person the character can pick up is grabbed. The character throws the grabbed person at another target. The range is determined by the level of the character's Mighty power and the grabbed person's size. The character makes a ranged attack against the target. A failure inflicts regular damage on the thrown person, who falls prone within 1 space of the target. If the attack is a success, the target takes regular damage too. On a Fantastic success, the target is knocked prone as well."
-  }
+  },
+  {
+    id: "p208",
+    name: "Rally on Me",
+    set: "Tactics",
+    cost: "10 Focus",
+    page: 113,
+    duration: "Instant",
+    action: "Standard",
+    description: "Any allies in earshot can be affected, up to a number equal to the character's Vigilance. Each affected ally can move toward the character at half speed. If they are within the character's reach at the end of this move, they recover lost Focus equal to 5 times the character's rank. The character can use this power once per battle."
+  },
+  {
+    id: "p209",
+    name: "Regain Focus",
+    set: "Martial Arts",
+    cost: "",
+    page: 114,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character recovers Focus equal to their Vigilance."
+  },
+  {
+    id: "p210",
+    name: "Reinforced Skeleton",
+    set: "",
+    cost: "",
+    page: 114,
+    duration: "Permanent",
+    action: "",
+    description: "The character gains Health Damage Reduction 1."
+  },
+  {
+    id: "p211",
+    name: "Resize Object",
+    set: "Resize",
+    cost: "10 Focus",
+    duration: "Permanent",
+    action: "Standard",
+    description: "The character can make an object within reach grow or shrink. The character can resize the object as much as their own Grow or Shrink power would allow them to."
+  },
+  {
+    id: "p212",
+    name: "Resize Other",
+    set: "Resize",
+    cost: "10 Focus",
+    page: 114,
+    duration: "Permanent",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the target is grabbed. The character can resize any person (and their clothing) they are touching. The character can resize the object as much as their own Grow or Shrink power would allow them to. If the target does not wish to be resized, the character must grab them first."
+  },
+  {
+    id: "p213",
+    name: "Return Fire",
+    set: "Ranged Weapons",
+    cost: "5 Focus",
+    page: 114,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: an enemy declares an attack against the character. The character makes an Agility attack against a target's Vigilance defense. If the attack is a success, apply Health Damage Reduction normally. Any damage taken is then applied to the target's Focus instead. If it's a Fantastic success, the damage is doubled and, if the target takes any Focus damage, they are stunned for 1 round."
+  },
+  {
+    id: "p214",
+    name: "Reverse Punch",
+    set: "Plasticity",
+    cost: "5 Focus",
+    page: 115,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a close attack with an edge on an enemy. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is stunned for one round."
+  },
+  {
+    id: "p215",
+    name: "Rico-Shield",
+    set: "Shield Bearer",
+    cost: "10 Focus",
+    page: 115,
+    duration: "Instant",
+    action: "Standard",
+    description: "RANGE: 10 spaces times character's rank. The character makes a ranged attack on a target. If the attack is a success, the target takes regular damage. On a Fantastic success, the target is also knocked prone, and the character can make an extra attack on another target, adding the extra range between the two targets to the new attack roll. This can be repeated until an attack is not a Fantastic success. When the attacks are over, the shield then bounces back to the character."
+  },
+  {
+    id: "p216",
+    name: "Riposte",
+    set: "Melee Weapons",
+    cost: "",
+    page: 115,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: an enemy makes a close attack against the character that fails. The character makes a close attack on the enemy who just missed them. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and suffers the weapon's special effect."
+  },
+  {
+    id: "p217",
+    name: "Rubberneck",
+    set: "Plasticity",
+    cost: "",
+    page: 116,
+    duration: "Permanent",
+    action: "",
+    description: "The character can move their head away from their body, up to their reach, to establish a line of sight to a target."
+  },
+  {
+    id: "p218",
+    name: "Run on Water",
+    set: "Super-Speed",
+    cost: "",
+    page: 116,
+    duration: "Permanent",
+    action: "",
+    description: "The character can run so that their feet skip across the surface of water. As long as they keep running (even in place), they do not sink."
+  },
 ];
 
 // IDENTITY VARIABLES
