@@ -3108,6 +3108,476 @@ const powersList = [
     action: "",
     description: "The character can run so that their feet skip across the surface of water. As long as they keep running (even in place), they do not sink."
   },
+  {
+    id: "p219",
+    name: "Scatter",
+    set: "Tactics",
+    cost: "10 Focus",
+    page: 116,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: an enemy in line of sight declares an attack on an ally within earshot. Any allies in earshot can be affected, up to a number equal to the character's rank. Each affected ally can move away from you at half Speed and then fall prone. If this makes the ally an ineligible target for the initial attack, that attack automatically fails."
+  },
+  {
+    id: "p220",
+    name: "Sense Sins",
+    set: "Magic",
+    cost: "",
+    page: 116,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character looks into a target's eyes and makes an Ego check against the target's Ego defense. On a success, the character can sense what sorts of horrible things the target has done. On a Fantastic success, they can sense what sorts of horrible things the target intends to do in the immediate future."
+  },
+  {
+    id: "p221",
+    name: "Sense Supernatural",
+    set: "Magic",
+    cost: "",
+    page: 116,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character can reach out with their mind to sense the presence of supernatural people, places or things within 100 spaces per rank. This tells them the location of the supernatural thing and its general status. I f a target or targets wish to remain undetected, the character must make an Ego check and compare it against each target's Vigilance defense. If they succeed, they sense the target. On a Fantastic success, they can also identify if the target is cursed or demonic."
+  },
+  {
+    id: "p222",
+    name: "Shape-Shift",
+    set: "",
+    cost: "",
+    page: 116,
+    duration: "Permanent",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked or otherwise in danger. The character can change into another form no more than one size bigger or smaller than their regular form. When in any form, the character has access to the natural abilities of that form. For instance, if they transformed into a bird, they could fly. When transformed into a fish, they can breathe water."
+  },
+  {
+    id: "p223",
+    name: "Shield 1",
+    set: "Shield Bearer",
+    cost: "",
+    page: 117,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked. The character gains Health Damage Reduction 1."
+  },
+  {
+    id: "p224",
+    name: "Shield 2",
+    set: "Shield Bearer",
+    cost: "5 Focus",
+    page: 117,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked. The character gains Health Damage Reduction 2."
+  },
+  {
+    id: "p225",
+    name: "Shield 3",
+    set: "Shield Bearer",
+    cost: "15 Focus",
+    page: 117,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked. The character gains Health Damage Reduction 3."
+  },
+  {
+    id: "p226",
+    name: "Shield 4",
+    set: "Shield Bearer",
+    cost: "25 Focus",
+    page: 117,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked. The character gains Health Damage Reduction 4."
+  },
+  {
+    id: "p227",
+    name: "Shield Bash",
+    set: "Shield Bearer",
+    cost: "",
+    page: 117,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a close attack on an enemy within their reach. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and is knocked prone."
+  },
+  {
+    id: "p228",
+    name: "Shield Deflection",
+    set: "Shield Bearer",
+    cost: "",
+    page: 117,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: the character is the target of an attack against their Agility defense. The attack has trouble."
+  },
+  {
+    id: "p229",
+    name: "Shield of the Seraphim",
+    set: "Magic",
+    cost: "10 Focus",
+    page: 117,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "The character produces a magical shield that protects them from physical damage. Any attacks against them that do 20 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 20 points of damage, it destroys the protection. Either way, the character remains unharmed."
+  },
+  {
+    id: "p230",
+    name: "Shield Wall",
+    set: "Shield Bearer",
+    cost: "",
+    page: 117,
+    duration: "Concentration",
+    action: "Movement",
+    duration: "Attacks against the character have trouble. The character breaks concentration on this power if they use a movement action."
+  },
+  {
+    id: "p231",
+    name: "Shrink 1",
+    set: "Resize",
+    cost: "",
+    page: 117,
+    duration: "Permanent",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked. The character can shrink down to little size. They can return to their normal size at will."
+  },
+  {
+    id: "p232",
+    name: "Shrink 2",
+    set: "Resize",
+    cost: "",
+    page: 117,
+    duration: "Permanent",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked. The character can shrink down to tiny size. They can return to their normal size at will."
+  },
+  {
+    id: "p233",
+    name: "Shrink 3",
+    set: "Resize",
+    cost: "",
+    page: 117,
+    duration: "Permanent",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked. The character can shrink down to miniature size. They can return to their normal size at will."
+  },
+  {
+    id: "p234",
+    name: "Shrink 4",
+    set: "Resize",
+    cost: "",
+    page: 118,
+    duration: "Permanent",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked. The character can shrink down to microscopic size. They can return to their normal size at will."
+  },
+  {
+    id: "p235",
+    name: "Shrinking Dodge",
+    set: "Resize",
+    cost: "5 Focus",
+    page: 118,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: the character is attacked. The attacker has trouble on the attack."
+  },
+  {
+    id: "p236",
+    name: "Shut Down Powers",
+    set: "Power Control",
+    cost: "15+ Focus",
+    page: 118,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character picks another character within 20 spaces and makes an Ego attack against them. On a success, they remove all of a target's powers. If the target's powers have costs, the character must pay the highest of them, or a minimum of 15 Focus."
+  },
+  {
+    id: "p237",
+    name: "Silence Area",
+    set: "Illusion",
+    cost: "5 Focus",
+    page: 118,
+    duration: "Concentration",
+    action: "Standard",
+    description: "An area up to 5 spaces wide per the character's rank-centered on anything the character wishes, within 50 spaces-is filled with silence. Those inside the area cannot hear anything, and no one outside of it can hear any noises made inside it. The character must remain within 50 spaces of the area to avoid breaking concentration."
+  },
+  {
+    id: "p238",
+    name: "Silence Self",
+    set: "Illusion",
+    cost: "5 Focus",
+    page: 118,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character makes no noise at all-unless they wish to. They have an edge on Agility checks to sneak past people, and enemies have trouble on Vigilance checks to perceive them."
+  },
+  {
+    id: "p239",
+    name: "Slip Free",
+    set: "Plasticity",
+    cost: "",
+    page: 118,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: the character is grabbed or pinned. The character is not grabbed or pinned."
+  },
+  {
+    id: "p240",
+    name: "Slow-Motion Dodge",
+    set: "",
+    cost: "",
+    page: 118,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: an enemy makes an attack against the character's Agility defense. The enemy has trouble on the attack."
+  },
+  {
+    id: "p241",
+    name: "Slow-Motion Shoot-Dodge",
+    set: "Ranged Weapons",
+    cost: "10 Focus",
+    page: 118,
+    duration: "Instant + 1 Round",
+    action: "Standard",
+    description: "The character splits their attack to make two ranged attacks against separate targets (or they can focus a single attack on a single target). Make a single Agility check and compare it to the targets' Agility defenses. On a success, an affected target takes half regular damage. On a Fantastic success, an affected target takes full damage, and the character can make a bonus attack with this power against any available target, with the same effect. When the character moves, is moved, or starts their next turn, they instantly fall prone. Until that happens, all attacks against their Agility defense have trouble."
+  },
+  {
+    id: "p242",
+    name: "Smash",
+    set: "Super-Strength",
+    cost: "5+ Focus",
+    page: 118,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a close attack with an edge. For this attack, add +1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes that total damage. On a Fantastic success, an affected target takes double that total damage and is stunned for one round."
+  },
+  {
+    id: "p243",
+    name: "Snap Shooting",
+    set: "Ranged Weapons",
+    cost: "",
+    page: 120,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character splits their attack to make two ranged attacks against separate targets (or they can focus a single attack on a single target). Make a single Agility check and compare it to the targets' Agility defenses. On a success, an affected target takes half regular damage. On a Fantastic success, an affected target takes full damage and is bleeding."
+  },
+  {
+    id: "p244",
+    name: "Sniping",
+    set: "Ranged Weapons",
+    cost: "5 Focus",
+    page: 120,
+    duration: "Instant",
+    action: "Both Standard and Movement",
+    description: "The character makes a ranged attack against an enemy at least 20 spaces away. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes triple damage instead. The character cannot move this turn."
+  },
+  {
+    id: "p245",
+    name: "Speed Blast",
+    set: "Super-Speed",
+    cost: "5 Focus",
+    page: 120,
+    duration: "Instant",
+    action: "Standard",
+    description: "RANGE: 10. The character makes a ranged attack. If it succeeds, the target is stunned for one round. On a Fantastic success, the character is knocked prone too."
+  },
+  {
+    id: "p246",
+    name: "Speed Run 1",
+    set: "Super-Speed",
+    cost: "",
+    page: 120,
+    duration: "Permanent",
+    action: "",
+    description: "Multiply the character's regular Run Speed by their rank to get their new Run Speed. Outside of combat, they can move three times as fast."
+  },
+  {
+    id: "p247",
+    name: "Speed Run 2",
+    set: "Super-Speed",
+    cost: "",
+    page: 120,
+    duration: "Permanent",
+    action: "",
+    description: "Outside of combat, the character can move up to 50 times as fast as their increased Run Speed."
+  },
+  {
+    id: "p248",
+    name: "Speed Swim",
+    set: "Super-Speed",
+    cost: "",
+    page: 120,
+    duration: "Permanent",
+    action: "",
+    description: "Multiply the character's regular Swim Speed by their rank to get their new Swim Speed. Outside of combat, they can move three times as fast."
+  },
+  {
+    id: "p249",
+    name: "Spider-Dodge",
+    set: "Spider-Powers",
+    cost: "",
+    page: 120,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: someone makes an Agility attack against the character. The attacker has trouble on the attack. If the attack misses, the character can leap in any direction at their Jump Speed."
+  },
+  {
+    id: "p250",
+    name: "Spider-Pheromones",
+    set: "Spider-Powers",
+    cost: "",
+    page: 120,
+    duration: "Concentration",
+    action: "Standard",
+    description: "RANGE: 5 spaces. The character has an edge on Ego (intimidation) checks against people who are not attracted to their gender. They also have an edge on Ego (persuasion) checks against people who are attracted to their gender."
+  },
+  {
+    id: "p251",
+    name: "Spider-Sense",
+    set: "Spider-Powers",
+    cost: "",
+    page: 120,
+    duration: "Permanent",
+    action: "",
+    description: "The character has an edge on initiative checks and on Vigilance checks to perceive danger. Enemies have trouble on Agility checks against the character's Vigilance defense. The character also gains a permanent +2 bonus to their Agility defense."
+  },
+  {
+    id: "p252",
+    name: "Spider-Strike",
+    set: "Spider-Powers",
+    cost: "",
+    page: 120,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character splits their attack to make two close attacks against separate targets within reach (or they can focus a single attack on a single target). Make a single Melee check and compare it to the targets' Melee defenses. On a success, the affected target takes half regular damage. On a Fantastic success, the affected target takes full damage and is paralyzed by webbing. Breaking free from webbing requires a Melee check (target number 20). After the attacks, the character may run, jump or climb at half speed for free."
+  },
+  {
+    id: "p253",
+    name: "Spin and Throw",
+    set: "Martial Arts",
+    cost: "5 Focus",
+    page: 121,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: an enemy the character can pick up is grabbed. The character makes a Melee attack against the grabbed foe. If the attack is a success, the enemy takes regular damage and is knocked prone. On a Fantastic success, the enemy takes double damage and is knocked prone, pinned and stunned for one round. Either way, the character can move the enemy to any open space within reach."
+  },
+  {
+    id: "p254",
+    name: "Static Illusion",
+    set: "Illusion",
+    cost: "5 Focus",
+    page: 121,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character creates a visual-only illusion anywhere in line of sight, within 50 spaces. The illusion can be of anything up to three sizes larger than the character, but it must be static. The character breaks concentration if they move beyond 50 spaces from the illusion or lose line of sight of it."
+  },
+  {
+    id: "p255",
+    name: "Steal Powers",
+    set: "Power Control",
+    cost: "15+ Focus",
+    page: 121,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the target is grabbed. The character makes an Ego attack against the grabbed target. On a success, they remove all of the target's powers and take them for their own. They can now use those powers as if they were always theirs. If the target's powers have costs, the character must pay the highest of them, or a minimum of 15 Focus. When the character uses a power, they must pay any cost normally as well."
+  },
+  {
+    id: "p256",
+    name: "Stilt Steps",
+    set: "Plasticity",
+    cost: "",
+    page: 121,
+    duration: "Instant",
+    action: "Movement",
+    description: "The character's Run Speed doubles, as does their Climb Speed."
+  },
+  {
+    id: "p257",
+    name: "Stopping Power",
+    set: "Ranged Weapons",
+    cost: "5 Focus",
+    page: 121,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a ranged attack on an enemy. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage, and the character can make another regular ranged attack on the same target."
+  },
+  {
+    id: "p258",
+    name: "Sturdy 1",
+    set: "",
+    cost: "",
+    page: 122,
+    duration: "Permanent",
+    action: "",
+    description: "The character's body is so sturdy that they have Health Damage Reduction 1. If this power stems from armor or anything else removable-like Iron Man's armor-the character should apply the Tech Reliance trait to it."
+  },
+  {
+    id: "p259",
+    name: "Sturdy 2",
+    set: "",
+    cost: "",
+    page: 122,
+    duration: "Permanent",
+    action: "",
+    description: "The character gains Health Damage Reduction 2."
+  },
+  {
+    id: "p260",
+    name: "Sturdy 3",
+    set: "",
+    cost: "",
+    page: 122,
+    duration: "Permanent",
+    action: "",
+    description: "The character gains Health Damage Reduction 3."
+  },
+  {
+    id: "p261",
+    name: "Sturdy 4",
+    set: "",
+    cost: "",
+    page: 122,
+    duration: "Permanent",
+    action: "",
+    description: "The character gains Health Damage Reduction 4."
+  },
+  {
+    id: "p261",
+    name: "Summon Portal",
+    set: "Magic",
+    cost: "15 Focus",
+    page: 122,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character opens a glowing portal in a space next to them that teleports anything that enters it between that space and its destination, which forms a matched glowing portal in the other place. This can be between any two points in the Multiverse, as long as the character has seen the destination. Anything can move through the portal in either direction until it is closed, which the character can do at will."
+  },
+  {
+    id: "p262",
+    name: "Supernova",
+    set: "Elemental Control",
+    cost: "15+ Focus",
+    page: 123,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes an Ego check and compares that against the Resilience defense of every enemy within 10 spaces. For these attacks, add + 1 to the character's Melee damage bonus for every 2 points of Focus they spend. On a success, an affected target takes half that total damage. On a Fantastic success, an affected target takes full damage and suffers the elemental type's special effect."
+  },
+  {
+    id: "p263",
+    name: "Suppressive Fire",
+    set: "Ranged Weapons",
+    cost: "",
+    page: 123,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes an Agility attack against a target's Vigilance defense. If the attack is a success, apply Health Damage Reduction normally. Any damage taken is then applied to the target's Focus instead. If it's a Fantastic success, the damage is doubled, and if the target takes any Focus damage, they are stunned for one round."
+  },
+  {
+    id: "p264",
+    name: "Swipe Power",
+    set: "Power Control",
+    cost: "10+ Focus",
+    page: 123,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the target is grabbed. The character makes an Ego attack against the grabbed target. On a success, they remove one of the target's powers and take it for their own. They can now use that power as if it was always theirs. If the power has a cost, the character must pay it or a minimum of 10 Focus. When the character uses the power, they must pay any cost normally as well."
+  }
 ];
 
 // IDENTITY VARIABLES
