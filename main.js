@@ -3997,6 +3997,136 @@ const powersList = [
     duration: "Instant",
     action: "Standard",
     description: "The character makes a close attack. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and suffers the weapon's special effect."
+  },
+  {
+    id: "p307",
+    name: "Wallcrawling",
+    set: "Spider-Powers",
+    cost: "",
+    page: 129,
+    duration: "Permanent",
+    action: "",
+    description: "The character can climb at a speed equal to their regular speed. Under normal conditions, they never lose their grip, no matter the angle of the surface."
+  },
+  {
+    id: "p308",
+    name: "Weapons Blazing",
+    set: "Ranged Weapons",
+    cost: "",
+    page: 130,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character splits their attack to make two ranged attacks against separate targets (or they can focus a single attack on a single target). Make a single Agility check and compare it to the targets' Agility defenses. On a success, the affected target takes half regular damage. On a Fantastic success, the affected target takes full damage, and the character can make a bonus attack with this power against any available target, with the same effect."
+  },
+  {
+    id: "p309",
+    name: "Weather Chill",
+    set: "Weather Control",
+    cost: "",
+    page: 130,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The temperature in an area roughly a mile across falls as low as 0°F."
+  },
+  {
+    id: "p310",
+    name: "Weather Warm",
+    set: "Weather Control",
+    cost: "",
+    page: 130,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The temperature in an area roughly a mile across climbs as high as I00°F."
+  },
+  {
+    id: "p311",
+    name: "Webcasting",
+    set: "Spider-Powers",
+    cost: "",
+    page: 130,
+    duration: "Instant",
+    action: "Standard",
+    description: "RANGE: 10 spaces. The character makes a ranged attack on an enemy. If the attack is a success, the web paralyzes the enemy. On a Fantastic success, the enemy is also pinned. Breaking free from webbing requires a Melee check (target number 20)."
+  },
+  {
+    id: "p312",
+    name: "Webgliding",
+    set: "Spider-Powers",
+    cost: "",
+    page: 130,
+    duration: "Permanent",
+    action: "",
+    description: "The character gains the Glide mo·,ement mode, with a speed equal to double their Run Speed."
+  },
+  {
+    id: "p313",
+    name: "Webgrabbing",
+    set: "Spider-Powers",
+    cost: "5 Focus",
+    page: 130,
+    duration: "Instant",
+    action: "Standard",
+    description: "RANGE: 10 spaces. The character makes a ranged attack on an enemy. If the attack is a success, the character grabs the target with a web. On a Fantastic success, the target can also be pinned. Breaking free from webbing requires a Melee check (target number 20)."
+  },
+  {
+    id: "p314",
+    name: "Webslinging",
+    set: "Spider-Powers",
+    cost: "",
+    page: 130,
+    duration: "Permanent",
+    action: "",
+    description: "The character gains the swingline movement mode, with a Speed equal to triple their Run Speed. The reach of their swingline is equal to their Swingline Speed."
+  },
+  {
+    id: "p315",
+    name: "Webtrapping",
+    set: "Spider-Powers",
+    cost: "10 Focus",
+    page: 130,
+    duration: "The character's rank times 15 min",
+    action: "Standard",
+    description: "The character fills up to 5 spaces with sticky webs, and the affected spaces are considered difficult terrain. Any creature that starts its turn in or moves into an affected space must make an Agility check (target number 20) or be paralyzed by the webbing. Breaking free from webbing requires a Melee check (target number 20)."
+  },
+  {
+    id: "p316",
+    name: "Whirling Frenzy",
+    set: "Melee Weapons",
+    cost: "5 Focus",
+    page: 130,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes an Agility check and compares it against the Agility defense of every enemy within their reach. If an attack is a success, the enemy takes half regular damage. On a Fantastic success, the enemy takes full damage and suffers the weapon's special effect."
+  },
+  {
+    id: "p317",
+    name: "Winds of Watoomb",
+    set: "Magic",
+    cost: "10 Focus",
+    page: 130,
+    duration: "Instant",
+    action: "Standard or Reaction",
+    description: "TRIGGER: damage gets through the Shield of the Seraphim. The character conjures swirling winds that they control. All movement by a foe within 10 spaces per the character's rank is cut in half. The character can also use this spell to push away smoke, mist or fog. If such a thing was created by a power, the character makes an Ego check with an edge against the Ego defense of the opposing controller. On a success, the controller's power ends. On a Fantastic success, the controller is knocked prone. Additionally, the Winds of Watoomb can be used to reinforce the Shield of the Seraphim. The character can transfer any Health damage that gets through the Shield of the Seraphim's protection to their Focus instead, leaving the Shield of the Seraphim intact."
+  },
+  {
+    id: "p318",
+    name: "Wisdom",
+    set: "",
+    cost: "",
+    page: 131,
+    duration: "Permanent",
+    action: "",
+    description: "The character can use their Ego defense score against Logic attacks too."
+  },
+  {
+    id: "p319",
+    name: "Wisecracker",
+    set: "",
+    cost: "",
+    page: 131,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: the character succeeds in an attack on an enemy in earshot, or an enemy in earshot fails an attack on them. The character cracks a joke at the enemy's expense. Make an Ego attack. On a success, it does regular Focus damage. On a Fantastic success, the damage is doubled, and the target is stunned for one round."
   }
 ];
 
