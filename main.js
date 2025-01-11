@@ -3967,6 +3967,36 @@ const powersList = [
     duration: "Permanent",
     action: "",
     description: "If the character is attacked, all other close attacks against them have trouble until the start of their next turn."
+  },
+  {
+    id: "p304",
+    name: "Vapors of Valtorr",
+    set: "Magic",
+    cost: "10 Focus",
+    page: 129,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character creates an inky mist for up to 25 spaces per rank around them that blocks all line of sight beyond 5 spaces. On later turns, the character can have the mist attacks one target at a time. Make an Ego check aga.inst the target's Vigilance defense. On a success, the attack does regular damage. On a Fantastic success, it does double damage and blinds the target for one turn."
+  },
+  {
+    id: "p305",
+    name: "Venom Blast",
+    set: "Spider-Powers",
+    cost: "",
+    page: 129,
+    duration: "Instant",
+    action: "Standard",
+    description: "RANGE: 5 spaces. The character makes a ranged attack. If the attack is a success, it does regular damage. On a Fantastic success, the attack does double damage, and if the target suffers any actual damage, they are also stunned for one round."
+  },
+  {
+    id: "p306",
+    name: "Vicious Attack",
+    set: "Melee Weapons",
+    cost: "",
+    page: 129,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a close attack. If the attack is a success, the enemy takes regular damage. On a Fantastic success, the enemy takes double damage and suffers the weapon's special effect."
   }
 ];
 
