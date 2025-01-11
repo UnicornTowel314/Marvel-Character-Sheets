@@ -3577,7 +3577,317 @@ const powersList = [
     duration: "Concentration",
     action: "Standard or Reaction",
     description: "TRIGGER: the target is grabbed. The character makes an Ego attack against the grabbed target. On a success, they remove one of the target's powers and take it for their own. They can now use that power as if it was always theirs. If the power has a cost, the character must pay it or a minimum of 10 Focus. When the character uses the power, they must pay any cost normally as well."
-  }
+  },
+  {
+    id: "p265",
+    name: "Telekinetic Attack",
+    set: "Telekinesis",
+    cost: "5 Focus",
+    page: 123,
+    duration: "Concentration",
+    action: "Standard",
+    description: "RANGE: varies. The character makes a Logic attack against the Melee defense of a target within 5 spaces times the character's rank. If the attack is a success, it inflicts regular damage. On a Fantastic success, the damage is doubled instead, and the target is stunned for one round."
+  },
+  {
+    id: "p266",
+    name: "Telekinetic Barrier",
+    set: "Telekinesis",
+    cost: "5 Focus",
+    page: 123,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character forms an invisible barrier in their line of sight and up to 10 spaces away per rank. This covers up to 2 spaces across (vertically/horizontally) per their rank. The character makes a Logic check and compares the results against the Agility defense of any target in the affected spaces. On a success, the character chooses which side of the barrier the target winds up on. On a failure, the target chooses. On a Fantastic success, the target is paralyzed for one round too. Attacks on the barrier are against the character's Logic defense. Any attacks on it that do 10 points of damage or less are instantly absorbed, and the barrier continues. If an attack does more than 10 points of damage, it destroys the barrier. Either way, the attack leaves those behind the barrier unharmed."
+  },
+  {
+    id: "p267",
+    name: "Telekinetic Crush",
+    set: "Telekinesis",
+    cost: "10 Focus",
+    page: 123,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: the target is grabbed. The character makes a Logic attack against the grabbed target's Resilience defense. If it's a success, the target takes regular damage. On a Fantastic success, the target takes double damage and is pinned."
+  },
+  {
+    id: "p268",
+    name: "Telekinetic Grab",
+    set: "Telekinesis",
+    cost: "5 Focus",
+    page: 123,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character makes a Logic attack against the Melee defense of a target within 5 spaces times the character's rank. If the attack is a success, the character grabs the target with their mind. On a Fantastic success, the target can also be pinned. Breaking free requires a successful Melee check against target number 20."
+  },
+  {
+    id: "p269",
+    name: "Telekinetic Manipulation",
+    set: "Telekinesis",
+    cost: "",
+    page: 123,
+    duration: "Concentration",
+    action: "Standard",
+    description: "RANGE: varies. The character can manipulate objects in their line of sight with their mind. The maximum range for this is 5 spaces times the character's rank. If someone tries to prevent the character from taking control of an object, the character makes a Logic check against the opponent's Agility defense."
+  },
+  {
+    id: "p270",
+    name: "Telekinetic Protection 1",
+    set: "Telekinesis",
+    cost: "5 Focus",
+    page: 124,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked or otherwise in danger. The character's personal telekinetic field protects them. Any attacks against them that do 10 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 10 points of damage, it destroys the protection. Either way, the character remains unharmed."
+  },
+  {
+    id: "p271",
+    name: "Telekinetic Protection 2",
+    set: "Telekinesis",
+    cost: "10 Focus",
+    page: 124,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked or otherwise in danger. The character's personal telekinetic field protects them. Any attacks against them that do 20 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 20 points of damage, it destroys the protection. Either way, the character remains unharmed."
+  },
+  {
+    id: "p272",
+    name: "Telekinetic Protection 3",
+    set: "Telekinesis",
+    cost: "15 Focus",
+    page: 124,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked or otherwise in danger. The character's personal telekinetic field protects them. Any attacks against them that do 30 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 30 points of damage, it destroys the protection. Either way, the character remains unharmed."
+  },
+  {
+    id: "p273",
+    name: "Telekinetic Protection 4",
+    set: "Telekinesis",
+    cost: "20 Focus",
+    page: 125,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked or otherwise in danger. The character's personal telekinetic field protects them. Any attacks against them that do 40 points of damage or less are instantly absorbed, and the protection continues. If an attack does more than 40 points of damage, it destroys the protection. Either way, the character remains unharmed."
+  },
+  {
+    id: "p274",
+    name: "Telekinetic Reinforcement",
+    set: "Telekinesis",
+    cost: "Varies",
+    page: 125,
+    duration: "Instant",
+    action: "Reaction",
+    description: "TRIGGER: a character using a telekinetic power that grants damage protection is attacked. The character can transfer any Health damage that gets through a telekinetic power that grants damage protection to their Focus instead, leaving the protection intact."
+  },
+  {
+    id: "p275",
+    name: "Telekinetic Sphere",
+    set: "Telekinesis",
+    cost: "Same as the character's Telekinetic Protection power",
+    page: 125,
+    duration: "Concentration",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character is attacked or otherwise in danger. The character envelops themselves-and any chosen people within up to 5 spaces times their rank-in a protective telekinetic sphere. When the sphere is formed, the character makes a Logic check and compares the results against the Agility defense of unwanted characters in the enclosed spaces. On a success, the character can move any unwanted people within the sphere's perimeter to spaces outside of the sphere. On a Fantastic success, such moved people suffer full damage. Attacks on the sphere are against the character's Logic defense. Any attacks on the sphere are absorbed as if made against the character's Telekinetic Protection power, and the sphere continues. If an attack does more damage than the character's Telekinetic Protection power can sustain, it destroys the sphere, but no one inside is harmed."
+  },
+  {
+    id: "p276",
+    name: "Telekinetic Toss",
+    set: "Telekinesis",
+    cost: "10 Focus",
+    page: 125,
+    duration: "Instant",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the target is grabbed. RANGE: varies. The character can telekinetically throw a person that they've telekinetically grabbed at another target. The range for the throw is 5 spaces times the character's rank. The character makes a Logic check against the target's Agility defense. A failure inflicts regular damage on the thrown person, who falls prone within 1 space of the target. If the attack is a success, the target takes regular damage too. On a Fantastic success, the target is knocked prone as well."
+  },
+  {
+    id: "p277",
+    name: "Telepathic Blast",
+    set: "Telepathy",
+    cost: "5 Focus",
+    page: 125,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a Logic attack against a target in line of sight. If the attack is a success, it inflicts regular Focus damage. On a Fantastic success, the target takes double damage instead and is stunned for one round."
+  },
+  {
+    id: "p278",
+    name: "Telepathic Link",
+    set: "Telepathy",
+    cost: "",
+    page: 125,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character can communicate telepathically with one person at a time, and they must have met or seen the other person before. The communication can be verbal, visual or even more complex, such as imparting location information. There is no limit to the distance of the communication, as long as the character and the target are in the same dimension. If the other person does not wish to speak with the character, the target can automatically tune them out. To force a telepathic link, the character can make a Logic check against the target's Vigilance defense. On a failure, the character cannot attempt to communicate with the target in this way for the rest of the day. On a success, the character can communicate with the target for one round. On a Fantastic success, the target cannot shut the character out for the rest of the day."
+  },
+  {
+    id: "p279",
+    name: "Telepathic Network",
+    set: "Telepathy",
+    cost: "5 Focus",
+    page: 125,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character can communicate telepathically with a group of willing, linked people, each of whom they have met or seen before. The communication can be verbal, visual or even more complex, such as imparting location information. The group can number up to five people per rank. There is no limit to the distance of the communication, as long as everyone involved is in the same dimension."
+  },
+  {
+    id: "p280",
+    name: "Telepathic Possession",
+    set: "Telepathy",
+    cost: "20 Focus",
+    page: 126,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character possesses a target with whom they've established a Telepathic Link and who has no Focus left. The character makes a Logic check with trouble against the target's Logic defense. On a success, the character takes over the target's body completely. The result of the character's check is the target number for any attempts by the target to end the possession. If the character attempts to harm someone with the possessed body, the target gets to make a Logic check to end the possession. If the target has the Heroic tag, they get an edge on the check. If the character attempts to harm the possessed body, the target gets an edge on the check. If the target has the Heroic tag, they get a double edge. This power can also be used to transfer the character's mind into an empty-minded target-like a fresh clone or android-permanently. This requires no check, as there is no one in the body to challenge the character's action."
+  },
+  {
+    id: "p281",
+    name: "Teleport 1",
+    set: "Teleportation",
+    cost: "",
+    page: 126,
+    duration: "Instant",
+    action: "Standard or Movement",
+    description: "The character teleports into a clear space they can see or have been to, up to 10 times their rank in spaces away. Outside of combat, they can teleport up to 100 times their rank in spaces away."
+  },
+  {
+    id: "p282",
+    name: "Teleport 2",
+    set: "Teleportation",
+    cost: "",
+    page: 126,
+    duration: "Instant",
+    action: "Standard or Movement",
+    description: "Outside of combat, the character can teleport up to 1,000 times their rank in spaces away."
+  },
+  {
+    id: "p283",
+    name: "Teleport Blind",
+    set: "Teleportation",
+    cost: "15 Focus",
+    page: 126,
+    duration: "Instant",
+    action: "Standard or Movement",
+    description: "The character teleports to someplace they've never been and never seen, up to 10 times their rank in spaces away. Outside of combat, they can teleport up to 100 times their rank in spaces away. If the character teleports into something solid, they are automatically pushed out of it but take damage from the disruption equal to a standard action check. The damage multiplier is 1 for every space they must move to reach a clear area. If this kills them, their body is trapped inside the material they teleported into."
+  },
+  {
+    id: "p284",
+    name: "Teleport Object",
+    set: "Teleportation",
+    cost: "10 Focus",
+    page: 126,
+    duration: "Permanent",
+    action: "Standard",
+    description: "The character can teleport along with them an object within reach as far away as their Teleport power normally allows them. The object (and things attached to or inside of it) can be up to their rank in sizes bigger than them. For example, if they are Rank 4, the object can be up to four sizes bigger than them."
+  },
+  {
+    id: "p285",
+    name: "Teleport Other",
+    set: "Teleporation",
+    cost: "15 Focus",
+    page: 127,
+    duration: "Instant",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the target is grabbed. The character makes an Ego check against the Vigilance defense of a target they have grabbed. If the check is successful, the character can teleport the target as far away as their Teleport power normally allows them in combat. If the target winds up in something solid, they are automatically pushed out of it but take damage from the disruption equal to a standard action check. The damage multiplier is 1 for every space they must move to reach a clear area. If this kills them, their body is trapped inside the material they teleported into."
+  },
+  {
+    id: "p286",
+    name: "Teleport Together",
+    set: "Teleportation",
+    cost: "10 Focus",
+    page: 127,
+    duration: "Instant",
+    action: "Standard, Movement, or Reaction",
+    description: "TRIGGER: the target is grabbed. The character teleports, taking any person they are touching with them, into clear spaces they can see or have been to, up to 10 times their rank in spaces away. Outside of combat, they can teleport up to 100 times their rank in spaces away. If the target does not wish to be teleported, the character must grab them first."
+  },
+  {
+    id: "p287",
+    name: "Teleportal",
+    set: "Teleportation",
+    cost: "15 Focus",
+    page: 127,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character opens a glowing portal in a space next to them that teleports anything that enters it between that space and its destination, which forms a matched glowing portal in the other place. The other end of the portal must be in a clear space the character can see or has been to, up to 10 times their rank in spaces away. Outside of combat, they can teleport up to 1,000 times their rank in spaces away. Anything can move through the portal in either direction until it is closed, which the character can do at will."
+  },
+  {
+    id: "p288",
+    name: "Thunder",
+    set: "Weather Control",
+    cost: "",
+    page: 127,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes an Ego check and compares that against the Resilience defense of every character within 10 spaces. Any character the attack succeeds aga:inst is deafened. On a Fantastic success, the character is also stunned for one round."
+  },
+  {
+    id: "p289",
+    name: "Time-Out",
+    set: "Omniversal Travel",
+    cost: "15 Focus",
+    page: 127,
+    duration: "1 Round per Rank",
+    action: "Standard or Reaction",
+    description: "The character freezes time for everyone but themselves. During this period, they can act normally while everyone else seems to be frozen in place."
+  },
+  {
+    id: "p290",
+    name: "Time-Out Bubble",
+    set: "Omniversal Travel",
+    cost: "15 Focus",
+    page: 127,
+    duration: "1 Round per Rank",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character or an ally is attacked. The character creates a time bubble that affects themselves and any chosen allies within 1 space per rank. Within the bubble, the character and those allies can act normally while everyone else seems to be frozen in place."
+  },
+  {
+    id: "p291",
+    name: "Time-Out Tag",
+    set: "Omniversal Travel",
+    cost: "15 Focus",
+    page: 127,
+    duration: "1 Round per Rank",
+    action: "Standard or Reaction",
+    description: "TRIGGER: the character or an ally is attacked. The character freezes time for one person or thing within their reach. Everything and everyone else can act normally. If the target does not wish to be frozen, the character must grab them first."
+  },
+  {
+    id: "p292",
+    name: "Time Portal",
+    set: "Omniversal Travel",
+    cost: "15 Focus",
+    page: 127,
+    duration: "Concentration",
+    action: "Standard",
+    description: "The character opens a glowing portal in a space next to them that moves anything that enters it between that space and its destination, which forms a matched glowing portal in the other place. The other end of the portal must be in a clear space in another period of time, in roughly the same place. Anything can move through the portal in either direction until it is closed, which the character can do at will."
+  },
+  {
+    id: "p293",
+    name: "Time Travel",
+    set: "Omniversal Travel",
+    cost: "10 Focus",
+    page: 128,
+    duration: "Instant",
+    action: "Standard or Movement",
+    description: "The character instantly moves from their current time to another time-for instance, from the present to 1962. When they move to the other time, they can arrive in any place they've been to before. Otherwise, they arrive at the closest available corresponding space in the other time."
+  },
+  {
+    id: "p294",
+    name: "Time Travel Other",
+    set: "Omniversal Travel",
+    cost: "15 Focus",
+    page: 128,
+    duration: "Instant",
+    action: "Standard, Movement, or Reaction",
+    description: "TRIGGER: the target is grabbed. The character makes an Ego check against the Vigilance defense of a target they have grabbed. If the check is successful, the character can send the target to another time. The target can be sent to any location in that time that the character has been to before. Otherwise, the target arrives at the closest available corresponding space in the other time."
+  },
+  {
+    id: "p295",
+    name: "Time Travel Together",
+    set: "Omniversal Travel",
+    cost: "10 Focus",
+    page: 128,
+    duration: "Instant",
+    action: "Standard, Movement, or Reaction",
+    description: "TRIGGER: the target is grabbed. The character moves to a different time, taking any person they are touching with them. If the target does not wish to come along, the character must grab them first. When they move to the other time, they can arrive in any place they've been to before. Otherwise, they arrive at the closest available corresponding space in the other time."
+  },
 ];
 
 // IDENTITY VARIABLES
