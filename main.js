@@ -4234,6 +4234,7 @@ const modifyValues = (input, output) => {
 }
 
 // FUNCTIONS FOR DISPLAYING ORIGIN, OCCUPATION, TAGS, TRAITS, AND POWERS
+// TODO: update functions for displaying origins and occupations to be similar to tags, traits, and powers
 const displayOrigin = () => {
   const originResult = origins.find(obj => obj.id == originInput.value);
   if (originResult) {
