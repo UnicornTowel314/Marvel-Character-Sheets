@@ -3888,6 +3888,86 @@ const powersList = [
     action: "Standard, Movement, or Reaction",
     description: "TRIGGER: the target is grabbed. The character moves to a different time, taking any person they are touching with them. If the target does not wish to come along, the character must grab them first. When they move to the other time, they can arrive in any place they've been to before. Otherwise, they arrive at the closest available corresponding space in the other time."
   },
+  {
+    id: "p296",
+    name: "Uncanny 1",
+    set: "",
+    cost: "",
+    page: 128,
+    duration: "Permanent",
+    action: "",
+    description: "Any damage multiplier for attacks against the character's Focus is reduced by 1. If this power is part of a battle suit, the power is integrated into a removable helmet. Otherwise, it's a part of the character. If this power stems from armor or anything else removable-like Magneto's helmet-the character should apply the Tech Reliance trait to it."
+  },
+  {
+    id: "p297",
+    name: "Uncanny 2",
+    set: "",
+    cost: "",
+    page: 128,
+    duration: "Permanent",
+    action: "",
+    description: "Any damage multiplier for attacks against the character's Focus is reduced by 2."
+  },
+  {
+    id: "p298",
+    name: "Uncanny 3",
+    set: "",
+    cost: "",
+    page: 128,
+    duration: "Permanent",
+    action: "",
+    description: "Any damage multiplier for attacks against the character's Focus is reduced by 3."
+  },
+  {
+    id: "p299",
+    name: "Uncanny 4",
+    set: "",
+    cost: "",
+    page: 128,
+    duration: "Permanent",
+    action: "",
+    description: "Any damage multiplier for attacks against the character's Focus is reduced by 4."
+  },
+  {
+    id: "p300",
+    name: "Unflappable Poise",
+    set: "Martial Arts",
+    cost: "",
+    page: 128,
+    duration: "Permanent",
+    action: "",
+    description: "Any close attacks against the character have trouble. While they use Defense Stance, such attacks have double trouble."
+  },
+  {
+    id: "p301",
+    name: "Unrelenting Smash",
+    set: "Super-Strength",
+    cost: "15 Focus",
+    page: 128,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a Melee check and compares it against the Melee defense of every enemy within their reach. Any enemy the attack succeeds against takes half regular damage. On a Fantastic success, those enemies take full regular damage and are knocked prone instead. The character may then pay 15 more Focus to do the same thing again-before which they can move up to half their speed with anything left from their normal movement action. They can keep doing this until they run out of speed or Focus. Each target can be affected by this attack by this character only once per round."
+  },
+  {
+    id: "p302",
+    name: "Unstoppable Assault",
+    set: "Melee Weapons",
+    cost: "15 Focus",
+    page: 129,
+    duration: "Instant",
+    action: "Standard",
+    description: "The character makes a Melee check and compares that against the Me lee defense of every enemy within their reach. Any enemy the attack succeeds against takes half regular damage. On a Fantastic success, those enemies take full regular damage instead and suffer the weapon's special effect. The character may then pay 15 more Focus to do the same thing again-before which they can move up to half their Speed with whatever is left from their normal movement action. They can keep doing this until they run out of Speed or Focus. Each target can only be affected by this attack by this character once per round."
+  },
+  {
+    id: "p303",
+    name: "Untouchable Position",
+    set: "Martial Arts",
+    cost: "",
+    page: 129,
+    duration: "Permanent",
+    action: "",
+    description: "If the character is attacked, all other close attacks against them have trouble until the start of their next turn."
+  }
 ];
 
 // IDENTITY VARIABLES
