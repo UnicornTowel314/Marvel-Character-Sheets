@@ -1152,7 +1152,7 @@ const powersList = [
   {
     id: "p23",
     name: "Bolts of Balthakk",
-    set: "Magic",
+    set: "Magic (Sorcery Set)",
     cost: "5+ Focus",
     page: 85,
     duration: "Instant",
@@ -1492,7 +1492,7 @@ const powersList = [
   {
     id: "p57",
     name: "Crimson Bands of Cyttorak",
-    set: "Magic",
+    set: "Magic (Sorcery Set)",
     cost: "10 Focus",
     page: 90,
     duration: "Concentration",
@@ -1572,7 +1572,7 @@ const powersList = [
   {
     id: "p65",
     name: "Dimensional Portal",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Dimensional)",
     cost: "15 Focus",
     page: 92,
     duration: "Concentration",
@@ -1582,7 +1582,7 @@ const powersList = [
   {
     id: "p66",
     name: "Dimensional Travel",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Dimensional)",
     cost: "10 Focus",
     page: 92,
     duration: "Instant",
@@ -1592,7 +1592,7 @@ const powersList = [
   {
     id: "p67",
     name: "Dimensional Travel Other",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Dimensional)",
     cost: "15 Focus",
     page: 92,
     duration: "Instant",
@@ -1602,7 +1602,7 @@ const powersList = [
   {
     id: "p68",
     name: "Dimensional Travel Together",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Dimensional)",
     cost: "10 Focus",
     page: 92,
     duration: "Instant",
@@ -1662,7 +1662,7 @@ const powersList = [
   {
     id: "p74",
     name: "Dispel Spell",
-    set: "Magic",
+    set: "Magic (Sorcery Set)",
     cost: "15 Focus",
     page: 92,
     duration: "Instant",
@@ -2032,7 +2032,7 @@ const powersList = [
   {
     id: "p111",
     name: "Flames of the Faltine",
-    set: "Magic",
+    set: "Magic (Sorcery Set)",
     cost: "5 Focus",
     page: 99,
     duration: "Instant",
@@ -2332,7 +2332,7 @@ const powersList = [
   {
     id: "141",
     name: "Hellfire Chains",
-    set: "Magic",
+    set: "Magic (Demonic Set)",
     cost: "5 Focus",
     page: 103,
     duration: "Concentration",
@@ -2342,7 +2342,7 @@ const powersList = [
   {
     id: "p142",
     name: "Hex Bolt",
-    set: "Magic",
+    set: "Magic (Chaos Set)",
     cost: "5 Focus",
     page: 103,
     duration: "Concentration",
@@ -2412,7 +2412,7 @@ const powersList = [
   {
     id: "p149",
     name: "Icy Tendrils of Ikthalon",
-    set: "Magic",
+    set: "Magic (Sorcery Set)",
     cost: "5 Focus",
     page: 104,
     duration: "Instant",
@@ -2432,7 +2432,7 @@ const powersList = [
   {
     id: "p151",
     name: "Images of Ikonn",
-    set: "Magic",
+    set: "Magic (Sorcery Set)",
     cost: "5 Focus",
     page: 105,
     duration: "Concentration",
@@ -2472,7 +2472,7 @@ const powersList = [
   {
     id: "p155",
     name: "Instant Replay",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Time)",
     cost: "10 Focus",
     page: 105,
     duration: "Instant",
@@ -2502,7 +2502,7 @@ const powersList = [
   {
     id: "p158",
     name: "Jinx",
-    set: "Magic",
+    set: "Magic (Chaos Set)",
     cost: "5 Focus",
     page: 105,
     duration: "Concentration",
@@ -2752,7 +2752,7 @@ const powersList = [
   {
     id: "p183",
     name: "Mists of Morpheus",
-    set: "Magic",
+    set: "Magic (Sorcery Set)",
     cost: "10 Focus",
     page: 109,
     duration: "Concentration",
@@ -2762,7 +2762,7 @@ const powersList = [
   {
     id: "p184",
     name: "Mists of Munnopor",
-    set: "Magic",
+    set: "Magic (Sorcery Set)",
     cost: "5 Focus",
     page: 109,
     duration: "Concentration",
@@ -2782,7 +2782,7 @@ const powersList = [
   {
     id: "p186",
     name: "Multiversal Portal",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Multiversal)",
     cost: "15 Focus",
     page: 110,
     duration: "Concentration",
@@ -2792,7 +2792,7 @@ const powersList = [
   {
     id: "p187",
     name: "Multiversal Travel",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Multiversal)",
     cost: "10 Focus",
     page: 110,
     duration: "Instant",
@@ -2802,7 +2802,7 @@ const powersList = [
   {
     id: "p188",
     name: "Multiversal Travel Other",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Multiversal)",
     cost: "15 Focus",
     page: 110,
     duration: "Instant",
@@ -2812,7 +2812,7 @@ const powersList = [
   {
     id: "p189",
     name: "Multiversal Travel Together",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Multiversal)",
     cost: "10 Focus",
     page: 110,
     duration: "Instant",
@@ -2872,7 +2872,7 @@ const powersList = [
   {
     id: "p195",
     name: "Penance Stare",
-    set: "Magic",
+    set: "Magic (Demonic Set)",
     cost: "",
     page: 111,
     duration: "Instant",
@@ -2932,7 +2932,7 @@ const powersList = [
   {
     id: "p201",
     name: "Possess Vehicle",
-    set: "Magic",
+    set: "Magic (Demonic Set)",
     cost: "10 Focus",
     page: 112,
     duration: "Concentration",
@@ -2942,7 +2942,7 @@ const powersList = [
   {
     id: "p202",
     name: "Possession",
-    set: "Magic",
+    set: "Magic (Demonic Set)",
     cost: "20 Focus",
     page: 113,
     duration: "Concentration",
@@ -2952,7 +2952,7 @@ const powersList = [
   {
     id: "p203",
     name: "Powerful Hex",
-    set: "Magic",
+    set: "Magic (Chaos Set)",
     cost: "5+ Focus",
     page: 113,
     duration: "Varies",
@@ -2962,7 +2962,7 @@ const powersList = [
   {
     id: "p204",
     name: "Probability-Manipulation Hex",
-    set: "Magic",
+    set: "Magic (Chaos Set)",
     cost: "10 Focus",
     page: 113,
     duration: "Concentration",
@@ -2972,7 +2972,7 @@ const powersList = [
   {
     id: "p205",
     name: "Protection Hex",
-    set: "Magic",
+    set: "Magic (Chaos Set)",
     cost: "10 Focus",
     page: 113,
     duration: "Concentration",
@@ -3121,7 +3121,7 @@ const powersList = [
   {
     id: "p220",
     name: "Sense Sins",
-    set: "Magic",
+    set: "Magic (Demonic Set)",
     cost: "",
     page: 116,
     duration: "Instant",
@@ -3211,7 +3211,7 @@ const powersList = [
   {
     id: "p229",
     name: "Shield of the Seraphim",
-    set: "Magic",
+    set: "Magic (Sorcery Set)",
     cost: "10 Focus",
     page: 117,
     duration: "Concentration",
@@ -3539,9 +3539,9 @@ const powersList = [
     description: "The character gains Health Damage Reduction 4."
   },
   {
-    id: "p261",
+    id: "p261i",
     name: "Summon Portal",
-    set: "Magic",
+    set: "Magic (Sorcery Set)",
     cost: "15 Focus",
     page: 122,
     duration: "Concentration",
@@ -3821,7 +3821,7 @@ const powersList = [
   {
     id: "p289",
     name: "Time-Out",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Time)",
     cost: "15 Focus",
     page: 127,
     duration: "1 Round per Rank",
@@ -3831,7 +3831,7 @@ const powersList = [
   {
     id: "p290",
     name: "Time-Out Bubble",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Time)",
     cost: "15 Focus",
     page: 127,
     duration: "1 Round per Rank",
@@ -3841,7 +3841,7 @@ const powersList = [
   {
     id: "p291",
     name: "Time-Out Tag",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Time)",
     cost: "15 Focus",
     page: 127,
     duration: "1 Round per Rank",
@@ -3851,7 +3851,7 @@ const powersList = [
   {
     id: "p292",
     name: "Time Portal",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Time)",
     cost: "15 Focus",
     page: 127,
     duration: "Concentration",
@@ -3861,7 +3861,7 @@ const powersList = [
   {
     id: "p293",
     name: "Time Travel",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Time)",
     cost: "10 Focus",
     page: 128,
     duration: "Instant",
@@ -3871,7 +3871,7 @@ const powersList = [
   {
     id: "p294",
     name: "Time Travel Other",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Time)",
     cost: "15 Focus",
     page: 128,
     duration: "Instant",
@@ -3881,7 +3881,7 @@ const powersList = [
   {
     id: "p295",
     name: "Time Travel Together",
-    set: "Omniversal Travel",
+    set: "Omniversal Travel (Time)",
     cost: "10 Focus",
     page: 128,
     duration: "Instant",
@@ -3971,7 +3971,7 @@ const powersList = [
   {
     id: "p304",
     name: "Vapors of Valtorr",
-    set: "Magic",
+    set: "Magic (Sorcery Set)",
     cost: "10 Focus",
     page: 129,
     duration: "Concentration",
@@ -4101,7 +4101,7 @@ const powersList = [
   {
     id: "p317",
     name: "Winds of Watoomb",
-    set: "Magic",
+    set: "Magic (Sorcery Set)",
     cost: "10 Focus",
     page: 130,
     duration: "Instant",
